@@ -285,8 +285,10 @@ function render() {
     currentRoute = routeKey;
   }
   if (mapInstance) {
+    mapInstance.stop();
     mapInstance.remove();
     mapInstance = null;
+    originMarker = null;
   }
   document.documentElement.lang = lang === 'zh' ? 'zh-Hans' : lang;
   document.title = `${t(['places', 'articles', 'events', 'reading'].includes(page) && id ? (page === 'places' ? 'details' : ['articles', 'reading'].includes(page) ? 'culture' : 'events') : page)} · Les Cafés de Paris`;
@@ -330,10 +332,13 @@ function render() {
 
 function initMap(c) {
   if (!window.L) return;
-  mapInstance = L.map('map', { scrollWheelZoom: false, zoomControl: true }).setView(
-    [48.857, 2.345],
-    13
-  );
+  mapInstance = L.map('map', {
+    scrollWheelZoom: false,
+    zoomControl: true,
+    zoomAnimation: false,
+    fadeAnimation: false,
+    markerZoomAnimation: false,
+  }).setView([48.857, 2.345], 13);
   L.tileLayer(MAP_TILE_URL, { attribution: MAP_ATTRIBUTION, maxZoom: 19 }).addTo(mapInstance);
   markerLayer = L.layerGroup().addTo(mapInstance);
   const places = (state.results || data.places).filter(
@@ -370,7 +375,10 @@ function initMap(c) {
   }
   if (state.query.origin) setOriginMarker(state.query.origin);
   if (markers.length)
-    mapInstance.fitBounds(L.featureGroup(markers).getBounds().pad(0.15), { maxZoom: 14 });
+    mapInstance.fitBounds(L.featureGroup(markers).getBounds().pad(0.15), {
+      maxZoom: 14,
+      animate: false,
+    });
   mapInstance.on('click', (event) => {
     const lat = Number(event.latlng.lat.toFixed(6)),
       lng = Number(event.latlng.lng.toFixed(6));
