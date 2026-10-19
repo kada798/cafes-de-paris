@@ -1,0 +1,25 @@
+# Dependencies and generated files
+node_modules/
+coverage/
+dist/
+*.log
+
+# Local configuration: only the example belongs in Git
+.env
+.env.*
+!.env.example
+
+# Runtime databases and data exports
+data/
+*.sqlite
+*.sqlite-*
+*.db
+*.db-*
+tmp/
+
+# Original project reference documents stay local
+/*.pdf
+
+# OS files
+.DS_Store
+Thumbs.db

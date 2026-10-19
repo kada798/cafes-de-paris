@@ -1,0 +1,15 @@
+{
+  "name": "cafes-de-paris",
+  "version": "0.1.0",
+  "private": true,
+  "description": "Les Cafés de Paris — cultural magazine and café discovery MVP",
+  "type": "module",
+  "engines": {
+    "node": ">=24 <27",
+    "npm": ">=10"
+  },
+  "scripts": {
+    "check:env": "node scripts/check-env.mjs",
+    "check": "node --check scripts/check-env.mjs && node scripts/check-env.mjs"
+  }
+}
