@@ -18,6 +18,7 @@
     "sync:watch": "node --env-file-if-exists=.env scripts/sync.mjs --watch",
     "test": "node --test tests/*.test.mjs",
     "test:browser": "playwright test",
+    "format": "prettier --write web server shared scripts tests content seeds docs package.json playwright.config.mjs",
     "check:env": "node scripts/check-env.mjs",
     "check": "node scripts/check.mjs && node --test tests/*.test.mjs"
   },
@@ -25,6 +26,7 @@
     "leaflet": "^1.9.4"
   },
   "devDependencies": {
-    "@playwright/test": "^1.64.1"
+    "@playwright/test": "^1.64.1",
+    "prettier": "^3.9.10"
   }
 }

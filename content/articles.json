@@ -30,10 +30,7 @@
           "在本项目中，视觉探索会连接到地点详情。已经确认的条件与尚未知晓的信息会分别展示。"
         ]
       },
-      "placeIds": [
-        "flore",
-        "deux-magots"
-      ],
+      "placeIds": ["flore", "deux-magots"],
       "image": "/assets/photos/photo-1501339847302-ac426a4a7cbb.jpg",
       "imageCaption": {
         "fr": "Photo d’ambiance illustrative · Unsplash",
@@ -78,10 +75,7 @@
           "我们的建议是从具体需求出发，比较规则，并留一个备选地点。未知信息应当保持可见，帮助用户在了解限制后作决定。"
         ]
       },
-      "placeIds": [
-        "sagan",
-        "cafeotheque"
-      ],
+      "placeIds": ["sagan", "cafeotheque"],
       "image": "/assets/photos/photo-1507842217343-583bb7270b66.jpg",
       "imageCaption": {
         "fr": "Photo d’ambiance illustrative · Unsplash",
@@ -126,11 +120,7 @@
           "文学历史并不能说明今天的接待规则。无论是阅读、用电脑写作还是安排会面，都仍需核对当前条件与待确认事项。"
         ]
       },
-      "placeIds": [
-        "flore",
-        "procope",
-        "deux-magots"
-      ],
+      "placeIds": ["flore", "procope", "deux-magots"],
       "image": "/assets/photos/photo-1442512595331-e89e73853f31.jpg",
       "imageCaption": {
         "fr": "Photo d’ambiance illustrative · Unsplash",

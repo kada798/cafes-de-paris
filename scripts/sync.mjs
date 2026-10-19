@@ -11,5 +11,12 @@ if (process.argv.includes('--watch')) {
   const minutes = Math.max(30, Number(process.env.SYNC_INTERVAL_MINUTES) || 180);
   setInterval(run, minutes * 60000);
   console.log(`Sync worker active: every ${minutes} minutes.`);
-  for (const signal of ['SIGINT', 'SIGTERM']) process.on(signal, () => { db.close(); process.exit(); });
-} else { db.close(); process.exitCode = result.status === 'success' ? 0 : 1; }
+  for (const signal of ['SIGINT', 'SIGTERM'])
+    process.on(signal, () => {
+      db.close();
+      process.exit();
+    });
+} else {
+  db.close();
+  process.exitCode = result.status === 'success' ? 0 : 1;
+}

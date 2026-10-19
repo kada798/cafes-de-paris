@@ -51,9 +51,10 @@ if (gitAvailable) {
     const normalize = (value) => value.replaceAll('\\', '/').replace(/\/$/, '');
     const actual = normalize(repoRoot);
     const expected = normalize(projectRoot);
-    const sameRoot = process.platform === 'win32'
-      ? actual.toLowerCase() === expected.toLowerCase()
-      : actual === expected;
+    const sameRoot =
+      process.platform === 'win32'
+        ? actual.toLowerCase() === expected.toLowerCase()
+        : actual === expected;
     report(sameRoot, 'Project has its own Git repository');
   } catch {
     report(false, 'Project Git repository missing; run git init in the project folder.');
@@ -62,16 +63,20 @@ if (gitAvailable) {
   try {
     // Do not print remote URLs: they can accidentally contain credentials.
     runGit(['remote', 'get-url', 'origin']);
-    console.log('INFO  Git origin configured; authentication and push access require a separate check.');
+    console.log(
+      'INFO  Git origin configured; authentication and push access require a separate check.'
+    );
   } catch {
     console.log('INFO  Git origin not configured yet.');
   }
 }
 
 const hasLocalEnv = existsSync(new URL('../.env', import.meta.url));
-console.log(hasLocalEnv
-  ? 'INFO  Local .env exists; values are not displayed.'
-  : 'INFO  Optional: copy .env.example to .env for local settings.');
+console.log(
+  hasLocalEnv
+    ? 'INFO  Local .env exists; values are not displayed.'
+    : 'INFO  Optional: copy .env.example to .env for local settings.'
+);
 console.log('INFO  This check does not contact GitHub or run any data collection.');
 console.log(failures ? `Environment check failed (${failures}).` : 'Environment ready.');
 process.exitCode = failures ? 1 : 0;

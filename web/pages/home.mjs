@@ -3,9 +3,23 @@ export function homePage(c) {
   const { t, path, data } = c;
   const scenarios = ['work', 'friends', 'date', 'business', 'reading'];
   return `<section class="hero wrap"><div class="hero-copy"><div class="eyebrow">${t('eyebrow')}</div><h1>${t('hero1')}<br><em>${t('hero2')}</em></h1><p class="hero-body">${t('heroBody')}</p><div class="hero-actions"><a class="button primary" href="${path('map')}">${t('find')} ${icon('arrow')}</a><a class="text-link" href="${path('culture')}">${t('exploreCulture')} ${icon('arrow')}</a></div><div class="hero-proof"><span>${icon('pin')} ${t('verifiedAddresses')}</span><span>${icon('leaf')} ${t('yourCriteria')}</span></div></div><div class="hero-visual"><img class="hero-photo" src="${IMG.hero}" alt="${t('photoCredit')}" fetchpriority="high"><div class="photo-note"><span>PARIS, FRANCE</span><strong>${t('heroCaption')}</strong><small>${t('photoCredit')}</small></div><div class="photo-index">01 / PARIS</div></div></section>
-  <section class="occasions"><div class="wrap"><div class="section-heading centered"><div class="eyebrow">${t('forYou')}</div><h2>${t('occasionTitle')}</h2><p>${t('occasionBody')}</p></div><div class="occasion-grid">${scenarios.map(s => `<a class="occasion-card" href="${path('map')}?scenario=${s}"><span class="occasion-icon">${icon(s)}</span><h3>${t(s)}</h3><p>${t(`${s}Hint`)}</p><span class="occasion-arrow">${icon('arrow')}</span></a>`).join('')}</div></div></section>
-  <section class="section wrap"><div class="section-heading row"><div><div class="eyebrow">${t('journal')}</div><h2>${t('featured')}</h2><p>${t('featuredBody')}</p></div><a class="text-link" href="${path('map')}">${t('allPlaces')} ${icon('arrow')}</a></div><div class="place-grid">${data.places.filter(p => !p.demo && p.kind === 'cafe').slice(0, 3).map(p => placeCard(p, c)).join('')}</div></section>
-  <section class="culture-section"><div class="wrap"><div class="section-heading row"><div><div class="eyebrow">CULTURE DES CAFÉS</div><h2>${t('cultureTitle')}</h2><p>${t('cultureIntro')}</p></div><a class="text-link" href="${path('culture')}">${t('allArticles')} ${icon('arrow')}</a></div><div class="article-grid">${data.articles.slice(0, 3).map(a => articleCard(a, c)).join('')}</div></div></section>
+  <section class="occasions"><div class="wrap"><div class="section-heading centered"><div class="eyebrow">${t('forYou')}</div><h2>${t('occasionTitle')}</h2><p>${t('occasionBody')}</p></div><div class="occasion-grid">${scenarios.map((s) => `<a class="occasion-card" href="${path('map')}?scenario=${s}"><span class="occasion-icon">${icon(s)}</span><h3>${t(s)}</h3><p>${t(`${s}Hint`)}</p><span class="occasion-arrow">${icon('arrow')}</span></a>`).join('')}</div></div></section>
+  <section class="section wrap"><div class="section-heading row"><div><div class="eyebrow">${t('journal')}</div><h2>${t('featured')}</h2><p>${t('featuredBody')}</p></div><a class="text-link" href="${path('map')}">${t('allPlaces')} ${icon('arrow')}</a></div><div class="place-grid">${data.places
+    .filter((p) => !p.demo && p.kind === 'cafe')
+    .slice(0, 3)
+    .map((p) => placeCard(p, c))
+    .join('')}</div></section>
+  <section class="culture-section"><div class="wrap"><div class="section-heading row"><div><div class="eyebrow">CULTURE DES CAFÉS</div><h2>${t('cultureTitle')}</h2><p>${t('cultureIntro')}</p></div><a class="text-link" href="${path('culture')}">${t('allArticles')} ${icon('arrow')}</a></div><div class="article-grid">${data.articles
+    .slice(0, 3)
+    .map((a) => articleCard(a, c))
+    .join('')}</div></div></section>
   <section class="trust-section wrap"><div class="trust-symbol">${icon('shield')}</div><div><div class="eyebrow">LES CAFÉS DE PARIS</div><h2>${t('trustTitle')}</h2><p>${t('trustBody')}</p></div><a class="button outline" href="${path('about')}">${t('method')} ${icon('arrow')}</a></section>
-  ${data.events.length ? `<section class="section wrap"><div class="section-heading row"><h2>${t('upcoming')}</h2><a class="text-link" href="${path('events')}">${t('allEvents')} ${icon('arrow')}</a></div><div class="event-list">${data.events.slice(0, 3).map(e => eventCard(e, c)).join('')}</div></section>` : ''}`;
+  ${
+    data.events.length
+      ? `<section class="section wrap"><div class="section-heading row"><h2>${t('upcoming')}</h2><a class="text-link" href="${path('events')}">${t('allEvents')} ${icon('arrow')}</a></div><div class="event-list">${data.events
+          .slice(0, 3)
+          .map((e) => eventCard(e, c))
+          .join('')}</div></section>`
+      : ''
+  }`;
 }

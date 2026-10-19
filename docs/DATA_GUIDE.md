@@ -2,18 +2,18 @@
 
 ## 文件入口
 
-| 内容 | 文件 |
-| --- | --- |
-| 首页 | `web/pages/home.mjs` |
-| 筛选页 | `web/pages/explore.mjs` |
-| 文化、类型、图集、活动与关于 | `web/pages/discover.mjs` |
-| 地点、文章与活动详情 | `web/pages/detail.mjs` |
-| 导航、语言与状态 | `web/app.mjs` |
-| 界面翻译（法、英、中顺序） | `web/locales/messages.mjs` |
-| 样式与设备断点 | `web/assets/style.css` |
-| 地点 | `seeds/catalog.json` |
-| 三语文章 | `content/articles.json` |
-| 场景与匹配 | `shared/match.mjs` |
+| 内容                         | 文件                       |
+| ---------------------------- | -------------------------- |
+| 首页                         | `web/pages/home.mjs`       |
+| 筛选页                       | `web/pages/explore.mjs`    |
+| 文化、类型、图集、活动与关于 | `web/pages/discover.mjs`   |
+| 地点、文章与活动详情         | `web/pages/detail.mjs`     |
+| 导航、语言与状态             | `web/app.mjs`              |
+| 界面翻译（法、英、中顺序）   | `web/locales/messages.mjs` |
+| 样式与设备断点               | `web/assets/style.css`     |
+| 地点                         | `seeds/catalog.json`       |
+| 三语文章                     | `content/articles.json`    |
+| 场景与匹配                   | `shared/match.mjs`         |
 
 编辑后运行 `npm.cmd run check`。种子资料修改后运行 `npm.cmd run db:seed` 或重启，再刷新页面。
 
@@ -31,7 +31,10 @@
 
 ```json
 {
-  "1": [["09:00", "12:00"], ["13:00", "19:00"]],
+  "1": [
+    ["09:00", "12:00"],
+    ["13:00", "19:00"]
+  ],
   "2": [],
   "3": [["20:00", "02:00"]]
 }
@@ -46,7 +49,7 @@
 可公开修改直接编辑种子文件并提交 Git。本地个人记录可以放在 `data/patch.json`：
 
 ```json
-{"notes":{"fr":"Note personnelle.","en":"Personal note.","zh":"个人备注。"}}
+{ "notes": { "fr": "Note personnelle.", "en": "Personal note.", "zh": "个人备注。" } }
 ```
 
 ```powershell

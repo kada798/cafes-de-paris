@@ -153,7 +153,7 @@ npm.cmd run sync
 
 ## 修改与验证
 
-界面翻译在 `web/locales/messages.mjs`，配色在 `web/assets/style.css`，页面在 `web/pages/`，场景和匹配规则在 `shared/match.mjs`，地点资料在 `seeds/catalog.json`，三语文章在 `content/articles.json`。修改资料后执行 `npm.cmd run db:seed`；本地覆盖可通过 `npm.cmd run data:override -- 地点ID data/补丁.json` 保存，导入种子不会覆盖。
+界面翻译在 `web/locales/messages.mjs`，配色在 `web/assets/style.css`，页面在 `web/pages/`，场景和匹配规则在 `shared/match.mjs`，地点资料在 `seeds/catalog.json`，三语文章在 `content/articles.json`。修改资料后执行 `npm.cmd run db:seed`；本地覆盖可通过 `npm.cmd run data:override -- 地点ID data/补丁.json` 保存，导入种子不会覆盖。可运行 `npm.cmd run format` 统一源码格式，页面与样式保留为普通可编辑文件。
 
 ```powershell
 npm.cmd run check
