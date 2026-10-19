@@ -114,7 +114,8 @@
           "source": "https://cafedeflore.fr/"
         }
       ],
-      "imageSource": "https://images.unsplash.com/photo-1442512595331-e89e73853f31?auto=format&fit=crop&w=1400&q=85"
+      "imageSource": "https://images.unsplash.com/photo-1442512595331-e89e73853f31?auto=format&fit=crop&w=1400&q=85",
+      "categoryTags": ["literary"]
     },
     {
       "id": "deux-magots",
@@ -229,7 +230,8 @@
           "source": "https://lesdeuxmagots.fr/wp-content/uploads/2026/05/ALLERGENES_COMPLET_MAI2026.pdf"
         }
       ],
-      "imageSource": "https://images.unsplash.com/photo-1501339847302-ac426a4a7cbb?auto=format&fit=crop&w=1400&q=85"
+      "imageSource": "https://images.unsplash.com/photo-1501339847302-ac426a4a7cbb?auto=format&fit=crop&w=1400&q=85",
+      "categoryTags": ["literary"]
     },
     {
       "id": "procope",
@@ -313,7 +315,8 @@
           "checkedAt": "2026-10-19"
         }
       },
-      "imageSource": "https://images.unsplash.com/photo-1554118811-1e0d58224f24?auto=format&fit=crop&w=1400&q=85"
+      "imageSource": "https://images.unsplash.com/photo-1554118811-1e0d58224f24?auto=format&fit=crop&w=1400&q=85",
+      "categoryTags": ["cafe_restaurant", "literary"]
     },
     {
       "id": "cafe-paix",
@@ -374,7 +377,8 @@
           "checkedAt": "2026-10-19"
         }
       },
-      "imageSource": "https://images.unsplash.com/photo-1559925393-8be0ec4767c8?auto=format&fit=crop&w=1400&q=85"
+      "imageSource": "https://images.unsplash.com/photo-1559925393-8be0ec4767c8?auto=format&fit=crop&w=1400&q=85",
+      "categoryTags": ["traditional"]
     },
     {
       "id": "rotonde",
@@ -453,13 +457,14 @@
           "checkedAt": "2026-10-19"
         }
       },
-      "imageSource": "https://images.unsplash.com/photo-1509042239860-f550ce710b93?auto=format&fit=crop&w=1400&q=85"
+      "imageSource": "https://images.unsplash.com/photo-1509042239860-f550ce710b93?auto=format&fit=crop&w=1400&q=85",
+      "categoryTags": ["cafe_restaurant"]
     },
     {
       "id": "cafeotheque",
       "name": "La Caféothèque",
       "kind": "cafe",
-      "type": "modern",
+      "type": "specialty",
       "lat": 48.854432,
       "lng": 2.355775,
       "address": "52 rue de l’Hôtel de Ville, 75004 Paris",
@@ -527,7 +532,12 @@
           "checkedAt": "2026-10-19"
         }
       },
-      "imageSource": "https://images.unsplash.com/photo-1445116572660-236099ec97a0?auto=format&fit=crop&w=1400&q=85"
+      "imageSource": "https://images.unsplash.com/photo-1445116572660-236099ec97a0?auto=format&fit=crop&w=1400&q=85",
+      "categoryTags": ["specialty"],
+      "classificationEvidence": {
+        "label": "La Caféothèque · Café et torréfaction",
+        "url": "https://lacafeotheque.com/"
+      }
     },
     {
       "id": "sagan",
@@ -733,7 +743,8 @@
       "sources": [],
       "verifiedAt": null,
       "demo": true,
-      "imageSource": "https://images.unsplash.com/photo-1554118811-1e0d58224f24?auto=format&fit=crop&w=1400&q=85"
+      "imageSource": "https://images.unsplash.com/photo-1554118811-1e0d58224f24?auto=format&fit=crop&w=1400&q=85",
+      "categoryTags": ["modern"]
     },
     {
       "id": "demo-jardin",
@@ -783,7 +794,8 @@
       "sources": [],
       "verifiedAt": null,
       "demo": true,
-      "imageSource": "https://images.unsplash.com/photo-1501339847302-ac426a4a7cbb?auto=format&fit=crop&w=1400&q=85"
+      "imageSource": "https://images.unsplash.com/photo-1501339847302-ac426a4a7cbb?auto=format&fit=crop&w=1400&q=85",
+      "categoryTags": ["neighborhood"]
     },
     {
       "id": "demo-salon",
@@ -1066,6 +1078,1206 @@
       },
       "demo": false,
       "imageSource": "https://images.unsplash.com/photo-1445116572660-236099ec97a0?auto=format&fit=crop&w=1400&q=85"
+    },
+    {
+      "id": "nuances-casanova",
+      "name": "Café Nuances · Danielle Casanova",
+      "kind": "cafe",
+      "type": "specialty",
+      "categoryTags": ["specialty"],
+      "lat": 48.867948,
+      "lng": 2.331493,
+      "address": "25 rue Danielle Casanova, 75001 Paris",
+      "area": "Paris 1er",
+      "description": {
+        "fr": "Une adresse de Café Nuances dans le 1er.",
+        "en": "Café Nuances in the first arrondissement.",
+        "zh": "Café Nuances 在巴黎一区的门店。"
+      },
+      "website": "https://cafenuances.com/",
+      "verifiedAt": "2026-10-19",
+      "classificationEvidence": {
+        "label": "Specialty Coffee Shop · site officiel",
+        "url": "https://cafenuances.com/"
+      },
+      "sources": [
+        {
+          "url": "https://cafenuances.com/pages/locations",
+          "label": "Café Nuances · Locations officielles"
+        },
+        {
+          "url": "https://cafenuances.com/",
+          "label": "Specialty Coffee Shop · site officiel"
+        },
+        {
+          "url": "https://data.geopf.fr/geocodage/search?q=25+rue+Danielle+Casanova%2C+75001+Paris&limit=1&index=address",
+          "label": "IGN · Géocodage de l’adresse officielle"
+        }
+      ],
+      "hours": null,
+      "policies": {
+        "laptop": "unknown",
+        "power": "unknown",
+        "wifi": "unknown",
+        "pets": "unknown",
+        "decaf": "unknown",
+        "caffeineFree": "unknown",
+        "reservation": "unknown",
+        "quiet": "unknown",
+        "conversation": "unknown",
+        "terrace": "unknown"
+      },
+      "notes": {
+        "fr": "Adresse vérifiée sur le site officiel. Horaires et règles d’accueil restent à confirmer.",
+        "en": "Address verified on the official website. Opening hours and visitor policies still need confirmation.",
+        "zh": "地址来自官方网站；营业时间及接待条件仍待核实。"
+      },
+      "image": "/assets/photos/photo-1554118811-1e0d58224f24.jpg",
+      "imageCaption": {
+        "fr": "Photo d’ambiance illustrative",
+        "en": "Illustrative atmosphere photograph",
+        "zh": "氛围示意图"
+      }
+    },
+    {
+      "id": "nuances-francs-bourgeois",
+      "name": "Café Nuances · Francs-Bourgeois",
+      "kind": "cafe",
+      "type": "specialty",
+      "categoryTags": ["specialty"],
+      "lat": 48.858883,
+      "lng": 2.35833,
+      "address": "51 rue des Francs-Bourgeois, 75004 Paris",
+      "area": "Paris 4e",
+      "description": {
+        "fr": "Une adresse de Café Nuances dans le 4e.",
+        "en": "Café Nuances in the fourth arrondissement.",
+        "zh": "Café Nuances 在巴黎四区的门店。"
+      },
+      "website": "https://cafenuances.com/",
+      "verifiedAt": "2026-10-19",
+      "classificationEvidence": {
+        "label": "Specialty Coffee Shop · site officiel",
+        "url": "https://cafenuances.com/"
+      },
+      "sources": [
+        {
+          "url": "https://cafenuances.com/pages/locations",
+          "label": "Café Nuances · Locations officielles"
+        },
+        {
+          "url": "https://cafenuances.com/",
+          "label": "Specialty Coffee Shop · site officiel"
+        },
+        {
+          "url": "https://data.geopf.fr/geocodage/search?q=51+rue+des+Francs-Bourgeois%2C+75004+Paris&limit=1&index=address",
+          "label": "IGN · Géocodage de l’adresse officielle"
+        }
+      ],
+      "hours": null,
+      "policies": {
+        "laptop": "unknown",
+        "power": "unknown",
+        "wifi": "unknown",
+        "pets": "unknown",
+        "decaf": "unknown",
+        "caffeineFree": "unknown",
+        "reservation": "unknown",
+        "quiet": "unknown",
+        "conversation": "unknown",
+        "terrace": "unknown"
+      },
+      "notes": {
+        "fr": "Adresse vérifiée sur le site officiel. Horaires et règles d’accueil restent à confirmer.",
+        "en": "Address verified on the official website. Opening hours and visitor policies still need confirmation.",
+        "zh": "地址来自官方网站；营业时间及接待条件仍待核实。"
+      },
+      "image": "/assets/photos/photo-1554118811-1e0d58224f24.jpg",
+      "imageCaption": {
+        "fr": "Photo d’ambiance illustrative",
+        "en": "Illustrative atmosphere photograph",
+        "zh": "氛围示意图"
+      }
+    },
+    {
+      "id": "nuances-vieux-colombier",
+      "name": "Café Nuances · Vieux Colombier",
+      "kind": "cafe",
+      "type": "specialty",
+      "categoryTags": ["specialty"],
+      "lat": 48.851953,
+      "lng": 2.330259,
+      "address": "22 rue du Vieux Colombier, 75006 Paris",
+      "area": "Paris 6e",
+      "description": {
+        "fr": "Une adresse de Café Nuances dans le 6e.",
+        "en": "Café Nuances in the sixth arrondissement.",
+        "zh": "Café Nuances 在巴黎六区的门店。"
+      },
+      "website": "https://cafenuances.com/",
+      "verifiedAt": "2026-10-19",
+      "classificationEvidence": {
+        "label": "Specialty Coffee Shop · site officiel",
+        "url": "https://cafenuances.com/"
+      },
+      "sources": [
+        {
+          "url": "https://cafenuances.com/pages/locations",
+          "label": "Café Nuances · Locations officielles"
+        },
+        {
+          "url": "https://cafenuances.com/",
+          "label": "Specialty Coffee Shop · site officiel"
+        },
+        {
+          "url": "https://data.geopf.fr/geocodage/search?q=22+rue+du+Vieux+Colombier%2C+75006+Paris&limit=1&index=address",
+          "label": "IGN · Géocodage de l’adresse officielle"
+        }
+      ],
+      "hours": null,
+      "policies": {
+        "laptop": "unknown",
+        "power": "unknown",
+        "wifi": "unknown",
+        "pets": "unknown",
+        "decaf": "unknown",
+        "caffeineFree": "unknown",
+        "reservation": "unknown",
+        "quiet": "unknown",
+        "conversation": "unknown",
+        "terrace": "unknown"
+      },
+      "notes": {
+        "fr": "Adresse vérifiée sur le site officiel. Horaires et règles d’accueil restent à confirmer.",
+        "en": "Address verified on the official website. Opening hours and visitor policies still need confirmation.",
+        "zh": "地址来自官方网站；营业时间及接待条件仍待核实。"
+      },
+      "image": "/assets/photos/photo-1554118811-1e0d58224f24.jpg",
+      "imageCaption": {
+        "fr": "Photo d’ambiance illustrative",
+        "en": "Illustrative atmosphere photograph",
+        "zh": "氛围示意图"
+      }
+    },
+    {
+      "id": "nuances-tremoille",
+      "name": "Café Nuances · La Trémoille",
+      "kind": "cafe",
+      "type": "specialty",
+      "categoryTags": ["specialty"],
+      "lat": 48.866569,
+      "lng": 2.302323,
+      "address": "10 rue de la Trémoille, 75008 Paris",
+      "area": "Paris 8e",
+      "description": {
+        "fr": "Une adresse de Café Nuances dans le 8e.",
+        "en": "Café Nuances in the eighth arrondissement.",
+        "zh": "Café Nuances 在巴黎八区的门店。"
+      },
+      "website": "https://cafenuances.com/",
+      "verifiedAt": "2026-10-19",
+      "classificationEvidence": {
+        "label": "Specialty Coffee Shop · site officiel",
+        "url": "https://cafenuances.com/"
+      },
+      "sources": [
+        {
+          "url": "https://cafenuances.com/pages/locations",
+          "label": "Café Nuances · Locations officielles"
+        },
+        {
+          "url": "https://cafenuances.com/",
+          "label": "Specialty Coffee Shop · site officiel"
+        },
+        {
+          "url": "https://data.geopf.fr/geocodage/search?q=10+rue+de+la+Tr%C3%A9moille%2C+75008+Paris&limit=1&index=address",
+          "label": "IGN · Géocodage de l’adresse officielle"
+        }
+      ],
+      "hours": null,
+      "policies": {
+        "laptop": "unknown",
+        "power": "unknown",
+        "wifi": "unknown",
+        "pets": "unknown",
+        "decaf": "unknown",
+        "caffeineFree": "unknown",
+        "reservation": "unknown",
+        "quiet": "unknown",
+        "conversation": "unknown",
+        "terrace": "unknown"
+      },
+      "notes": {
+        "fr": "Adresse vérifiée sur le site officiel. Horaires et règles d’accueil restent à confirmer.",
+        "en": "Address verified on the official website. Opening hours and visitor policies still need confirmation.",
+        "zh": "地址来自官方网站；营业时间及接待条件仍待核实。"
+      },
+      "image": "/assets/photos/photo-1554118811-1e0d58224f24.jpg",
+      "imageCaption": {
+        "fr": "Photo d’ambiance illustrative",
+        "en": "Illustrative atmosphere photograph",
+        "zh": "氛围示意图"
+      }
+    },
+    {
+      "id": "ten-belles-grange",
+      "name": "Ten Belles · Grange aux Belles",
+      "kind": "cafe",
+      "type": "specialty",
+      "categoryTags": ["specialty"],
+      "lat": 48.873549,
+      "lng": 2.364779,
+      "address": "10 rue de la Grange aux Belles, 75010 Paris",
+      "area": "Paris 10e",
+      "description": {
+        "fr": "Café de spécialité et pain au levain.",
+        "en": "Specialty coffee and sourdough bread.",
+        "zh": "提供精品咖啡与酸种面包。"
+      },
+      "website": "https://www.tenbelles.com/fr/",
+      "verifiedAt": "2026-10-19",
+      "classificationEvidence": {
+        "label": "Torréfaction de café de spécialité déclarée",
+        "url": "https://www.tenbelles.com/fr/"
+      },
+      "sources": [
+        {
+          "url": "https://www.tenbelles.com/fr/",
+          "label": "Ten Belles · Site officiel"
+        },
+        {
+          "url": "https://www.tenbelles.com/fr/",
+          "label": "Torréfaction de café de spécialité déclarée"
+        },
+        {
+          "url": "https://data.geopf.fr/geocodage/search?q=10+rue+de+la+Grange+aux+Belles%2C+75010+Paris&limit=1&index=address",
+          "label": "IGN · Géocodage de l’adresse officielle"
+        }
+      ],
+      "hours": null,
+      "policies": {
+        "laptop": "unknown",
+        "power": "unknown",
+        "wifi": "unknown",
+        "pets": "unknown",
+        "decaf": "unknown",
+        "caffeineFree": "unknown",
+        "reservation": "unknown",
+        "quiet": "unknown",
+        "conversation": "unknown",
+        "terrace": "unknown"
+      },
+      "notes": {
+        "fr": "Adresse vérifiée sur le site officiel. Horaires et règles d’accueil restent à confirmer.",
+        "en": "Address verified on the official website. Opening hours and visitor policies still need confirmation.",
+        "zh": "地址来自官方网站；营业时间及接待条件仍待核实。"
+      },
+      "image": "/assets/photos/photo-1554118811-1e0d58224f24.jpg",
+      "imageCaption": {
+        "fr": "Photo d’ambiance illustrative",
+        "en": "Illustrative atmosphere photograph",
+        "zh": "氛围示意图"
+      }
+    },
+    {
+      "id": "ten-belles-breguet",
+      "name": "Ten Belles Bread · Bréguet",
+      "kind": "cafe",
+      "type": "specialty",
+      "categoryTags": ["specialty"],
+      "lat": 48.857604,
+      "lng": 2.37363,
+      "address": "17-19 rue Bréguet, 75011 Paris",
+      "area": "Paris 11e",
+      "description": {
+        "fr": "Café de spécialité et pain au levain.",
+        "en": "Specialty coffee and sourdough bread.",
+        "zh": "提供精品咖啡与酸种面包。"
+      },
+      "website": "https://www.tenbelles.com/fr/",
+      "verifiedAt": "2026-10-19",
+      "classificationEvidence": {
+        "label": "Torréfaction de café de spécialité déclarée",
+        "url": "https://www.tenbelles.com/fr/"
+      },
+      "sources": [
+        {
+          "url": "https://www.tenbelles.com/fr/",
+          "label": "Ten Belles · Site officiel"
+        },
+        {
+          "url": "https://www.tenbelles.com/fr/",
+          "label": "Torréfaction de café de spécialité déclarée"
+        },
+        {
+          "url": "https://data.geopf.fr/geocodage/search?q=17-19+rue+Br%C3%A9guet%2C+75011+Paris&limit=1&index=address",
+          "label": "IGN · Géocodage de l’adresse officielle"
+        }
+      ],
+      "hours": null,
+      "policies": {
+        "laptop": "unknown",
+        "power": "unknown",
+        "wifi": "unknown",
+        "pets": "unknown",
+        "decaf": "unknown",
+        "caffeineFree": "unknown",
+        "reservation": "unknown",
+        "quiet": "unknown",
+        "conversation": "unknown",
+        "terrace": "unknown"
+      },
+      "notes": {
+        "fr": "Adresse vérifiée sur le site officiel. Horaires et règles d’accueil restent à confirmer.",
+        "en": "Address verified on the official website. Opening hours and visitor policies still need confirmation.",
+        "zh": "地址来自官方网站；营业时间及接待条件仍待核实。"
+      },
+      "image": "/assets/photos/photo-1554118811-1e0d58224f24.jpg",
+      "imageCaption": {
+        "fr": "Photo d’ambiance illustrative",
+        "en": "Illustrative atmosphere photograph",
+        "zh": "氛围示意图"
+      }
+    },
+    {
+      "id": "ten-belles-cherche-midi",
+      "name": "Ten Belles · Cherche-Midi",
+      "kind": "cafe",
+      "type": "specialty",
+      "categoryTags": ["specialty"],
+      "lat": 48.84878,
+      "lng": 2.325205,
+      "address": "53 rue du Cherche-Midi, 75006 Paris",
+      "area": "Paris 6e",
+      "description": {
+        "fr": "Café de spécialité et pain au levain.",
+        "en": "Specialty coffee and sourdough bread.",
+        "zh": "提供精品咖啡与酸种面包。"
+      },
+      "website": "https://www.tenbelles.com/fr/",
+      "verifiedAt": "2026-10-19",
+      "classificationEvidence": {
+        "label": "Torréfaction de café de spécialité déclarée",
+        "url": "https://www.tenbelles.com/fr/"
+      },
+      "sources": [
+        {
+          "url": "https://www.tenbelles.com/fr/",
+          "label": "Ten Belles · Site officiel"
+        },
+        {
+          "url": "https://www.tenbelles.com/fr/",
+          "label": "Torréfaction de café de spécialité déclarée"
+        },
+        {
+          "url": "https://data.geopf.fr/geocodage/search?q=53+rue+du+Cherche-Midi%2C+75006+Paris&limit=1&index=address",
+          "label": "IGN · Géocodage de l’adresse officielle"
+        }
+      ],
+      "hours": null,
+      "policies": {
+        "laptop": "unknown",
+        "power": "unknown",
+        "wifi": "unknown",
+        "pets": "unknown",
+        "decaf": "unknown",
+        "caffeineFree": "unknown",
+        "reservation": "unknown",
+        "quiet": "unknown",
+        "conversation": "unknown",
+        "terrace": "unknown"
+      },
+      "notes": {
+        "fr": "Adresse vérifiée sur le site officiel. Horaires et règles d’accueil restent à confirmer.",
+        "en": "Address verified on the official website. Opening hours and visitor policies still need confirmation.",
+        "zh": "地址来自官方网站；营业时间及接待条件仍待核实。"
+      },
+      "image": "/assets/photos/photo-1554118811-1e0d58224f24.jpg",
+      "imageCaption": {
+        "fr": "Photo d’ambiance illustrative",
+        "en": "Illustrative atmosphere photograph",
+        "zh": "氛围示意图"
+      }
+    },
+    {
+      "id": "coutume-babylone",
+      "name": "Coutume · Babylone",
+      "kind": "cafe",
+      "type": "specialty",
+      "categoryTags": ["specialty"],
+      "lat": 48.851669,
+      "lng": 2.318362,
+      "address": "47 rue de Babylone, 75007 Paris",
+      "area": "Paris 7e",
+      "description": {
+        "fr": "Café de spécialité, brunch et restauration rue de Babylone.",
+        "en": "Specialty coffee, brunch and food on rue de Babylone.",
+        "zh": "位于巴比伦街，提供精品咖啡、早午餐与餐食。"
+      },
+      "website": "https://coutumecafe.com/",
+      "verifiedAt": "2026-10-19",
+      "classificationEvidence": {
+        "label": "Café de spécialité · offre publiée par Coutume",
+        "url": "https://coutumecafe.com/pages/cafe-babylone"
+      },
+      "sources": [
+        {
+          "url": "https://coutumecafe.com/pages/cafe-babylone",
+          "label": "Coutume · Fiche officielle Babylone"
+        },
+        {
+          "url": "https://coutumecafe.com/pages/cafe-babylone",
+          "label": "Café de spécialité · offre publiée par Coutume"
+        },
+        {
+          "url": "https://data.geopf.fr/geocodage/search?q=47+rue+de+Babylone%2C+75007+Paris&limit=1&index=address",
+          "label": "IGN · Géocodage de l’adresse officielle"
+        }
+      ],
+      "hours": null,
+      "policies": {
+        "laptop": "unknown",
+        "power": "unknown",
+        "wifi": "unknown",
+        "pets": "unknown",
+        "decaf": "unknown",
+        "caffeineFree": "unknown",
+        "reservation": "unknown",
+        "quiet": "unknown",
+        "conversation": "unknown",
+        "terrace": "unknown"
+      },
+      "notes": {
+        "fr": "Adresse vérifiée sur le site officiel. Horaires et règles d’accueil restent à confirmer.",
+        "en": "Address verified on the official website. Opening hours and visitor policies still need confirmation.",
+        "zh": "地址来自官方网站；营业时间及接待条件仍待核实。"
+      },
+      "image": "/assets/photos/photo-1554118811-1e0d58224f24.jpg",
+      "imageCaption": {
+        "fr": "Photo d’ambiance illustrative",
+        "en": "Illustrative atmosphere photograph",
+        "zh": "氛围示意图"
+      }
+    },
+    {
+      "id": "coutume-procure",
+      "name": "Coutume · La Procure",
+      "kind": "cafe",
+      "type": "specialty",
+      "categoryTags": ["specialty"],
+      "lat": 48.850198,
+      "lng": 2.332396,
+      "address": "1 rue de Mézières, 75006 Paris",
+      "area": "Paris 6e",
+      "description": {
+        "fr": "Un comptoir de café de spécialité dans la librairie La Procure.",
+        "en": "A specialty coffee counter inside La Procure bookshop.",
+        "zh": "开设在 La Procure 书店内的精品咖啡空间。"
+      },
+      "website": "https://coutumecafe.com/",
+      "verifiedAt": "2026-10-19",
+      "classificationEvidence": {
+        "label": "Café de spécialité · offre publiée par Coutume",
+        "url": "https://coutumecafe.com/pages/cafe-la-procure"
+      },
+      "sources": [
+        {
+          "url": "https://coutumecafe.com/pages/cafe-la-procure",
+          "label": "Coutume · Fiche officielle La Procure"
+        },
+        {
+          "url": "https://coutumecafe.com/pages/cafe-la-procure",
+          "label": "Café de spécialité · offre publiée par Coutume"
+        },
+        {
+          "url": "https://data.geopf.fr/geocodage/search?q=1+rue+de+M%C3%A9zi%C3%A8res%2C+75006+Paris&limit=1&index=address",
+          "label": "IGN · Géocodage de l’adresse officielle"
+        }
+      ],
+      "hours": null,
+      "policies": {
+        "laptop": "unknown",
+        "power": "unknown",
+        "wifi": "unknown",
+        "pets": "unknown",
+        "decaf": "unknown",
+        "caffeineFree": "unknown",
+        "reservation": "unknown",
+        "quiet": "unknown",
+        "conversation": "unknown",
+        "terrace": "unknown"
+      },
+      "notes": {
+        "fr": "Adresse vérifiée sur le site officiel. Horaires et règles d’accueil restent à confirmer.",
+        "en": "Address verified on the official website. Opening hours and visitor policies still need confirmation.",
+        "zh": "地址来自官方网站；营业时间及接待条件仍待核实。"
+      },
+      "image": "/assets/photos/photo-1554118811-1e0d58224f24.jpg",
+      "imageCaption": {
+        "fr": "Photo d’ambiance illustrative",
+        "en": "Illustrative atmosphere photograph",
+        "zh": "氛围示意图"
+      }
+    },
+    {
+      "id": "coutume-mathis",
+      "name": "Coutume · Hôtel Mathis",
+      "kind": "cafe",
+      "type": "specialty",
+      "categoryTags": ["specialty"],
+      "lat": 48.870066,
+      "lng": 2.311324,
+      "address": "3 rue de Ponthieu, 75008 Paris",
+      "area": "Paris 8e",
+      "description": {
+        "fr": "Café de spécialité et restauration dans l’Hôtel Mathis.",
+        "en": "Specialty coffee and food inside Hôtel Mathis.",
+        "zh": "Hôtel Mathis 酒店内的精品咖啡与餐饮空间。"
+      },
+      "website": "https://coutumecafe.com/",
+      "verifiedAt": "2026-10-19",
+      "classificationEvidence": {
+        "label": "Café de spécialité · offre publiée par Coutume",
+        "url": "https://coutumecafe.com/pages/cafe-hotel-mathis"
+      },
+      "sources": [
+        {
+          "url": "https://coutumecafe.com/pages/cafe-hotel-mathis",
+          "label": "Coutume · Fiche officielle Hôtel Mathis"
+        },
+        {
+          "url": "https://coutumecafe.com/pages/cafe-hotel-mathis",
+          "label": "Café de spécialité · offre publiée par Coutume"
+        },
+        {
+          "url": "https://data.geopf.fr/geocodage/search?q=3+rue+de+Ponthieu%2C+75008+Paris&limit=1&index=address",
+          "label": "IGN · Géocodage de l’adresse officielle"
+        }
+      ],
+      "hours": null,
+      "policies": {
+        "laptop": "unknown",
+        "power": "unknown",
+        "wifi": "unknown",
+        "pets": "unknown",
+        "decaf": "unknown",
+        "caffeineFree": "unknown",
+        "reservation": "unknown",
+        "quiet": "unknown",
+        "conversation": "unknown",
+        "terrace": "unknown"
+      },
+      "notes": {
+        "fr": "Adresse vérifiée sur le site officiel. Horaires et règles d’accueil restent à confirmer.",
+        "en": "Address verified on the official website. Opening hours and visitor policies still need confirmation.",
+        "zh": "地址来自官方网站；营业时间及接待条件仍待核实。"
+      },
+      "image": "/assets/photos/photo-1554118811-1e0d58224f24.jpg",
+      "imageCaption": {
+        "fr": "Photo d’ambiance illustrative",
+        "en": "Illustrative atmosphere photograph",
+        "zh": "氛围示意图"
+      }
+    },
+    {
+      "id": "coutume-daubinet",
+      "name": "François Daubinet chez Coutume",
+      "kind": "cafe",
+      "type": "specialty",
+      "categoryTags": ["specialty"],
+      "lat": 48.873199,
+      "lng": 2.332434,
+      "address": "40 boulevard Haussmann, 75009 Paris",
+      "area": "Paris 9e · Galeries Lafayette, 2e étage du magasin Coupole",
+      "description": {
+        "fr": "Café de spécialité et pâtisseries aux Galeries Lafayette.",
+        "en": "Specialty coffee and pastries at Galeries Lafayette.",
+        "zh": "老佛爷百货内的精品咖啡与甜点空间。"
+      },
+      "website": "https://coutumecafe.com/",
+      "verifiedAt": "2026-10-19",
+      "classificationEvidence": {
+        "label": "Café de spécialité · offre publiée par Coutume",
+        "url": "https://coutumecafe.com/pages/cafe-francois-daubinet"
+      },
+      "sources": [
+        {
+          "url": "https://coutumecafe.com/pages/cafe-francois-daubinet",
+          "label": "Coutume · Fiche officielle François Daubinet"
+        },
+        {
+          "url": "https://coutumecafe.com/pages/cafe-francois-daubinet",
+          "label": "Café de spécialité · offre publiée par Coutume"
+        },
+        {
+          "url": "https://data.geopf.fr/geocodage/search?q=40+boulevard+Haussmann%2C+75009+Paris&limit=1&index=address",
+          "label": "IGN · Géocodage de l’adresse officielle"
+        }
+      ],
+      "hours": null,
+      "policies": {
+        "laptop": "unknown",
+        "power": "unknown",
+        "wifi": "unknown",
+        "pets": "unknown",
+        "decaf": "unknown",
+        "caffeineFree": "unknown",
+        "reservation": "unknown",
+        "quiet": "unknown",
+        "conversation": "unknown",
+        "terrace": "unknown"
+      },
+      "notes": {
+        "fr": "Adresse vérifiée sur le site officiel. Horaires et règles d’accueil restent à confirmer.",
+        "en": "Address verified on the official website. Opening hours and visitor policies still need confirmation.",
+        "zh": "地址来自官方网站；营业时间及接待条件仍待核实。"
+      },
+      "image": "/assets/photos/photo-1554118811-1e0d58224f24.jpg",
+      "imageCaption": {
+        "fr": "Photo d’ambiance illustrative",
+        "en": "Illustrative atmosphere photograph",
+        "zh": "氛围示意图"
+      }
+    },
+    {
+      "id": "coutume-grande-epicerie",
+      "name": "Coutume · La Grande Épicerie de Paris",
+      "kind": "cafe",
+      "type": "specialty",
+      "categoryTags": ["specialty"],
+      "lat": 48.858213,
+      "lng": 2.275842,
+      "address": "80 rue de Passy, 75016 Paris",
+      "area": "Paris 16e",
+      "description": {
+        "fr": "Café de spécialité au sein de la Grande Épicerie, rive droite.",
+        "en": "Specialty coffee inside the Right Bank Grande Épicerie.",
+        "zh": "右岸 La Grande Épicerie 食品百货内的精品咖啡空间。"
+      },
+      "website": "https://coutumecafe.com/",
+      "verifiedAt": "2026-10-19",
+      "classificationEvidence": {
+        "label": "Café de spécialité · offre publiée par Coutume",
+        "url": "https://coutumecafe.com/pages/cafe-grande-epicerie-paris"
+      },
+      "sources": [
+        {
+          "url": "https://coutumecafe.com/pages/cafe-grande-epicerie-paris",
+          "label": "Coutume · Fiche officielle Grande Épicerie"
+        },
+        {
+          "url": "https://coutumecafe.com/pages/cafe-grande-epicerie-paris",
+          "label": "Café de spécialité · offre publiée par Coutume"
+        },
+        {
+          "url": "https://data.geopf.fr/geocodage/search?q=80+rue+de+Passy%2C+75016+Paris&limit=1&index=address",
+          "label": "IGN · Géocodage de l’adresse officielle"
+        }
+      ],
+      "hours": null,
+      "policies": {
+        "laptop": "unknown",
+        "power": "unknown",
+        "wifi": "unknown",
+        "pets": "unknown",
+        "decaf": "unknown",
+        "caffeineFree": "unknown",
+        "reservation": "unknown",
+        "quiet": "unknown",
+        "conversation": "unknown",
+        "terrace": "unknown"
+      },
+      "notes": {
+        "fr": "Adresse vérifiée sur le site officiel. Horaires et règles d’accueil restent à confirmer.",
+        "en": "Address verified on the official website. Opening hours and visitor policies still need confirmation.",
+        "zh": "地址来自官方网站；营业时间及接待条件仍待核实。"
+      },
+      "image": "/assets/photos/photo-1554118811-1e0d58224f24.jpg",
+      "imageCaption": {
+        "fr": "Photo d’ambiance illustrative",
+        "en": "Illustrative atmosphere photograph",
+        "zh": "氛围示意图"
+      }
+    },
+    {
+      "id": "terres-capucines",
+      "name": "Terres de Café · Capucines",
+      "kind": "cafe",
+      "type": "specialty",
+      "categoryTags": ["specialty"],
+      "lat": 48.869361,
+      "lng": 2.328907,
+      "address": "20 rue des Capucines, 75002 Paris",
+      "area": "Paris 2e",
+      "description": {
+        "fr": "Café de spécialité, boutique Capucines.",
+        "en": "Specialty coffee at Capucines.",
+        "zh": "Capucines 精品咖啡门店。"
+      },
+      "website": "https://www.terresdecafe.com/",
+      "verifiedAt": "2026-10-19",
+      "classificationEvidence": {
+        "label": "Offre spécialisée déclarée",
+        "url": "https://www.terresdecafe.com/fr/content/70-nos-boutiques"
+      },
+      "sources": [
+        {
+          "url": "https://www.terresdecafe.com/fr/content/70-nos-boutiques",
+          "label": "Terres de Café · Boutiques officielles"
+        },
+        {
+          "url": "https://www.terresdecafe.com/fr/content/70-nos-boutiques",
+          "label": "Offre spécialisée déclarée"
+        },
+        {
+          "url": "https://data.geopf.fr/geocodage/search?q=20+rue+des+Capucines%2C+75002+Paris&limit=1&index=address",
+          "label": "IGN · Géocodage de l’adresse officielle"
+        }
+      ],
+      "hours": null,
+      "policies": {
+        "laptop": "unknown",
+        "power": "unknown",
+        "wifi": "unknown",
+        "pets": "unknown",
+        "decaf": "unknown",
+        "caffeineFree": "unknown",
+        "reservation": "unknown",
+        "quiet": "unknown",
+        "conversation": "unknown",
+        "terrace": "unknown"
+      },
+      "notes": {
+        "fr": "Adresse vérifiée sur le site officiel. Horaires et règles d’accueil restent à confirmer.",
+        "en": "Address verified on the official website. Opening hours and visitor policies still need confirmation.",
+        "zh": "地址来自官方网站；营业时间及接待条件仍待核实。"
+      },
+      "image": "/assets/photos/photo-1554118811-1e0d58224f24.jpg",
+      "imageCaption": {
+        "fr": "Photo d’ambiance illustrative",
+        "en": "Illustrative atmosphere photograph",
+        "zh": "氛围示意图"
+      }
+    },
+    {
+      "id": "terres-beaumarchais",
+      "name": "Terres de Café · Beaumarchais",
+      "kind": "cafe",
+      "type": "specialty",
+      "categoryTags": ["specialty"],
+      "lat": 48.858379,
+      "lng": 2.367602,
+      "address": "23 boulevard Beaumarchais, 75003 Paris",
+      "area": "Paris 3e",
+      "description": {
+        "fr": "Café de spécialité, boutique Beaumarchais.",
+        "en": "Specialty coffee at Beaumarchais.",
+        "zh": "Beaumarchais 精品咖啡门店。"
+      },
+      "website": "https://www.terresdecafe.com/",
+      "verifiedAt": "2026-10-19",
+      "classificationEvidence": {
+        "label": "Offre spécialisée déclarée",
+        "url": "https://www.terresdecafe.com/fr/content/70-nos-boutiques"
+      },
+      "sources": [
+        {
+          "url": "https://www.terresdecafe.com/fr/content/70-nos-boutiques",
+          "label": "Terres de Café · Boutiques officielles"
+        },
+        {
+          "url": "https://www.terresdecafe.com/fr/content/70-nos-boutiques",
+          "label": "Offre spécialisée déclarée"
+        },
+        {
+          "url": "https://data.geopf.fr/geocodage/search?q=23+boulevard+Beaumarchais%2C+75003+Paris&limit=1&index=address",
+          "label": "IGN · Géocodage de l’adresse officielle"
+        }
+      ],
+      "hours": null,
+      "policies": {
+        "laptop": "unknown",
+        "power": "unknown",
+        "wifi": "unknown",
+        "pets": "unknown",
+        "decaf": "unknown",
+        "caffeineFree": "unknown",
+        "reservation": "unknown",
+        "quiet": "unknown",
+        "conversation": "unknown",
+        "terrace": "unknown"
+      },
+      "notes": {
+        "fr": "Adresse vérifiée sur le site officiel. Horaires et règles d’accueil restent à confirmer.",
+        "en": "Address verified on the official website. Opening hours and visitor policies still need confirmation.",
+        "zh": "地址来自官方网站；营业时间及接待条件仍待核实。"
+      },
+      "image": "/assets/photos/photo-1554118811-1e0d58224f24.jpg",
+      "imageCaption": {
+        "fr": "Photo d’ambiance illustrative",
+        "en": "Illustrative atmosphere photograph",
+        "zh": "氛围示意图"
+      }
+    },
+    {
+      "id": "terres-rambuteau",
+      "name": "Terres de Café · Rambuteau",
+      "kind": "cafe",
+      "type": "specialty",
+      "categoryTags": ["specialty"],
+      "lat": 48.860562,
+      "lng": 2.355653,
+      "address": "14 rue Rambuteau, 75003 Paris",
+      "area": "Paris 3e",
+      "description": {
+        "fr": "Café de spécialité, boutique Rambuteau.",
+        "en": "Specialty coffee at Rambuteau.",
+        "zh": "Rambuteau 精品咖啡门店。"
+      },
+      "website": "https://www.terresdecafe.com/",
+      "verifiedAt": "2026-10-19",
+      "classificationEvidence": {
+        "label": "Offre spécialisée déclarée",
+        "url": "https://www.terresdecafe.com/fr/content/70-nos-boutiques"
+      },
+      "sources": [
+        {
+          "url": "https://www.terresdecafe.com/fr/content/70-nos-boutiques",
+          "label": "Terres de Café · Boutiques officielles"
+        },
+        {
+          "url": "https://www.terresdecafe.com/fr/content/70-nos-boutiques",
+          "label": "Offre spécialisée déclarée"
+        },
+        {
+          "url": "https://data.geopf.fr/geocodage/search?q=14+rue+Rambuteau%2C+75003+Paris&limit=1&index=address",
+          "label": "IGN · Géocodage de l’adresse officielle"
+        }
+      ],
+      "hours": null,
+      "policies": {
+        "laptop": "unknown",
+        "power": "unknown",
+        "wifi": "unknown",
+        "pets": "unknown",
+        "decaf": "unknown",
+        "caffeineFree": "unknown",
+        "reservation": "unknown",
+        "quiet": "unknown",
+        "conversation": "unknown",
+        "terrace": "unknown"
+      },
+      "notes": {
+        "fr": "Adresse vérifiée sur le site officiel. Horaires et règles d’accueil restent à confirmer.",
+        "en": "Address verified on the official website. Opening hours and visitor policies still need confirmation.",
+        "zh": "地址来自官方网站；营业时间及接待条件仍待核实。"
+      },
+      "image": "/assets/photos/photo-1554118811-1e0d58224f24.jpg",
+      "imageCaption": {
+        "fr": "Photo d’ambiance illustrative",
+        "en": "Illustrative atmosphere photograph",
+        "zh": "氛围示意图"
+      }
+    },
+    {
+      "id": "terres-batignolles",
+      "name": "Terres de Café · Batignolles",
+      "kind": "cafe",
+      "type": "specialty",
+      "categoryTags": ["specialty"],
+      "lat": 48.885097,
+      "lng": 2.320533,
+      "address": "33 rue des Batignolles, 75017 Paris",
+      "area": "Paris 17e",
+      "description": {
+        "fr": "Café de spécialité, boutique Batignolles.",
+        "en": "Specialty coffee at Batignolles.",
+        "zh": "Batignolles 精品咖啡门店。"
+      },
+      "website": "https://www.terresdecafe.com/",
+      "verifiedAt": "2026-10-19",
+      "classificationEvidence": {
+        "label": "Offre spécialisée déclarée",
+        "url": "https://www.terresdecafe.com/fr/content/70-nos-boutiques"
+      },
+      "sources": [
+        {
+          "url": "https://www.terresdecafe.com/fr/content/70-nos-boutiques",
+          "label": "Terres de Café · Boutiques officielles"
+        },
+        {
+          "url": "https://www.terresdecafe.com/fr/content/70-nos-boutiques",
+          "label": "Offre spécialisée déclarée"
+        },
+        {
+          "url": "https://data.geopf.fr/geocodage/search?q=33+rue+des+Batignolles%2C+75017+Paris&limit=1&index=address",
+          "label": "IGN · Géocodage de l’adresse officielle"
+        }
+      ],
+      "hours": null,
+      "policies": {
+        "laptop": "unknown",
+        "power": "unknown",
+        "wifi": "unknown",
+        "pets": "unknown",
+        "decaf": "unknown",
+        "caffeineFree": "unknown",
+        "reservation": "unknown",
+        "quiet": "unknown",
+        "conversation": "unknown",
+        "terrace": "unknown"
+      },
+      "notes": {
+        "fr": "Adresse vérifiée sur le site officiel. Horaires et règles d’accueil restent à confirmer.",
+        "en": "Address verified on the official website. Opening hours and visitor policies still need confirmation.",
+        "zh": "地址来自官方网站；营业时间及接待条件仍待核实。"
+      },
+      "image": "/assets/photos/photo-1554118811-1e0d58224f24.jpg",
+      "imageCaption": {
+        "fr": "Photo d’ambiance illustrative",
+        "en": "Illustrative atmosphere photograph",
+        "zh": "氛围示意图"
+      }
+    },
+    {
+      "id": "terres-bourdonnais",
+      "name": "Terres de Café · Bourdonnais",
+      "kind": "cafe",
+      "type": "specialty",
+      "categoryTags": ["specialty"],
+      "lat": 48.856905,
+      "lng": 2.301565,
+      "address": "67 avenue de la Bourdonnais, 75007 Paris",
+      "area": "Paris 7e",
+      "description": {
+        "fr": "Café de spécialité, boutique Bourdonnais.",
+        "en": "Specialty coffee at Bourdonnais.",
+        "zh": "Bourdonnais 精品咖啡门店。"
+      },
+      "website": "https://www.terresdecafe.com/",
+      "verifiedAt": "2026-10-19",
+      "classificationEvidence": {
+        "label": "Offre spécialisée déclarée",
+        "url": "https://www.terresdecafe.com/fr/content/70-nos-boutiques"
+      },
+      "sources": [
+        {
+          "url": "https://www.terresdecafe.com/fr/content/70-nos-boutiques",
+          "label": "Terres de Café · Boutiques officielles"
+        },
+        {
+          "url": "https://www.terresdecafe.com/fr/content/70-nos-boutiques",
+          "label": "Offre spécialisée déclarée"
+        },
+        {
+          "url": "https://data.geopf.fr/geocodage/search?q=67+avenue+de+la+Bourdonnais%2C+75007+Paris&limit=1&index=address",
+          "label": "IGN · Géocodage de l’adresse officielle"
+        }
+      ],
+      "hours": null,
+      "policies": {
+        "laptop": "unknown",
+        "power": "unknown",
+        "wifi": "unknown",
+        "pets": "unknown",
+        "decaf": "unknown",
+        "caffeineFree": "unknown",
+        "reservation": "unknown",
+        "quiet": "unknown",
+        "conversation": "unknown",
+        "terrace": "unknown"
+      },
+      "notes": {
+        "fr": "Adresse vérifiée sur le site officiel. Horaires et règles d’accueil restent à confirmer.",
+        "en": "Address verified on the official website. Opening hours and visitor policies still need confirmation.",
+        "zh": "地址来自官方网站；营业时间及接待条件仍待核实。"
+      },
+      "image": "/assets/photos/photo-1554118811-1e0d58224f24.jpg",
+      "imageCaption": {
+        "fr": "Photo d’ambiance illustrative",
+        "en": "Illustrative atmosphere photograph",
+        "zh": "氛围示意图"
+      }
+    },
+    {
+      "id": "terres-saint-honore",
+      "name": "Terres de Café · Saint-Honoré",
+      "kind": "cafe",
+      "type": "specialty",
+      "categoryTags": ["specialty"],
+      "lat": 48.861972,
+      "lng": 2.340339,
+      "address": "150 rue Saint-Honoré, 75001 Paris",
+      "area": "Paris 1er",
+      "description": {
+        "fr": "Café de spécialité, boutique Saint-Honoré.",
+        "en": "Specialty coffee at Saint-Honoré.",
+        "zh": "Saint-Honoré 精品咖啡门店。"
+      },
+      "website": "https://www.terresdecafe.com/",
+      "verifiedAt": "2026-10-19",
+      "classificationEvidence": {
+        "label": "Offre spécialisée déclarée",
+        "url": "https://www.terresdecafe.com/fr/content/70-nos-boutiques"
+      },
+      "sources": [
+        {
+          "url": "https://www.terresdecafe.com/fr/content/70-nos-boutiques",
+          "label": "Terres de Café · Boutiques officielles"
+        },
+        {
+          "url": "https://www.terresdecafe.com/fr/content/70-nos-boutiques",
+          "label": "Offre spécialisée déclarée"
+        },
+        {
+          "url": "https://data.geopf.fr/geocodage/search?q=150+rue+Saint-Honor%C3%A9%2C+75001+Paris&limit=1&index=address",
+          "label": "IGN · Géocodage de l’adresse officielle"
+        }
+      ],
+      "hours": null,
+      "policies": {
+        "laptop": "unknown",
+        "power": "unknown",
+        "wifi": "unknown",
+        "pets": "unknown",
+        "decaf": "unknown",
+        "caffeineFree": "unknown",
+        "reservation": "unknown",
+        "quiet": "unknown",
+        "conversation": "unknown",
+        "terrace": "unknown"
+      },
+      "notes": {
+        "fr": "Adresse vérifiée sur le site officiel. Horaires et règles d’accueil restent à confirmer.",
+        "en": "Address verified on the official website. Opening hours and visitor policies still need confirmation.",
+        "zh": "地址来自官方网站；营业时间及接待条件仍待核实。"
+      },
+      "image": "/assets/photos/photo-1554118811-1e0d58224f24.jpg",
+      "imageCaption": {
+        "fr": "Photo d’ambiance illustrative",
+        "en": "Illustrative atmosphere photograph",
+        "zh": "氛围示意图"
+      }
+    },
+    {
+      "id": "terres-daguerre",
+      "name": "Terres de Café · Daguerre",
+      "kind": "cafe",
+      "type": "specialty",
+      "categoryTags": ["specialty"],
+      "lat": 48.834339,
+      "lng": 2.328739,
+      "address": "32 rue Daguerre, 75014 Paris",
+      "area": "Paris 14e",
+      "description": {
+        "fr": "Café de spécialité, boutique Daguerre.",
+        "en": "Specialty coffee at Daguerre.",
+        "zh": "Daguerre 精品咖啡门店。"
+      },
+      "website": "https://www.terresdecafe.com/",
+      "verifiedAt": "2026-10-19",
+      "classificationEvidence": {
+        "label": "Offre spécialisée déclarée",
+        "url": "https://www.terresdecafe.com/fr/content/70-nos-boutiques"
+      },
+      "sources": [
+        {
+          "url": "https://www.terresdecafe.com/fr/content/70-nos-boutiques",
+          "label": "Terres de Café · Boutiques officielles"
+        },
+        {
+          "url": "https://www.terresdecafe.com/fr/content/70-nos-boutiques",
+          "label": "Offre spécialisée déclarée"
+        },
+        {
+          "url": "https://data.geopf.fr/geocodage/search?q=32+rue+Daguerre%2C+75014+Paris&limit=1&index=address",
+          "label": "IGN · Géocodage de l’adresse officielle"
+        }
+      ],
+      "hours": null,
+      "policies": {
+        "laptop": "unknown",
+        "power": "unknown",
+        "wifi": "unknown",
+        "pets": "unknown",
+        "decaf": "unknown",
+        "caffeineFree": "unknown",
+        "reservation": "unknown",
+        "quiet": "unknown",
+        "conversation": "unknown",
+        "terrace": "unknown"
+      },
+      "notes": {
+        "fr": "Adresse vérifiée sur le site officiel. Horaires et règles d’accueil restent à confirmer.",
+        "en": "Address verified on the official website. Opening hours and visitor policies still need confirmation.",
+        "zh": "地址来自官方网站；营业时间及接待条件仍待核实。"
+      },
+      "image": "/assets/photos/photo-1554118811-1e0d58224f24.jpg",
+      "imageCaption": {
+        "fr": "Photo d’ambiance illustrative",
+        "en": "Illustrative atmosphere photograph",
+        "zh": "氛围示意图"
+      }
+    },
+    {
+      "id": "lomi-marcadet",
+      "name": "Lomi · Marcadet",
+      "kind": "cafe",
+      "type": "specialty",
+      "categoryTags": ["specialty"],
+      "lat": 48.891217,
+      "lng": 2.341752,
+      "address": "3 ter rue Marcadet, 75018 Paris",
+      "area": "Paris 18e",
+      "description": {
+        "fr": "Coffee shop Lomi, voisin de son école du café.",
+        "en": "Lomi coffee shop beside its coffee training school.",
+        "zh": "Lomi 咖啡空间，毗邻品牌的咖啡培训学校。"
+      },
+      "website": "https://lomi.cafe/",
+      "verifiedAt": "2026-10-19",
+      "classificationEvidence": {
+        "label": "Café de spécialité · histoire de la maison",
+        "url": "https://lomi.cafe/notre-histoire"
+      },
+      "sources": [
+        {
+          "url": "https://lomi.cafe/nos-lieux",
+          "label": "Lomi · Nos lieux, site officiel"
+        },
+        {
+          "url": "https://lomi.cafe/notre-histoire",
+          "label": "Café de spécialité · histoire de la maison"
+        },
+        {
+          "url": "https://data.geopf.fr/geocodage/search?q=3+ter+rue+Marcadet%2C+75018+Paris&limit=1&index=address",
+          "label": "IGN · Géocodage de l’adresse officielle"
+        }
+      ],
+      "hours": null,
+      "policies": {
+        "laptop": "unknown",
+        "power": "unknown",
+        "wifi": "unknown",
+        "pets": "unknown",
+        "decaf": "unknown",
+        "caffeineFree": "unknown",
+        "reservation": "unknown",
+        "quiet": "unknown",
+        "conversation": "unknown",
+        "terrace": "unknown"
+      },
+      "notes": {
+        "fr": "Adresse vérifiée sur le site officiel. Horaires et règles d’accueil restent à confirmer.",
+        "en": "Address verified on the official website. Opening hours and visitor policies still need confirmation.",
+        "zh": "地址来自官方网站；营业时间及接待条件仍待核实。"
+      },
+      "image": "/assets/photos/photo-1554118811-1e0d58224f24.jpg",
+      "imageCaption": {
+        "fr": "Photo d’ambiance illustrative",
+        "en": "Illustrative atmosphere photograph",
+        "zh": "氛围示意图"
+      }
     }
   ],
   "events": []

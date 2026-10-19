@@ -70,7 +70,13 @@ try {
 // Export public seed content, never private local overrides or configuration.
 const { places } = JSON.parse(await readFile(resolve(ROOT, 'seeds/catalog.json'), 'utf8'));
 const { articles } = JSON.parse(await readFile(resolve(ROOT, 'content/articles.json'), 'utf8'));
+const reading = JSON.parse(
+  await readFile(resolve(ROOT, 'content/reading-sources.json'), 'utf8')
+).sources;
+const taxonomy = JSON.parse(await readFile(resolve(ROOT, 'content/taxonomy.json'), 'utf8'));
 const catalog = {
+  reading,
+  taxonomy,
   places,
   articles,
   events,
@@ -95,6 +101,7 @@ for (const lang of ['fr', 'en', 'zh']) {
     '',
     'map',
     'culture',
+    ...reading.map((s) => `reading/${s.id}`),
     'types',
     'gallery',
     'about',

@@ -1,0 +1,487 @@
+{
+  "sources": [
+    {
+      "id": "sca-specialty-definition",
+      "publisher": "Specialty Coffee Association",
+      "url": "https://sca.coffee/what-is-specialty-coffee",
+      "sourceTitle": "What is Specialty Coffee",
+      "kind": "reference",
+      "language": "en",
+      "publishedAt": null,
+      "checkedAt": "2026-10-19",
+      "theme": "specialty",
+      "title": {
+        "fr": "Comprendre le café de spécialité",
+        "en": "Understanding specialty coffee",
+        "zh": "理解精品咖啡的定义"
+      },
+      "summary": {
+        "fr": "La SCA explique comment les attributs du café et de son expérience contribuent à sa valeur.",
+        "en": "The SCA explains how the attributes of coffee and its experience contribute to its value.",
+        "zh": "SCA 从咖啡本身及饮用体验的不同属性出发，解释精品咖啡的价值。"
+      },
+      "editorial": {
+        "relevance": 5,
+        "authority": 5,
+        "usefulness": 5,
+        "reason": {
+          "fr": "Référence professionnelle utile pour distinguer qualité du café et usages du lieu.",
+          "en": "A professional reference for separating coffee quality from how a venue can be used.",
+          "zh": "专业协会的一手定义，可帮助区分咖啡品质与场所使用条件。"
+        }
+      },
+      "placeIds": []
+    },
+    {
+      "id": "sca-value-assessment",
+      "publisher": "Specialty Coffee Association",
+      "url": "https://sca.coffee/value-assessment",
+      "sourceTitle": "Coffee Value Assessment",
+      "kind": "reference",
+      "language": "en",
+      "publishedAt": null,
+      "checkedAt": "2026-10-19",
+      "theme": "specialty",
+      "title": {
+        "fr": "Évaluer le café au-delà d'une note",
+        "en": "Assessing coffee beyond a single score",
+        "zh": "如何超越单一分数评价咖啡"
+      },
+      "summary": {
+        "fr": "Le CVA sépare les dimensions physiques, descriptives, affectives et informationnelles de l'évaluation.",
+        "en": "The CVA distinguishes physical, descriptive, affective and informational dimensions of coffee assessment.",
+        "zh": "CVA 将评价拆为物理、感官描述、偏好以及来源信息等维度。"
+      },
+      "editorial": {
+        "relevance": 4,
+        "authority": 5,
+        "usefulness": 4,
+        "reason": {
+          "fr": "Cadre de référence documenté pour éviter un classement simpliste des cafés.",
+          "en": "A documented framework that helps avoid simplistic coffee rankings.",
+          "zh": "有文档依据的评价框架，适合解释为何不能用一个分数概括所有咖啡。"
+        }
+      },
+      "placeIds": []
+    },
+    {
+      "id": "ect-paris-guide",
+      "publisher": "European Coffee Trip",
+      "url": "https://europeancoffeetrip.com/paris/",
+      "sourceTitle": "Best Cafés in Paris - Speciality Coffee Guide to Paris",
+      "kind": "directory",
+      "language": "en",
+      "publishedAt": null,
+      "checkedAt": "2026-10-19",
+      "theme": "specialty",
+      "title": {
+        "fr": "Explorer la scène de spécialité parisienne",
+        "en": "Explore the Paris specialty coffee scene",
+        "zh": "探索巴黎精品咖啡地图"
+      },
+      "summary": {
+        "fr": "Un répertoire spécialisé relie des cafés parisiens à des portraits et reportages de la rédaction.",
+        "en": "A specialist directory connects Paris cafés with the publisher's interviews and reporting.",
+        "zh": "这份专业目录将巴黎咖啡馆与编辑部的专访、报道连接起来。"
+      },
+      "editorial": {
+        "relevance": 5,
+        "authority": 4,
+        "usefulness": 5,
+        "reason": {
+          "fr": "Point de départ concret ; les profils premium sont signalés par l'éditeur et les règles d'usage restent à vérifier.",
+          "en": "A useful starting point; the publisher labels premium profiles, while venue rules still need verification.",
+          "zh": "适合发现地址；出版方标注付费增强档案，实际使用规则仍需向店家核实。"
+        }
+      },
+      "placeIds": []
+    },
+    {
+      "id": "standart-paris-history",
+      "publisher": "Standart",
+      "url": "https://standartmag.com/blogs/journal-blog/paris-city-guide",
+      "sourceTitle": "A History of Coffee in Paris",
+      "kind": "article",
+      "language": "en",
+      "publishedAt": null,
+      "checkedAt": "2026-10-19",
+      "theme": "heritage",
+      "title": {
+        "fr": "Une histoire du café à Paris",
+        "en": "A history of coffee in Paris",
+        "zh": "巴黎咖啡的历史脉络"
+      },
+      "summary": {
+        "fr": "Ce récit relie les cafés parisiens aux transformations sociales et à l'arrivée des micro-torréfacteurs.",
+        "en": "This narrative connects Paris cafés with social change and the arrival of micro-roasters.",
+        "zh": "文章将巴黎咖啡馆的变迁与社会生活、微型烘焙商的发展联系起来。"
+      },
+      "editorial": {
+        "relevance": 5,
+        "authority": 4,
+        "usefulness": 4,
+        "reason": {
+          "fr": "Un magazine spécialisé apporte une lecture historique qui dépasse les listes d'adresses.",
+          "en": "A specialist magazine offers historical context beyond lists of addresses.",
+          "zh": "专业杂志提供历史背景，补足单纯店铺清单难以呈现的文化线索。"
+        }
+      },
+      "placeIds": []
+    },
+    {
+      "id": "alimentarium-coffee-history",
+      "publisher": "Alimentarium",
+      "url": "https://www.alimentarium.org/fr/savoir/lhistoire-du-caf%C3%A9",
+      "sourceTitle": "L'histoire du café",
+      "kind": "article",
+      "language": "fr",
+      "publishedAt": null,
+      "checkedAt": "2026-10-19",
+      "theme": "heritage",
+      "title": {
+        "fr": "Le café comme histoire alimentaire",
+        "en": "Coffee as food history",
+        "zh": "从饮食史看咖啡"
+      },
+      "summary": {
+        "fr": "Le musée de l'alimentation retrace la diffusion du café et les débats qui ont accompagné sa consommation.",
+        "en": "The food museum traces coffee's spread and the debates surrounding its consumption.",
+        "zh": "饮食博物馆梳理咖啡的传播，以及围绕饮用习惯出现的争论。"
+      },
+      "editorial": {
+        "relevance": 4,
+        "authority": 5,
+        "usefulness": 4,
+        "reason": {
+          "fr": "Une ressource muséale pour replacer les récits parisiens dans une histoire plus large.",
+          "en": "A museum resource places Paris narratives within a wider history.",
+          "zh": "博物馆资料为巴黎本地故事提供更广阔的历史背景。"
+        }
+      },
+      "placeIds": []
+    },
+    {
+      "id": "coe-historic-cafes-route",
+      "publisher": "Conseil de l'Europe",
+      "url": "https://www.coe.int/fr/web/cultural-routes/historic-cafes-route",
+      "sourceTitle": "Route des cafés historiques",
+      "kind": "reference",
+      "language": "fr",
+      "publishedAt": null,
+      "checkedAt": "2026-10-19",
+      "theme": "heritage",
+      "title": {
+        "fr": "Les cafés historiques comme patrimoine vivant",
+        "en": "Historic cafés as living heritage",
+        "zh": "作为活态文化遗产的历史咖啡馆"
+      },
+      "summary": {
+        "fr": "Le Conseil de l'Europe présente le rôle architectural, social et culturel des cafés historiques de son itinéraire certifié.",
+        "en": "The Council of Europe presents the architectural, social and cultural role of historic cafés on its certified route.",
+        "zh": "欧洲委员会介绍认证文化路线中历史咖啡馆的建筑、社交与文化价值。"
+      },
+      "editorial": {
+        "relevance": 5,
+        "authority": 5,
+        "usefulness": 4,
+        "reason": {
+          "fr": "Un cadre institutionnel pour le patrimoine ; toute appartenance d'un café doit être vérifiée séparément.",
+          "en": "An institutional heritage framework; a café's membership must be checked separately.",
+          "zh": "提供有机构依据的文化遗产框架；具体店铺是否属于路线仍需单独核查。"
+        }
+      },
+      "placeIds": []
+    },
+    {
+      "id": "paris-terraces-rules",
+      "publisher": "Ville de Paris",
+      "url": "https://www.paris.fr/pages/terrasses-et-etalages-3516/",
+      "sourceTitle": "Terrasses et étalages",
+      "kind": "reference",
+      "language": "fr",
+      "publishedAt": null,
+      "updatedAt": "2026-07-22",
+      "checkedAt": "2026-10-19",
+      "theme": "practical",
+      "title": {
+        "fr": "Comprendre les terrasses parisiennes",
+        "en": "Understanding Paris terraces",
+        "zh": "了解巴黎露台的使用与管理规则"
+      },
+      "summary": {
+        "fr": "La Ville rassemble les règles et démarches relatives aux terrasses permanentes et saisonnières.",
+        "en": "The city brings together rules and procedures for permanent and seasonal terraces.",
+        "zh": "巴黎市官方页面汇总固定露台、季节性露台的管理规则与办理说明。"
+      },
+      "editorial": {
+        "relevance": 4,
+        "authority": 5,
+        "usefulness": 4,
+        "reason": {
+          "fr": "Une source officielle évolutive ; vérifier la version en vigueur avant d'en tirer une règle pratique.",
+          "en": "An evolving official source; check its current version before drawing a practical rule.",
+          "zh": "可持续更新的官方来源；实际安排仍应以现行版本和店家信息为准。"
+        }
+      },
+      "placeIds": []
+    },
+    {
+      "id": "pdg-decaf-deserve-better",
+      "publisher": "Perfect Daily Grind",
+      "url": "https://perfectdailygrind.com/2026/05/does-decaf-deserve-better/",
+      "sourceTitle": "Does decaf deserve better?",
+      "kind": "article",
+      "language": "en",
+      "publishedAt": "2026-05-27",
+      "checkedAt": "2026-10-19",
+      "theme": "practical",
+      "title": {
+        "fr": "Mieux comprendre l'offre décaféinée",
+        "en": "Understanding the decaf offering",
+        "zh": "低因咖啡值得怎样的选择"
+      },
+      "summary": {
+        "fr": "Le reportage examine les attentes des buveurs de décaféiné et l'attention portée à sa préparation.",
+        "en": "The report explores decaf drinkers' expectations and the care given to preparation.",
+        "zh": "报道讨论低因咖啡消费者的期待，以及店家在制作与品质方面应投入的关注。"
+      },
+      "editorial": {
+        "relevance": 5,
+        "authority": 4,
+        "usefulness": 5,
+        "reason": {
+          "fr": "Directement lié au choix d'une boisson ; il ne confirme pas la carte d'un établissement parisien.",
+          "en": "Directly relevant to drink choice; it does not confirm any Paris venue's menu.",
+          "zh": "与饮品选择直接相关，但不能据此认定某家巴黎店铺提供低因咖啡。"
+        }
+      },
+      "placeIds": []
+    },
+    {
+      "id": "ect-belleville-roaster",
+      "publisher": "European Coffee Trip",
+      "url": "https://europeancoffeetrip.com/roaster-stories-belleville-brulerie/",
+      "sourceTitle": "Roaster Stories: Belleville Brûlerie in Paris, France",
+      "kind": "video",
+      "language": "en",
+      "publishedAt": "2020-03-25",
+      "checkedAt": "2026-10-19",
+      "theme": "industry",
+      "title": {
+        "fr": "Dans les coulisses de Belleville Brûlerie",
+        "en": "Behind the scenes at Belleville Brûlerie",
+        "zh": "走进 Belleville Brûlerie 的烘焙日常"
+      },
+      "summary": {
+        "fr": "Une visite filmée et un entretien donnent la parole à un cofondateur et à la cheffe torréfactrice.",
+        "en": "A filmed visit and interview give a co-founder and the head roaster a voice.",
+        "zh": "影像探访与访谈带读者听一位联合创始人和首席烘焙师讲述工作。"
+      },
+      "editorial": {
+        "relevance": 5,
+        "authority": 4,
+        "usefulness": 4,
+        "reason": {
+          "fr": "Des témoignages directs sur un acteur parisien ; un reportage ancien ne valide pas les horaires actuels.",
+          "en": "Direct testimony from a Paris roaster; older reporting does not verify current opening hours.",
+          "zh": "来自巴黎烘焙从业者的直接讲述；较早的报道不能证明当前营业信息。"
+        }
+      },
+      "placeIds": []
+    },
+    {
+      "id": "ect-angie-tanat",
+      "publisher": "European Coffee Trip",
+      "url": "https://europeancoffeetrip.com/barista-stories-angie-katherine-molina-ospina/",
+      "sourceTitle": "Barista Stories, Angie Katherine Molina Ospina of Tanat Coffee, France / Hong Kong",
+      "kind": "interview",
+      "language": "en",
+      "publishedAt": "2026-08-21",
+      "checkedAt": "2026-10-19",
+      "theme": "industry",
+      "title": {
+        "fr": "Un parcours entre Paris et les origines du café",
+        "en": "A career connecting Paris and coffee origins",
+        "zh": "连接巴黎与咖啡产地的职业旅程"
+      },
+      "summary": {
+        "fr": "Angie Katherine Molina Ospina raconte sa découverte du café à Paris et son parcours chez Tanat.",
+        "en": "Angie Katherine Molina Ospina discusses discovering coffee in Paris and her work with Tanat.",
+        "zh": "Angie Katherine Molina Ospina 讲述在巴黎接触精品咖啡及加入 Tanat 的经历。"
+      },
+      "editorial": {
+        "relevance": 5,
+        "authority": 4,
+        "usefulness": 4,
+        "reason": {
+          "fr": "Entretien récent et attribué ; la série indique son parrainage commercial.",
+          "en": "A recent, attributed interview; the series discloses commercial sponsorship.",
+          "zh": "有明确受访者的近期专访；该系列在原页披露了商业赞助。"
+        }
+      },
+      "placeIds": []
+    },
+    {
+      "id": "sprudge-twenty-2025",
+      "publisher": "Sprudge",
+      "url": "https://sprudge.com/the-sprudge-twenty-class-of-2025-presented-by-pacific-barista-series-361924.html",
+      "sourceTitle": "The Sprudge Twenty Class of 2025—Presented By Pacific Barista Series",
+      "kind": "article",
+      "language": "en",
+      "publishedAt": "2025-06-30",
+      "checkedAt": "2026-10-19",
+      "theme": "industry",
+      "title": {
+        "fr": "Des personnes qui font vivre la communauté café",
+        "en": "People building the coffee community",
+        "zh": "那些推动咖啡社群的人"
+      },
+      "summary": {
+        "fr": "Cette sélection de portraits évoque notamment l'engagement de Mihaela Iordache dans la communauté française.",
+        "en": "This selection of profiles includes Mihaela Iordache's involvement in the French coffee community.",
+        "zh": "人物专题介绍多位咖啡从业者，其中包括 Mihaela Iordache 在法国咖啡社群中的参与。"
+      },
+      "editorial": {
+        "relevance": 4,
+        "authority": 4,
+        "usefulness": 3,
+        "reason": {
+          "fr": "Un angle humain documenté ; la sélection sponsorisée n'est pas un classement indépendant de cafés.",
+          "en": "A documented human perspective; this sponsored selection is not an independent café ranking.",
+          "zh": "提供具体人物视角；这是披露赞助的人物评选，并非独立咖啡馆排行榜。"
+        }
+      },
+      "placeIds": []
+    },
+    {
+      "id": "paris-tourism-auburn",
+      "publisher": "Paris je t'aime — Office de tourisme",
+      "url": "https://parisjetaime.com/restaurant/auburn-p4116",
+      "sourceTitle": "Auburn - Coffee shop & bar à vins",
+      "kind": "directory",
+      "language": "fr",
+      "publishedAt": null,
+      "checkedAt": "2026-10-19",
+      "theme": "citylife",
+      "title": {
+        "fr": "Un lieu, plusieurs moments de la journée",
+        "en": "One venue, different times of day",
+        "zh": "同一地点，一天中的不同节奏"
+      },
+      "summary": {
+        "fr": "L'office de tourisme présente Auburn comme un coffee shop le matin et un bar à vins le soir.",
+        "en": "The tourism office presents Auburn as a morning coffee shop and an evening wine bar.",
+        "zh": "旅游局将 Auburn 介绍为早晨的咖啡店与晚间的葡萄酒吧。"
+      },
+      "editorial": {
+        "relevance": 4,
+        "authority": 4,
+        "usefulness": 4,
+        "reason": {
+          "fr": "Une fiche officielle illustre les usages variables d'un lieu, sans garantir sa disponibilité.",
+          "en": "An official listing illustrates how a venue's use can vary, without guaranteeing availability.",
+          "zh": "官方目录展示场所用途会随时间变化，但不保证实时空位。"
+        }
+      },
+      "placeIds": []
+    },
+    {
+      "id": "timeout-paris-coffee-shops",
+      "publisher": "Time Out Paris",
+      "url": "https://www.timeout.fr/paris/restaurants/cafes-et-coffee-shop-paris",
+      "sourceTitle": "La crème des cafés et coffee shops à Paris",
+      "kind": "article",
+      "language": "fr",
+      "publishedAt": null,
+      "updatedAt": "2026-07-10",
+      "checkedAt": "2026-10-19",
+      "theme": "citylife",
+      "title": {
+        "fr": "Découvrir les coffee shops avec Time Out",
+        "en": "Discover coffee shops with Time Out",
+        "zh": "跟随 Time Out 发现巴黎咖啡店"
+      },
+      "summary": {
+        "fr": "La rédaction propose des adresses pour explorer boissons, pâtisseries et ambiances de coffee shops.",
+        "en": "The editorial team offers addresses for exploring coffee-shop drinks, pastries and atmospheres.",
+        "zh": "编辑团队从饮品、点心与氛围出发，介绍值得探索的咖啡店。"
+      },
+      "editorial": {
+        "relevance": 5,
+        "authority": 4,
+        "usefulness": 5,
+        "reason": {
+          "fr": "Une sélection locale utile pour découvrir ; ses appréciations ne sont pas des mesures d'affluence.",
+          "en": "A useful local discovery guide; its judgments are not measurements of crowd levels.",
+          "zh": "适合发现本地地址；编辑评价不能替代客流量或空位数据。"
+        }
+      },
+      "placeIds": []
+    },
+    {
+      "id": "roadbook-paris-coffee",
+      "publisher": "ROADBOOK",
+      "url": "https://roadbook.com/paris/city-guide/best-coffee-shops-cafes-paris/",
+      "sourceTitle": "The best coffee shops in Paris for velvety pours and serious vibes",
+      "kind": "article",
+      "language": "en",
+      "publishedAt": null,
+      "updatedAt": "2025-09-15",
+      "checkedAt": "2026-10-19",
+      "theme": "citylife",
+      "title": {
+        "fr": "Cafés et quartiers, une autre porte d'entrée",
+        "en": "Discover cafés through their neighbourhoods",
+        "zh": "从街区与空间认识咖啡馆"
+      },
+      "summary": {
+        "fr": "Ce guide par arrondissement associe adresses, décors et expériences de visite.",
+        "en": "This arrondissement-based guide connects addresses with interiors and visiting experiences.",
+        "zh": "按区组织的指南，将店铺地址、空间设计与到访体验放在一起介绍。"
+      },
+      "editorial": {
+        "relevance": 5,
+        "authority": 4,
+        "usefulness": 4,
+        "reason": {
+          "fr": "La lecture par quartier aide à préparer une sortie ; menus et règles demandent une vérification actuelle.",
+          "en": "Neighbourhood context helps plan a visit; menus and venue rules need current verification.",
+          "zh": "街区视角便于规划出行；菜单与使用规则仍需查核当前信息。"
+        }
+      },
+      "placeIds": []
+    },
+    {
+      "id": "placesducafe-paris-guide",
+      "publisher": "Places du Café",
+      "url": "https://www.placesducafe.com/decouvrir-le-cafe/paris-coffee-shops-le-guide-des-cent-lieux-ou-deguster-du-cafe-de-specialite-116",
+      "sourceTitle": "Paris Coffee Shops : le guide des cent lieux où déguster du café de spécialité",
+      "kind": "article",
+      "language": "fr",
+      "publishedAt": "2024-09-29",
+      "checkedAt": "2026-10-19",
+      "theme": "practical",
+      "title": {
+        "fr": "Lire un guide de cafés avec discernement",
+        "en": "Reading a café guide critically",
+        "zh": "如何有判断地使用咖啡馆指南"
+      },
+      "summary": {
+        "fr": "Cette présentation d'un guide imprimé décrit son organisation par arrondissement et thèmes, ainsi que ses limites pratiques.",
+        "en": "This review of a print guide describes its arrondissement and theme structure alongside practical limitations.",
+        "zh": "这篇纸质指南介绍说明了按区、按主题查找的方法，也指出实际信息上的局限。"
+      },
+      "editorial": {
+        "relevance": 5,
+        "authority": 4,
+        "usefulness": 4,
+        "reason": {
+          "fr": "Utile pour distinguer découverte éditoriale et informations nécessaires avant une visite.",
+          "en": "Useful for distinguishing editorial discovery from the information needed before a visit.",
+          "zh": "有助于区分编辑推荐与真正出门前需要核实的营业、路线等信息。"
+        }
+      },
+      "placeIds": []
+    }
+  ]
+}

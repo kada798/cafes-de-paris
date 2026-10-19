@@ -1,3 +1,4 @@
+import { LIBRARY_MESSAGES } from './library.mjs';
 const messages = {
   home: ['Accueil', 'Home', '首页'],
   culture: ['Culture des cafés', 'Café culture', '咖啡文化'],
@@ -407,9 +408,9 @@ const messages = {
     '底图无法加载时，仍可使用列表。',
   ],
   snapshotNotice: [
-    'Aperçu interactif · données enregistrées le',
-    'Interactive preview · data snapshot from',
-    '交互预览 · 数据快照时间',
+    'Lieux et événements · données enregistrées le',
+    'Venues and events · data snapshot from',
+    '地点与活动 · 数据快照时间',
   ],
 };
 export const LANGS = ['fr', 'en', 'zh'];
@@ -445,6 +446,8 @@ export function translator(lang) {
   const index = LANGS.indexOf(lang);
   return (key) => messages[key]?.[index] ?? key;
 }
+Object.assign(messages, LIBRARY_MESSAGES);
+
 export function localized(value, lang) {
   return typeof value === 'string' ? value : (value?.[lang] ?? value?.fr ?? '');
 }

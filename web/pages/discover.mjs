@@ -1,27 +1,31 @@
 import { esc, safeUrl, icon, placeCard, articleCard, eventCard, IMG } from '../components/ui.mjs';
+import { culturePage } from './library.mjs';
 export function discoverPage(page, c) {
   const { t, l, path, data } = c;
-  if (page === 'culture')
-    return `<section class="page-heading wrap"><div class="eyebrow">LE CARNET</div><h1>${t('cultureTitle')}</h1><p>${t('cultureIntro')}</p></section><section class="wrap section no-top"><div class="article-grid">${data.articles.map((a) => articleCard(a, c)).join('')}</div></section>`;
-  if (page === 'types')
-    return `<section class="page-heading wrap"><div class="eyebrow">TYPES DE CAFÉS</div><h1>${t('typesTitle')}</h1><p>${t('typesIntro')}</p></section><section class="wrap"><div class="notice">${icon('shield')} ${t('typeHint')}</div>${[
-      'traditional',
-      'literary',
-      'neighborhood',
-      'modern',
-      'cafe_restaurant',
-    ]
-      .map(
-        (type, i) =>
-          `<section class="type-section"><div class="type-title"><span>0${i + 1}</span><h2>${t(type)}</h2><a class="text-link" href="${path('map')}?type=${type}">${t('allPlaces')} ${icon('arrow')}</a></div><div class="place-grid">${
-            data.places
-              .filter((p) => !p.demo && p.kind === 'cafe' && p.type === type)
-              .map((p) => placeCard(p, c))
-              .join('') ||
-            `<a class="type-empty" href="${path('map')}?type=${type}">${t('allPlaces')} ${icon('arrow')}</a>`
-          }</div></section>`
-      )
+  if (page === 'culture') return culturePage(c);
+  if (page === 'types') {
+    const taxonomy = data.taxonomy || { categories: [], sources: [] };
+    return `<section class="page-heading wrap"><div class="eyebrow">TYPES DE CAFÉS</div><h1>${t('typesTitle')}</h1><p>${t('classificationIntro')}</p></section><section class="wrap"><div class="notice">${icon('shield')} ${t('typeHint')}</div><div class="taxonomy-method prose"><h2>${t('classificationMethod')}</h2><p>${t('classificationAxes')}</p><p>${t('inseeNote')}</p><ul class="source-list">${taxonomy.sources.map((s) => `<li><a href="${safeUrl(s.url)}" target="_blank" rel="noopener noreferrer">${esc(s.label)} ${icon('external')}</a></li>`).join('')}</ul></div>${taxonomy.categories
+      .map((category, i) => {
+        const places = data.places.filter(
+          (p) => !p.demo && p.kind === 'cafe' && (p.categoryTags || [p.type]).includes(category.id)
+        );
+        return `<section class="type-section"><div class="type-title"><span>0${i + 1}</span><h2>${esc(l(category.name))} <small>${places.length}</small></h2><a class="text-link" href="${path('map')}?type=${category.id}">${t('allPlaces')} ${icon('arrow')}</a></div><p>${esc(l(category.definition))}</p><p class="small">${t('classificationBasis')}: ${category.sourceIds
+          .map((id) => taxonomy.sources.find((s) => s.id === id))
+          .filter(Boolean)
+          .map(
+            (s) =>
+              `<a href="${safeUrl(s.url)}" target="_blank" rel="noopener noreferrer">${esc(s.label)}</a>`
+          )
+          .join(' · ')}</p><div class="place-grid">${
+          places
+            .slice(0, 3)
+            .map((p) => placeCard(p, c))
+            .join('') || `<p class="muted-text">${t('noVerifiedCategory')}</p>`
+        }</div></section>`;
+      })
       .join('')}</section>`;
+  }
   if (page === 'gallery')
     return `<section class="page-heading wrap"><div class="eyebrow">GALERIE</div><h1>${t('galleryTitle')}</h1><p>${t('galleryIntro')}</p></section><section class="wrap gallery-grid">${data.places
       .filter((p) => !p.demo)

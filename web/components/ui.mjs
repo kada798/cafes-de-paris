@@ -1,3 +1,4 @@
+import { googleDirections } from '/shared/navigation.mjs';
 export const esc = (value) =>
   String(value ?? '').replace(
     /[&<>"']/g,
@@ -63,7 +64,7 @@ export function placeCard(p, c, compact = false) {
             .join('')}</div>`
         : ''
     }
-    <div class="card-bottom"><span>${route ? `${icon('clock')} ${Math.ceil(route.durationSeconds / 60)} ${t('min')} · ${t(route.mode)}<small>${esc(route.provider)} · ${t('routeEstimate')}${p.route.status === 'partial' ? ` · ${t('transitPending')}` : ''}</small>` : `${icon('pin')} ${esc(p.address.split(',')[0])}`}</span><a class="arrow-link" href="${path(`places/${p.id}`)}" aria-label="${esc(t('details'))}: ${esc(p.name)}">${icon('arrow')}</a></div></div></article>`;
+    <div class="card-bottom"><span>${route ? `${icon('clock')} ${Math.ceil(route.durationSeconds / 60)} ${t('min')} · ${t(route.mode)}<small>${esc(route.provider)} · ${t('routeEstimate')}${p.route.status === 'partial' ? ` · ${t('transitPending')}` : ''}</small>` : `${icon('pin')} ${esc(p.address.split(',')[0])}`}</span><a class="arrow-link" href="${path(`places/${p.id}`)}" aria-label="${esc(t('details'))}: ${esc(p.name)}">${icon('arrow')}</a></div><a class="google-directions small" href="${safeUrl(googleDirections(p, c.state?.query))}" target="_blank" rel="noopener noreferrer">${t('googleDirections')} ${icon('external')}</a></div></article>`;
 }
 export function articleCard(a, c) {
   return `<article class="article-card"><a href="${c.path(`articles/${a.id}`)}"><div class="article-image"><img src="${safeUrl(a.image || IMG.cafe)}" alt="${esc(c.t('photoCredit'))}" loading="lazy"></div><div class="card-meta">LE CARNET · ${c.lang.toUpperCase()}</div><h3>${esc(c.l(a.title))}</h3><p>${esc(c.l(a.excerpt))}</p><span class="text-link">${c.t('read')} ${icon('arrow')}</span></a></article>`;

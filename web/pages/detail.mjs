@@ -10,6 +10,7 @@ import {
   eventLanguage,
 } from '../components/ui.mjs';
 import { POLICY_KEYS } from './explore.mjs';
+import { googleDirections } from '/shared/navigation.mjs';
 export function detailPage(kind, id, c) {
   const { t, l, path, data, state } = c;
   if (kind === 'places') {
@@ -19,15 +20,7 @@ export function detailPage(kind, id, c) {
     const relatedEvents = data.events.filter(
       (e) => e.placeId === p.id || e.nearbyPlaceIds?.includes(p.id)
     );
-    const destination = new URL('https://www.google.com/maps/dir/');
-    destination.searchParams.set('api', '1');
-    destination.searchParams.set('destination', `${p.lat},${p.lng}`);
-    if (state.query.origin)
-      destination.searchParams.set('origin', `${state.query.origin.lat},${state.query.origin.lng}`);
-    destination.searchParams.set(
-      'travelmode',
-      state.query.mode === 'transit' ? 'transit' : 'walking'
-    );
+    const destination = new URL(googleDirections(p, state.query));
     const sources = (p.sources || [])
       .map(
         (s) =>
@@ -37,6 +30,7 @@ export function detailPage(kind, id, c) {
     return `<section class="wrap detail-top"><a class="text-link" href="${path('map')}" data-back-results>${icon('arrow', 'reverse')} ${t('backResults')}</a><div class="detail-title"><div><div class="eyebrow">${t(p.kind)} · ${esc(p.area)}</div><h1>${esc(p.name)}</h1><p>${esc(p.address)}</p></div><a class="button primary" href="${safeUrl(destination.href)}" target="_blank" rel="noopener noreferrer">${t('directions')} ${icon('external')}</a></div>${p.demo ? `<div class="notice demo-notice">${t('demo')} · ${esc(l(p.notes))}</div>` : ''}${p.availability?.status === 'closed' ? `<div class="notice warning">${t('closed')} · ${esc(l(p.availability.reason))}</div>` : ''}<div class="detail-hero"><img src="${safeUrl(p.image || IMG.cafe)}" alt="${t('photoCredit')}"></div><p class="photo-disclaimer">${t('illustrative')}</p></section>
     <section class="wrap detail-layout"><div><div class="prose"><h2>${t('practical')}</h2><p>${esc(l(p.description))}</p>${p.notes ? `<div class="editor-note"><strong>${t('note')}</strong><p>${esc(l(p.notes))}</p></div>` : ''}</div>
     ${result?.match.checks.length ? `<div class="detail-box"><h2>${t(result.match.status)}</h2><div class="check-grid">${result.match.checks.map((k) => `<div><span>${t(k.key === 'stay' ? 'stayRule' : k.key)}</span><strong class="state-${k.state}">${t(k.state)}</strong></div>`).join('')}</div></div>` : `<a class="button outline" href="${path('map')}?ids=${encodeURIComponent(p.id)}">${t('find')} ${icon('arrow')}</a>`}
+    ${p.kind === 'cafe' ? `<div class="detail-box"><h2>${t('classificationBasis')}</h2><p>${(p.categoryTags || [p.type]).map((k) => t(k)).join(' · ')}</p>${p.classificationEvidence ? `<p><a href="${safeUrl(p.classificationEvidence.url)}" target="_blank" rel="noopener noreferrer">${esc(p.classificationEvidence.label)} ${icon('external')}</a></p>` : ''}<a class="text-link" href="${path('types')}">${t('classificationMethod')} ${icon('arrow')}</a></div>` : ''}
     <div class="detail-box"><h2>${t('policies')}</h2><div class="check-grid">${POLICY_KEYS.map(
       (key) => {
         const v = p.policies?.[key] || 'unknown';

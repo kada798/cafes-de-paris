@@ -147,7 +147,7 @@ export function evaluatePlaces(places, query = {}, routes = {}) {
     .filter(
       (p) =>
         (!query.kind || p.kind === query.kind) &&
-        (!query.type || p.type === query.type) &&
+        (!query.type || (p.categoryTags || [p.type]).includes(query.type)) &&
         (!query.ids?.length || query.ids.includes(p.id)) &&
         (query.includeDemo || !p.demo) &&
         (!needle || `${p.name} ${p.address} ${p.area}`.toLocaleLowerCase().includes(needle))

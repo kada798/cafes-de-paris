@@ -20,7 +20,8 @@
     "test:browser": "playwright test",
     "format": "prettier --write web server shared scripts tests content seeds docs package.json playwright.config.mjs",
     "check:env": "node scripts/check-env.mjs",
-    "check": "node scripts/check.mjs && node --test tests/*.test.mjs"
+    "check": "node scripts/check.mjs && node --test tests/*.test.mjs",
+    "build": "node --env-file-if-exists=.env scripts/build-hosted.mjs"
   },
   "dependencies": {
     "leaflet": "^1.9.4"

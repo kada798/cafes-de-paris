@@ -1,0 +1,114 @@
+{
+  "version": "2026-10-19",
+  "sources": [
+    {
+      "id": "sca",
+      "label": "Specialty Coffee Association · Definition & CVA",
+      "url": "https://sca.coffee/what-is-specialty-coffee"
+    },
+    {
+      "id": "bistro",
+      "label": "Ville de Paris · Critères des bistrots médaillés (2024)",
+      "url": "https://www.paris.fr/pages/paris-celebre-ses-bistrots-et-honore-62-d-entre-eux-26606"
+    },
+    {
+      "id": "literary",
+      "label": "Paris je t’aime · Saint-Germain-des-Prés",
+      "url": "https://parisjetaime.com/article/paris-saint-germain-des-pres-a925"
+    },
+    {
+      "id": "osm",
+      "label": "OpenStreetMap · amenity=cafe",
+      "url": "https://wiki.openstreetmap.org/wiki/Tag:amenity%3Dcafe"
+    },
+    {
+      "id": "insee",
+      "label": "INSEE · NAF rév.2 56.30Z",
+      "url": "https://www.insee.fr/fr/metadonnees/nafr2/sousClasse/56.30z"
+    }
+  ],
+  "categories": [
+    {
+      "id": "specialty",
+      "axis": "coffee",
+      "name": {
+        "fr": "Café de spécialité / torréfacteur",
+        "en": "Specialty coffee / roaster",
+        "zh": "精品咖啡 / 烘焙商"
+      },
+      "definition": {
+        "fr": "Origines, méthodes ou torréfaction documentées par le lieu. Le cadre SCA guide les attributs ; ce classement ne certifie ni le lieu ni une note en tasse.",
+        "en": "Origins, brewing or roasting documented by the venue. SCA informs the attribute framework; this label is not certification or a cup score.",
+        "zh": "由门店来源证实其产地、冲煮或烘焙特色。参考 SCA 的属性框架，不等于门店获得认证，也不代表杯测分数。"
+      },
+      "sourceIds": ["sca"]
+    },
+    {
+      "id": "traditional",
+      "axis": "service",
+      "name": {
+        "fr": "Café / bistrot traditionnel",
+        "en": "Traditional café / bistro",
+        "zh": "传统咖啡馆 / 小酒馆"
+      },
+      "definition": {
+        "fr": "Service de café et boissons sur place, avec un positionnement traditionnel attesté. Les critères des médaillés parisiens sont une référence locale, pas une certification générale.",
+        "en": "On-site coffee and drinks with a documented traditional identity. Paris’s medal criteria are a local reference, not universal certification.",
+        "zh": "提供堂饮咖啡和饮品，且来源证实其传统咖啡馆定位。巴黎市获奖小酒馆标准是地方参考，不是全国统一认证。"
+      },
+      "sourceIds": ["bistro", "osm"]
+    },
+    {
+      "id": "literary",
+      "axis": "culture",
+      "name": {
+        "fr": "Café littéraire / patrimonial",
+        "en": "Literary / heritage café",
+        "zh": "文学 / 历史咖啡馆"
+      },
+      "definition": {
+        "fr": "Liens documentés avec écrivains, vie artistique ou patrimoine. Un repère culturel compatible avec d’autres catégories, sans présumer du calme actuel.",
+        "en": "Documented literary, artistic or heritage links. This cultural label can overlap other categories and does not establish present-day quietness.",
+        "zh": "具有可查证的文学、艺术或历史联系，可与其他类别重叠；历史声誉不代表今天环境安静。"
+      },
+      "sourceIds": ["literary"]
+    },
+    {
+      "id": "cafe_restaurant",
+      "axis": "service",
+      "name": {
+        "fr": "Café-restaurant / brunch",
+        "en": "Café-restaurant / brunch",
+        "zh": "餐饮型咖啡馆 / 早午餐"
+      },
+      "definition": {
+        "fr": "Le lieu annonce une offre de repas ou brunch. La carte et le service sont vérifiés séparément des règles d’accueil.",
+        "en": "A meal or brunch offering stated by the venue. Menus and service are checked separately from visitor policies.",
+        "zh": "门店明确提供正餐或早午餐；餐饮经营模式与电脑、宠物等接待规则分别核实。"
+      },
+      "sourceIds": ["osm"]
+    },
+    {
+      "id": "neighborhood",
+      "axis": "culture",
+      "name": { "fr": "Café de quartier", "en": "Neighborhood café", "zh": "社区咖啡馆" },
+      "definition": {
+        "fr": "Un positionnement local indiqué par la source, sans promesse de prix, de calme ou d’accès aux ordinateurs. Catégorie éditoriale du projet.",
+        "en": "A local community identity documented by a source, without assumptions about price, quietness or laptop access. A project editorial category.",
+        "zh": "来源证实其社区定位，不自动推定价格、安静程度或电脑准入。这是本项目的编辑分类。"
+      },
+      "sourceIds": ["bistro"]
+    },
+    {
+      "id": "unclassified",
+      "axis": "unknown",
+      "name": { "fr": "À documenter", "en": "Classification pending", "zh": "分类待核实" },
+      "definition": {
+        "fr": "Les données disponibles ne permettent pas de préciser la catégorie.",
+        "en": "Available evidence is insufficient for a more specific category.",
+        "zh": "现有证据不足，不强行归入其他类别。"
+      },
+      "sourceIds": ["osm"]
+    }
+  ]
+}

@@ -173,3 +173,9 @@ Sites 身份保存在 `.openai/hosting.json`。托管预览与 GitHub 独立，�
 活动标题、简介、日程说明和价格，切换中文或英文后按需调用 MyMemory 自动翻译；页面标注机器翻译，展开可查看完整法语原文。列表仅翻译进入视野的活动标题。Node 服务将译文保存在 SQLite `translation_cache`；静态站点使用浏览器缓存，缓存键包含原文哈希，原文变化会生成新译文。免费服务有额度限制，失败或额度用完会明确提示并保留原文入口，不能保证无限量翻译。
 
 可在本地 `.env` 设置 `TRANSLATION_PROVIDER=libretranslate`、`LIBRETRANSLATE_URL`，需要时填写 `LIBRETRANSLATE_API_KEY`，替换为自建或付费翻译服务。密钥不会导出到静态站点。已缓存的公共活动译文会随构建导出，减少访客请求。接口说明：[IGN 路线](https://ignf.github.io/cartes.gouv.fr-documentation/fr/guides-utilisateur/utiliser-les-services-de-la-geoplateforme/calcul-itineraire/)、[MyMemory](https://mymemory.translated.net/doc/spec.php)。
+
+## 来源扩充与每周选读
+
+已加入 15 条可追溯的文化阅读资料、五个内容主题、每周精选及筛选依据；新增 20 家官网可核查的巴黎咖啡馆。类型页采用多维标签并列明分类来源。Google Maps 外部导航无需密钥，Google 站内 API 未启用。每周精选展示本站真实访问、原文点击、可撤销有用票和近 7 天活跃度，外站统计不可获取时明确说明。
+
+维护方法、数据字段、Google 接入条件、统计定义及托管构建见 [SOURCES_AND_RANKING.md](docs/SOURCES_AND_RANKING.md)。托管统计使用 Sites D1；本地 Node 的 SQLite 与之分开。普通静态导出仍可使用，但无法提供共享统计接口。

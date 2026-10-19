@@ -18,6 +18,9 @@ data/
 *.db
 *.db-*
 tmp/
+hosting/public/
+hosting/frontend.mjs
+hosting/*.tsbuildinfo
 
 # Original project reference documents stay local
 /*.pdf

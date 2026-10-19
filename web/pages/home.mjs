@@ -1,4 +1,5 @@
 import { icon, IMG, placeCard, articleCard, eventCard } from '../components/ui.mjs';
+import { weeklySection } from './library.mjs';
 export function homePage(c) {
   const { t, path, data } = c;
   const scenarios = ['work', 'friends', 'date', 'business', 'reading'];
@@ -13,7 +14,7 @@ export function homePage(c) {
     .slice(0, 3)
     .map((a) => articleCard(a, c))
     .join('')}</div></div></section>
-  <section class="trust-section wrap"><div class="trust-symbol">${icon('shield')}</div><div><div class="eyebrow">LES CAFÉS DE PARIS</div><h2>${t('trustTitle')}</h2><p>${t('trustBody')}</p></div><a class="button outline" href="${path('about')}">${t('method')} ${icon('arrow')}</a></section>
+  ${weeklySection(c, true)}<section class="trust-section wrap"><div class="trust-symbol">${icon('shield')}</div><div><div class="eyebrow">LES CAFÉS DE PARIS</div><h2>${t('trustTitle')}</h2><p>${t('trustBody')}</p></div><a class="button outline" href="${path('about')}">${t('method')} ${icon('arrow')}</a></section>
   ${
     data.events.length
       ? `<section class="section wrap"><div class="section-heading row"><h2>${t('upcoming')}</h2><a class="text-link" href="${path('events')}">${t('allEvents')} ${icon('arrow')}</a></div><div class="event-list">${data.events

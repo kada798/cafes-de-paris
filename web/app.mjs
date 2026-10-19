@@ -8,6 +8,8 @@ import { SCENARIOS } from '/shared/match.mjs';
 import { parisLocalInput, parseParisLocal } from '/shared/time.mjs';
 import { MAP_TILE_URL, MAP_ATTRIBUTION } from './services/map-config.mjs';
 import { getCatalog, searchPlaces, geocode, translateEvents } from './services/api.mjs';
+import { readingDetail } from './pages/library.mjs';
+import { libraryMetrics, recordReading, liked } from './services/library.mjs';
 
 const defaults = () => ({
   requirements: {},
@@ -45,6 +47,32 @@ const app = document.querySelector('#app');
 let translationObserver,
   translationQueue = Promise.resolve();
 const translating = new Set();
+const readingViews = new Set();
+function updateLibraryMetrics(metrics) {
+  data.libraryMetrics = { ...data.libraryMetrics, ...metrics };
+  document.querySelectorAll('[data-stat-id]').forEach((el) => {
+    const m = data.libraryMetrics[el.dataset.statId];
+    if (m) el.textContent = Number(m[el.dataset.statKind] || 0).toLocaleString(language());
+  });
+  document
+    .querySelectorAll('[data-stats-status]')
+    .forEach((el) => (el.textContent = context().t('statsNote')));
+  const sort = new URLSearchParams(location.search).get('sort');
+  const grid = document.querySelector('#reading-library .reading-grid');
+  if (grid && ['views', 'clicks', 'likes', 'active7d'].includes(sort)) {
+    [...grid.children]
+      .sort(
+        (a, b) =>
+          Number(data.libraryMetrics[b.dataset.readingCard]?.[sort] || 0) -
+          Number(data.libraryMetrics[a.dataset.readingCard]?.[sort] || 0)
+      )
+      .forEach((card) => grid.append(card));
+  }
+}
+async function recordLibrary(id, kind, active) {
+  const result = await recordReading(id, kind, active);
+  updateLibraryMetrics(result.metrics);
+}
 function requestTranslation(id, lang, full = false) {
   const event = data.events.find((e) => e.id === id);
   const status = event?.translationStatus?.[lang];
@@ -260,19 +288,25 @@ function render() {
     mapInstance = null;
   }
   document.documentElement.lang = lang === 'zh' ? 'zh-Hans' : lang;
-  document.title = `${t(['places', 'articles', 'events'].includes(page) && id ? (page === 'places' ? 'details' : page === 'articles' ? 'culture' : 'events') : page)} · Les Cafés de Paris`;
+  document.title = `${t(['places', 'articles', 'events', 'reading'].includes(page) && id ? (page === 'places' ? 'details' : ['articles', 'reading'].includes(page) ? 'culture' : 'events') : page)} · Les Cafés de Paris`;
   const nav = ['home', 'culture', 'types', 'gallery', 'map', 'about'];
-  const active = ['places'].includes(page) ? 'map' : page === 'articles' ? 'culture' : page;
+  const active = ['places'].includes(page)
+    ? 'map'
+    : ['articles', 'reading'].includes(page)
+      ? 'culture'
+      : page;
   const html =
-    page === 'home'
-      ? homePage(c)
-      : page === 'map'
-        ? explorePage(c)
-        : id && ['places', 'articles', 'events'].includes(page)
-          ? detailPage(page, id, c)
-          : ['culture', 'types', 'gallery', 'events', 'about'].includes(page)
-            ? discoverPage(page, c)
-            : missing(c);
+    page === 'reading' && id
+      ? readingDetail(id, c)
+      : page === 'home'
+        ? homePage(c)
+        : page === 'map'
+          ? explorePage(c)
+          : id && ['places', 'articles', 'events'].includes(page)
+            ? detailPage(page, id, c)
+            : ['culture', 'types', 'gallery', 'events', 'about'].includes(page)
+              ? discoverPage(page, c)
+              : missing(c);
   app.innerHTML = `<header class="site-header"><div class="nav-wrap"><a href="${path('')}" class="brand"><span class="brand-mark">${icon('cup')}</span><span>Les Cafés<span class="brand-line">DE PARIS</span></span></a><nav id="main-nav" aria-label="Navigation">${nav.map((n) => `<a href="${path(n === 'home' ? '' : n)}" class="${active === n ? 'active' : ''}" ${active === n ? 'aria-current="page"' : ''}>${t(n)}</a>`).join('')}</nav><div class="header-tools"><div class="language-switch" aria-label="Language">${LANGS.map((l) => `<a href="/${l}/${parts.slice(1).join('/')}${location.search}" lang="${l}" data-language="${l}" class="${lang === l ? 'active' : ''}" aria-label="${{ fr: 'Français', en: 'English', zh: '中文' }[l]}">${{ fr: 'FR', en: 'EN', zh: '中文' }[l]}</a>`).join('')}</div><button class="menu-button icon-button" data-action="menu" aria-label="Menu" aria-expanded="false" aria-controls="main-nav">${icon('menu')}</button></div></div></header>${data.snapshotAt ? `<div class="snapshot-note">${t('snapshotNotice')} ${new Intl.DateTimeFormat(lang === 'zh' ? 'zh-CN' : lang, { dateStyle: 'medium', timeStyle: 'short', timeZone: 'Europe/Paris' }).format(new Date(data.snapshotAt))}</div>` : ''}<main id="main" class="${page === 'map' ? `explore-page view-${state.view}` : ''}">${html}</main><footer class="site-footer"><div class="wrap footer-main"><a class="brand" href="${path('')}"><span class="brand-mark">${icon('cup')}</span><span>Les Cafés<span class="brand-line">DE PARIS</span></span></a><p>${t('footerLine')}</p><div><a href="${path('events')}">${t('events')}</a><a href="${path('about')}">${t('method')}</a><a href="https://github.com/kada798/cafes-de-paris" target="_blank" rel="noopener noreferrer">GitHub ${icon('external')}</a></div></div><div class="wrap footer-bottom"><span>© ${new Date().getFullYear()} Les Cafés de Paris</span><span>${t('footerMade')}</span></div></footer>`;
   if (page === 'map') {
     initMap(c);
@@ -283,6 +317,14 @@ function render() {
       search();
   }
   activateTranslations(page, id, lang);
+  if (page === 'reading' && id) {
+    const button = document.querySelector('[data-action="like-reading"]');
+    button?.setAttribute('aria-pressed', String(liked(id)));
+    if (!readingViews.has(id)) {
+      readingViews.add(id);
+      recordLibrary(id, 'view').catch(() => {});
+    }
+  }
 }
 
 function initMap(c) {
@@ -364,6 +406,8 @@ function setOrigin(origin, label) {
 }
 
 document.addEventListener('click', async (event) => {
+  const outgoing = event.target.closest('[data-reading-outbound]');
+  if (outgoing) recordLibrary(outgoing.dataset.readingOutbound, 'click').catch(() => {});
   const link = event.target.closest('a');
   if (
     link &&
@@ -407,6 +451,20 @@ document.addEventListener('click', async (event) => {
     return;
   }
   const action = event.target.closest('[data-action]')?.dataset.action;
+  if (action === 'like-reading') {
+    const button = event.target.closest('button'),
+      id = button.dataset.reading;
+    button.disabled = true;
+    try {
+      const active = button.getAttribute('aria-pressed') !== 'true';
+      await recordLibrary(id, 'like', active);
+      button.setAttribute('aria-pressed', String(active));
+    } catch {
+      toast(context().t('statsUnavailable'));
+    } finally {
+      button.disabled = false;
+    }
+  }
   if (action === 'retry-translation') {
     const id = event.target.closest('[data-event]').dataset.event;
     const item = data.events.find((e) => e.id === id);
@@ -484,6 +542,10 @@ document.addEventListener('submit', (event) => {
     const params = new URLSearchParams(new FormData(event.target));
     navigate(`${context().path('events')}?${params}`);
   }
+  if (event.target.id === 'reading-filter') {
+    event.preventDefault();
+    navigate(`${context().path('culture')}?${new URLSearchParams(new FormData(event.target))}`);
+  }
 });
 window.addEventListener('popstate', () => {
   render();
@@ -494,6 +556,9 @@ try {
   data = await getCatalog();
   if (!LANGS.includes(location.pathname.split('/')[1])) history.replaceState({}, '', '/fr/');
   render();
+  libraryMetrics()
+    .then((result) => updateLibraryMetrics(result.metrics))
+    .catch(() => {});
 } catch (error) {
   console.error('Application startup failed:', error);
   app.innerHTML = `<div class="empty-state"><h1>Les Cafés de Paris</h1><p>Le serveur est indisponible. / Server unavailable. / 服务暂不可用。</p><button class="button primary" id="retry">Réessayer / Retry / 重试</button></div>`;

@@ -1,5 +1,6 @@
 import { createServer } from 'node:http';
 import { readFile, stat } from 'node:fs/promises';
+import { readFileSync } from 'node:fs';
 import { resolve, extname, sep } from 'node:path';
 import { openDatabase, seedDatabase, catalogRepository, ROOT } from './repositories/catalog.mjs';
 import { evaluatePlaces, currentCrowding } from '../shared/match.mjs';
@@ -7,6 +8,7 @@ import { calculateRoutes } from './routing/providers.mjs';
 import { upcomingEvent } from '../shared/events.mjs';
 import { syncEvents } from './ingestion/sync.mjs';
 import { databaseTranslator, translateRequestedEvents } from './services/translation.mjs';
+import { engagementEndpoint, sqliteBinding } from './services/engagement.mjs';
 
 export function validateQuery(q) {
   if (!q || typeof q !== 'object' || Array.isArray(q)) throw new Error('Invalid query');
@@ -80,6 +82,8 @@ const mime = {
 };
 export function createApp(db, { translator = databaseTranslator(db) } = {}) {
   const repo = catalogRepository(db);
+  const reading = JSON.parse(readFileSync(resolve(ROOT, 'content/reading-sources.json'), 'utf8'));
+  const taxonomy = JSON.parse(readFileSync(resolve(ROOT, 'content/taxonomy.json'), 'utf8'));
   const limits = new Map();
   return createServer(async (req, res) => {
     res.setHeader('X-Content-Type-Options', 'nosniff');
@@ -104,6 +108,8 @@ export function createApp(db, { translator = databaseTranslator(db) } = {}) {
           for (const [key, value] of limits) if (value.until < Date.now()) limits.delete(key);
         if (req.method === 'GET' && url.pathname === '/api/catalog')
           return send({
+            reading: reading.sources,
+            taxonomy,
             places: repo.places().map((p) => ({ ...p, crowding: currentCrowding(p.crowding) })),
             articles: repo.articles(),
             events: repo
@@ -120,6 +126,24 @@ export function createApp(db, { translator = databaseTranslator(db) } = {}) {
               timezone: 'Europe/Paris',
             },
           });
+        if (url.pathname === '/api/library') {
+          let body = '';
+          for await (const chunk of req) {
+            body += chunk;
+            if (body.length > 4096) return send({ error: 'Request too large' }, 413);
+          }
+          const request = new Request(`http://${req.headers.host}${req.url}`, {
+            method: req.method,
+            headers: req.headers,
+            ...(req.method === 'POST' ? { body } : {}),
+          });
+          const result = await engagementEndpoint(
+            request,
+            sqliteBinding(db),
+            reading.sources.map((s) => s.id)
+          );
+          return send(await result.json(), result.status);
+        }
         if (
           req.method === 'POST' &&
           ['/api/search', '/api/translate-events'].includes(url.pathname)
