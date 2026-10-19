@@ -92,6 +92,12 @@ git status
 
 本地 Git 通过 Git Credential Manager 或你已有的 SSH 设置认证。登录应在 GitHub 官方授权界面完成，不要将访问令牌写进源码、远程 URL 或聊天中。
 
+当前电脑的 Git 曾引用一个已经失效的证书文件路径。本项目已配置为使用 Windows 系统证书存储，HTTPS 证书验证保持开启。这项本地 Git 配置不会随克隆复制；如果在 Windows 的其他目录遇到同样的 `error setting certificate file`，可在对应仓库目录运行后重试：
+
+```powershell
+git config --local http.sslBackend schannel
+```
+
 新仓库用于保存项目源码和后续修改记录。换电脑时可先克隆，再安装并检查环境：
 
 ```powershell
