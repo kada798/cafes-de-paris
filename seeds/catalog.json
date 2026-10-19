@@ -1,0 +1,1361 @@
+{
+  "places": [
+    {
+      "id": "flore",
+      "name": "Café de Flore",
+      "kind": "cafe",
+      "type": "literary",
+      "lat": 48.854135,
+      "lng": 2.332561,
+      "address": "172 boulevard Saint-Germain, 75006 Paris",
+      "area": "Saint-Germain-des-Prés",
+      "image": "/assets/photos/photo-1442512595331-e89e73853f31.jpg",
+      "imageCaption": {
+        "fr": "Photo d’ambiance illustrative · Unsplash",
+        "en": "Illustrative atmosphere photograph · Unsplash",
+        "zh": "氛围示意图 · Unsplash"
+      },
+      "description": {
+        "fr": "Une adresse de Saint-Germain-des-Prés dont le site officiel retrace les liens avec écrivains et artistes.",
+        "en": "A Saint-Germain-des-Prés address whose official history follows its connections with writers and artists.",
+        "zh": "位于圣日耳曼德佩，官方网站介绍了它与作家及艺术家的联系。"
+      },
+      "sources": [
+        {
+          "url": "https://cafedeflore.fr/",
+          "label": "Site officiel"
+        },
+        {
+          "label": "IGN · Géocodage d’adresse",
+          "url": "https://data.geopf.fr/geocodage/search?q=172%20boulevard%20Saint-Germain%2C%2075006%20Paris&limit=1"
+        }
+      ],
+      "verifiedAt": "2026-10-19",
+      "hours": {
+        "1": [
+          [
+            "00:00",
+            "01:30"
+          ],
+          [
+            "07:30",
+            "24:00"
+          ]
+        ],
+        "2": [
+          [
+            "00:00",
+            "01:30"
+          ],
+          [
+            "07:30",
+            "24:00"
+          ]
+        ],
+        "3": [
+          [
+            "00:00",
+            "01:30"
+          ],
+          [
+            "07:30",
+            "24:00"
+          ]
+        ],
+        "4": [
+          [
+            "00:00",
+            "01:30"
+          ],
+          [
+            "07:30",
+            "24:00"
+          ]
+        ],
+        "5": [
+          [
+            "00:00",
+            "01:30"
+          ],
+          [
+            "07:30",
+            "24:00"
+          ]
+        ],
+        "6": [
+          [
+            "00:00",
+            "01:30"
+          ],
+          [
+            "07:30",
+            "24:00"
+          ]
+        ],
+        "7": [
+          [
+            "00:00",
+            "01:30"
+          ],
+          [
+            "07:30",
+            "24:00"
+          ]
+        ]
+      },
+      "policies": {
+        "laptop": "unknown",
+        "power": "unknown",
+        "wifi": "unknown",
+        "pets": "unknown",
+        "decaf": "yes",
+        "caffeineFree": "unknown",
+        "reservation": "no"
+      },
+      "notes": {
+        "fr": "Certaines données sont vérifiées ; les autres restent inconnues. Confirmez les règles et horaires exceptionnels avant de partir. Photo illustrative.",
+        "en": "Some fields are verified; others remain unknown. Check rules and exceptional hours before travelling. Illustrative photograph.",
+        "zh": "部分字段已经核实，其余保留未知。出发前请核对规则与特殊开放时间。图片为示意图。"
+      },
+      "demo": false,
+      "evidence": {
+        "address": {
+          "url": "https://cafedeflore.fr/",
+          "label": "Site officiel",
+          "checkedAt": "2026-10-19"
+        },
+        "coordinates": {
+          "url": "https://data.geopf.fr/geocodage/search?q=172%20boulevard%20Saint-Germain%2C%2075006%20Paris&limit=1",
+          "label": "IGN · Géocodage d’adresse",
+          "checkedAt": "2026-10-19"
+        },
+        "hours": {
+          "url": "https://cafedeflore.fr/",
+          "label": "Café de Flore · horaires, réservation et carte",
+          "checkedAt": "2026-10-19"
+        },
+        "reservation": {
+          "url": "https://cafedeflore.fr/",
+          "label": "Café de Flore · horaires, réservation et carte",
+          "checkedAt": "2026-10-19"
+        },
+        "decaf": {
+          "url": "https://cafedeflore.fr/",
+          "label": "Café de Flore · horaires, réservation et carte",
+          "checkedAt": "2026-10-19"
+        }
+      },
+      "drinkOptions": [
+        {
+          "name": {
+            "fr": "Café décaféiné",
+            "en": "Decaffeinated coffee",
+            "zh": "脱咖啡因咖啡"
+          },
+          "classification": "decaf",
+          "source": "https://cafedeflore.fr/"
+        }
+      ],
+      "imageSource": "https://images.unsplash.com/photo-1442512595331-e89e73853f31?auto=format&fit=crop&w=1400&q=85"
+    },
+    {
+      "id": "deux-magots",
+      "name": "Les Deux Magots",
+      "kind": "cafe",
+      "type": "literary",
+      "lat": 48.854237,
+      "lng": 2.333197,
+      "address": "6 place Saint-Germain-des-Prés, 75006 Paris",
+      "area": "Saint-Germain-des-Prés",
+      "image": "/assets/photos/photo-1501339847302-ac426a4a7cbb.jpg",
+      "imageCaption": {
+        "fr": "Photo d’ambiance illustrative · Unsplash",
+        "en": "Illustrative atmosphere photograph · Unsplash",
+        "zh": "氛围示意图 · Unsplash"
+      },
+      "description": {
+        "fr": "Un café à découvrir place Saint-Germain-des-Prés, voisin du Café de Flore.",
+        "en": "A café on place Saint-Germain-des-Prés, close to Café de Flore.",
+        "zh": "位于圣日耳曼德佩广场，邻近花神咖啡馆。"
+      },
+      "sources": [
+        {
+          "url": "https://lesdeuxmagots.fr/contact/",
+          "label": "Site officiel"
+        },
+        {
+          "label": "IGN · Géocodage d’adresse",
+          "url": "https://data.geopf.fr/geocodage/search?q=6%20place%20Saint-Germain-des-Pr%C3%A9s%2C%2075006%20Paris&limit=1"
+        },
+        {
+          "url": "https://lesdeuxmagots.fr/wp-content/uploads/2026/05/ALLERGENES_COMPLET_MAI2026.pdf",
+          "label": "Carte officielle · boissons"
+        }
+      ],
+      "verifiedAt": "2026-10-19",
+      "hours": {
+        "1": [
+          [
+            "00:00",
+            "01:00"
+          ],
+          [
+            "07:30",
+            "24:00"
+          ]
+        ],
+        "2": [
+          [
+            "00:00",
+            "01:00"
+          ],
+          [
+            "07:30",
+            "24:00"
+          ]
+        ],
+        "3": [
+          [
+            "00:00",
+            "01:00"
+          ],
+          [
+            "07:30",
+            "24:00"
+          ]
+        ],
+        "4": [
+          [
+            "00:00",
+            "01:00"
+          ],
+          [
+            "07:30",
+            "24:00"
+          ]
+        ],
+        "5": [
+          [
+            "00:00",
+            "01:00"
+          ],
+          [
+            "07:30",
+            "24:00"
+          ]
+        ],
+        "6": [
+          [
+            "00:00",
+            "01:00"
+          ],
+          [
+            "07:30",
+            "24:00"
+          ]
+        ],
+        "7": [
+          [
+            "00:00",
+            "01:00"
+          ],
+          [
+            "07:30",
+            "24:00"
+          ]
+        ]
+      },
+      "policies": {
+        "laptop": "unknown",
+        "power": "unknown",
+        "wifi": "unknown",
+        "pets": "unknown",
+        "decaf": "yes",
+        "caffeineFree": "unknown",
+        "reservation": "unknown"
+      },
+      "notes": {
+        "fr": "Certaines données sont vérifiées ; les autres restent inconnues. Confirmez les règles et horaires exceptionnels avant de partir. Photo illustrative.",
+        "en": "Some fields are verified; others remain unknown. Check rules and exceptional hours before travelling. Illustrative photograph.",
+        "zh": "部分字段已经核实，其余保留未知。出发前请核对规则与特殊开放时间。图片为示意图。"
+      },
+      "demo": false,
+      "evidence": {
+        "address": {
+          "url": "https://lesdeuxmagots.fr/contact/",
+          "label": "Site officiel",
+          "checkedAt": "2026-10-19"
+        },
+        "coordinates": {
+          "url": "https://data.geopf.fr/geocodage/search?q=6%20place%20Saint-Germain-des-Pr%C3%A9s%2C%2075006%20Paris&limit=1",
+          "label": "IGN · Géocodage d’adresse",
+          "checkedAt": "2026-10-19"
+        },
+        "hours": {
+          "url": "https://lesdeuxmagots.fr/contact/",
+          "label": "Les Deux Magots · horaires officiels",
+          "checkedAt": "2026-10-19"
+        },
+        "decaf": {
+          "url": "https://lesdeuxmagots.fr/wp-content/uploads/2026/05/ALLERGENES_COMPLET_MAI2026.pdf",
+          "label": "Les Deux Magots · carte allergènes mai 2026",
+          "checkedAt": "2026-10-19"
+        }
+      },
+      "drinkOptions": [
+        {
+          "name": {
+            "fr": "Expresso décaféiné",
+            "en": "Decaffeinated espresso",
+            "zh": "脱咖啡因浓缩咖啡"
+          },
+          "classification": "decaf",
+          "source": "https://lesdeuxmagots.fr/wp-content/uploads/2026/05/ALLERGENES_COMPLET_MAI2026.pdf"
+        }
+      ],
+      "imageSource": "https://images.unsplash.com/photo-1501339847302-ac426a4a7cbb?auto=format&fit=crop&w=1400&q=85"
+    },
+    {
+      "id": "procope",
+      "name": "Le Procope",
+      "kind": "cafe",
+      "type": "cafe_restaurant",
+      "lat": 48.853049,
+      "lng": 2.338732,
+      "address": "13 rue de l’Ancienne Comédie, 75006 Paris",
+      "area": "Odéon",
+      "image": "/assets/photos/photo-1554118811-1e0d58224f24.jpg",
+      "imageCaption": {
+        "fr": "Photo d’ambiance illustrative · Unsplash",
+        "en": "Illustrative atmosphere photograph · Unsplash",
+        "zh": "氛围示意图 · Unsplash"
+      },
+      "description": {
+        "fr": "Restaurant, café et glacier de la rue de l’Ancienne Comédie ; une étape pour explorer le quartier d’Odéon.",
+        "en": "A restaurant, café and ice-cream venue on rue de l’Ancienne Comédie, in the Odéon area.",
+        "zh": "位于旧喜剧院街的餐厅、咖啡与冰淇淋场所，可作为探索奥德翁街区的一站。"
+      },
+      "sources": [
+        {
+          "url": "https://www.procope.com/informations-contact/",
+          "label": "Site officiel"
+        },
+        {
+          "label": "IGN · Géocodage d’adresse",
+          "url": "https://data.geopf.fr/geocodage/search?q=13%20rue%20de%20l%E2%80%99Ancienne%20Com%C3%A9die%2C%2075006%20Paris&limit=1"
+        }
+      ],
+      "verifiedAt": "2026-10-19",
+      "hours": {
+        "1": [
+          [
+            "12:00",
+            "24:00"
+          ]
+        ],
+        "2": [
+          [
+            "12:00",
+            "24:00"
+          ]
+        ],
+        "3": [
+          [
+            "12:00",
+            "24:00"
+          ]
+        ],
+        "4": [
+          [
+            "12:00",
+            "24:00"
+          ]
+        ],
+        "5": [
+          [
+            "12:00",
+            "24:00"
+          ]
+        ],
+        "6": [
+          [
+            "12:00",
+            "24:00"
+          ]
+        ],
+        "7": [
+          [
+            "12:00",
+            "24:00"
+          ]
+        ]
+      },
+      "policies": {
+        "laptop": "unknown",
+        "power": "unknown",
+        "wifi": "yes",
+        "pets": "unknown",
+        "decaf": "unknown",
+        "caffeineFree": "unknown",
+        "reservation": "yes"
+      },
+      "notes": {
+        "fr": "Certaines données sont vérifiées ; les autres restent inconnues. Confirmez les règles et horaires exceptionnels avant de partir. Photo illustrative.",
+        "en": "Some fields are verified; others remain unknown. Check rules and exceptional hours before travelling. Illustrative photograph.",
+        "zh": "部分字段已经核实，其余保留未知。出发前请核对规则与特殊开放时间。图片为示意图。"
+      },
+      "demo": false,
+      "evidence": {
+        "address": {
+          "url": "https://www.procope.com/informations-contact/",
+          "label": "Site officiel",
+          "checkedAt": "2026-10-19"
+        },
+        "coordinates": {
+          "url": "https://data.geopf.fr/geocodage/search?q=13%20rue%20de%20l%E2%80%99Ancienne%20Com%C3%A9die%2C%2075006%20Paris&limit=1",
+          "label": "IGN · Géocodage d’adresse",
+          "checkedAt": "2026-10-19"
+        },
+        "hours": {
+          "url": "https://www.procope.com/informations-contact/",
+          "label": "Le Procope · informations officielles",
+          "checkedAt": "2026-10-19"
+        },
+        "wifi": {
+          "url": "https://www.procope.com/informations-contact/",
+          "label": "Le Procope · informations officielles",
+          "checkedAt": "2026-10-19"
+        },
+        "reservation": {
+          "url": "https://www.procope.com/informations-contact/",
+          "label": "Le Procope · informations officielles",
+          "checkedAt": "2026-10-19"
+        }
+      },
+      "imageSource": "https://images.unsplash.com/photo-1554118811-1e0d58224f24?auto=format&fit=crop&w=1400&q=85"
+    },
+    {
+      "id": "cafe-paix",
+      "name": "Café de la Paix",
+      "kind": "cafe",
+      "type": "traditional",
+      "lat": 48.87094,
+      "lng": 2.33174,
+      "address": "5 place de l’Opéra, 75009 Paris",
+      "area": "Opéra",
+      "image": "/assets/photos/photo-1559925393-8be0ec4767c8.jpg",
+      "imageCaption": {
+        "fr": "Photo d’ambiance illustrative · Unsplash",
+        "en": "Illustrative atmosphere photograph · Unsplash",
+        "zh": "氛围示意图 · Unsplash"
+      },
+      "description": {
+        "fr": "Une adresse place de l’Opéra ; consultez le site officiel pour ses actualités et offres.",
+        "en": "An address on place de l’Opéra; consult its official website for current news and offers.",
+        "zh": "位于歌剧院广场；最新活动与供应内容请查阅其官方网站。"
+      },
+      "sources": [
+        {
+          "url": "https://www.cafedelapaix.fr/fr/actualites/",
+          "label": "Site officiel"
+        },
+        {
+          "label": "IGN · Géocodage d’adresse",
+          "url": "https://data.geopf.fr/geocodage/search?q=5%20place%20de%20l%E2%80%99Op%C3%A9ra%2C%2075009%20Paris&limit=1"
+        }
+      ],
+      "verifiedAt": "2026-10-19",
+      "hours": null,
+      "policies": {
+        "laptop": "unknown",
+        "power": "unknown",
+        "wifi": "unknown",
+        "pets": "unknown",
+        "decaf": "unknown",
+        "caffeineFree": "unknown",
+        "reservation": "unknown"
+      },
+      "notes": {
+        "fr": "Certaines données sont vérifiées ; les autres restent inconnues. Confirmez les règles et horaires exceptionnels avant de partir. Photo illustrative.",
+        "en": "Some fields are verified; others remain unknown. Check rules and exceptional hours before travelling. Illustrative photograph.",
+        "zh": "部分字段已经核实，其余保留未知。出发前请核对规则与特殊开放时间。图片为示意图。"
+      },
+      "demo": false,
+      "evidence": {
+        "address": {
+          "url": "https://www.cafedelapaix.fr/fr/actualites/",
+          "label": "Site officiel",
+          "checkedAt": "2026-10-19"
+        },
+        "coordinates": {
+          "url": "https://data.geopf.fr/geocodage/search?q=5%20place%20de%20l%E2%80%99Op%C3%A9ra%2C%2075009%20Paris&limit=1",
+          "label": "IGN · Géocodage d’adresse",
+          "checkedAt": "2026-10-19"
+        }
+      },
+      "imageSource": "https://images.unsplash.com/photo-1559925393-8be0ec4767c8?auto=format&fit=crop&w=1400&q=85"
+    },
+    {
+      "id": "rotonde",
+      "name": "La Rotonde Montparnasse",
+      "kind": "cafe",
+      "type": "cafe_restaurant",
+      "lat": 48.842361,
+      "lng": 2.329132,
+      "address": "105 boulevard du Montparnasse, 75006 Paris",
+      "area": "Montparnasse",
+      "image": "/assets/photos/photo-1509042239860-f550ce710b93.jpg",
+      "imageCaption": {
+        "fr": "Photo d’ambiance illustrative · Unsplash",
+        "en": "Illustrative atmosphere photograph · Unsplash",
+        "zh": "氛围示意图 · Unsplash"
+      },
+      "description": {
+        "fr": "Une brasserie du boulevard du Montparnasse, à explorer en complément des cafés de Saint-Germain.",
+        "en": "A boulevard du Montparnasse brasserie to explore alongside the cafés of Saint-Germain.",
+        "zh": "位于蒙帕纳斯大道的法式餐馆，为圣日耳曼之外的咖啡文化探索提供另一站。"
+      },
+      "sources": [
+        {
+          "url": "https://larotonde-montparnasse.fr/contact/",
+          "label": "Site officiel"
+        },
+        {
+          "label": "IGN · Géocodage d’adresse",
+          "url": "https://data.geopf.fr/geocodage/search?q=105%20boulevard%20du%20Montparnasse%2C%2075006%20Paris&limit=1"
+        }
+      ],
+      "verifiedAt": "2026-10-19",
+      "hours": {
+        "1": [
+          [
+            "07:30",
+            "24:00"
+          ]
+        ],
+        "2": [
+          [
+            "07:30",
+            "24:00"
+          ]
+        ],
+        "3": [
+          [
+            "07:30",
+            "24:00"
+          ]
+        ],
+        "4": [
+          [
+            "07:30",
+            "24:00"
+          ]
+        ],
+        "5": [
+          [
+            "07:30",
+            "24:00"
+          ]
+        ],
+        "6": [
+          [
+            "07:30",
+            "24:00"
+          ]
+        ],
+        "7": [
+          [
+            "07:30",
+            "24:00"
+          ]
+        ]
+      },
+      "policies": {
+        "laptop": "unknown",
+        "power": "unknown",
+        "wifi": "unknown",
+        "pets": "unknown",
+        "decaf": "unknown",
+        "caffeineFree": "unknown",
+        "reservation": "yes"
+      },
+      "notes": {
+        "fr": "Certaines données sont vérifiées ; les autres restent inconnues. Confirmez les règles et horaires exceptionnels avant de partir. Photo illustrative.",
+        "en": "Some fields are verified; others remain unknown. Check rules and exceptional hours before travelling. Illustrative photograph.",
+        "zh": "部分字段已经核实，其余保留未知。出发前请核对规则与特殊开放时间。图片为示意图。"
+      },
+      "demo": false,
+      "evidence": {
+        "address": {
+          "url": "https://larotonde-montparnasse.fr/contact/",
+          "label": "Site officiel",
+          "checkedAt": "2026-10-19"
+        },
+        "coordinates": {
+          "url": "https://data.geopf.fr/geocodage/search?q=105%20boulevard%20du%20Montparnasse%2C%2075006%20Paris&limit=1",
+          "label": "IGN · Géocodage d’adresse",
+          "checkedAt": "2026-10-19"
+        },
+        "hours": {
+          "url": "https://larotonde-montparnasse.fr/contact/",
+          "label": "La Rotonde · contact et horaires",
+          "checkedAt": "2026-10-19"
+        },
+        "reservation": {
+          "url": "https://larotonde-montparnasse.fr/",
+          "label": "La Rotonde · réservation par téléphone",
+          "checkedAt": "2026-10-19"
+        }
+      },
+      "imageSource": "https://images.unsplash.com/photo-1509042239860-f550ce710b93?auto=format&fit=crop&w=1400&q=85"
+    },
+    {
+      "id": "cafeotheque",
+      "name": "La Caféothèque",
+      "kind": "cafe",
+      "type": "modern",
+      "lat": 48.854432,
+      "lng": 2.355775,
+      "address": "52 rue de l’Hôtel de Ville, 75004 Paris",
+      "area": "Marais · Seine",
+      "image": "/assets/photos/photo-1445116572660-236099ec97a0.jpg",
+      "imageCaption": {
+        "fr": "Photo d’ambiance illustrative · Unsplash",
+        "en": "Illustrative atmosphere photograph · Unsplash",
+        "zh": "氛围示意图 · Unsplash"
+      },
+      "description": {
+        "fr": "Un salon de café, atelier de torréfaction et école, consacré à la découverte des cafés de spécialité.",
+        "en": "A coffee salon, roastery and school focused on discovering specialty coffee.",
+        "zh": "结合咖啡空间、烘焙工坊与学校，专注精品咖啡的探索。"
+      },
+      "sources": [
+        {
+          "url": "https://lacafeotheque.com/",
+          "label": "Site officiel"
+        },
+        {
+          "label": "IGN · Géocodage d’adresse",
+          "url": "https://data.geopf.fr/geocodage/search?q=52%20rue%20de%20l%E2%80%99H%C3%B4tel%20de%20Ville%2C%2075004%20Paris&limit=1"
+        }
+      ],
+      "verifiedAt": "2026-10-19",
+      "hours": {
+        "1": [
+          [
+            "09:00",
+            "19:00"
+          ]
+        ],
+        "2": [
+          [
+            "09:00",
+            "19:00"
+          ]
+        ],
+        "3": [
+          [
+            "09:00",
+            "19:00"
+          ]
+        ],
+        "4": [
+          [
+            "09:00",
+            "19:00"
+          ]
+        ],
+        "5": [
+          [
+            "09:00",
+            "19:00"
+          ]
+        ],
+        "6": [
+          [
+            "09:30",
+            "19:00"
+          ]
+        ],
+        "7": [
+          [
+            "09:30",
+            "19:00"
+          ]
+        ]
+      },
+      "policies": {
+        "laptop": "unknown",
+        "power": "unknown",
+        "wifi": "unknown",
+        "pets": "unknown",
+        "decaf": "unknown",
+        "caffeineFree": "unknown",
+        "reservation": "unknown"
+      },
+      "notes": {
+        "fr": "Certaines données sont vérifiées ; les autres restent inconnues. Confirmez les règles et horaires exceptionnels avant de partir. Photo illustrative.",
+        "en": "Some fields are verified; others remain unknown. Check rules and exceptional hours before travelling. Illustrative photograph.",
+        "zh": "部分字段已经核实，其余保留未知。出发前请核对规则与特殊开放时间。图片为示意图。"
+      },
+      "demo": false,
+      "evidence": {
+        "address": {
+          "url": "https://lacafeotheque.com/",
+          "label": "Site officiel",
+          "checkedAt": "2026-10-19"
+        },
+        "coordinates": {
+          "url": "https://data.geopf.fr/geocodage/search?q=52%20rue%20de%20l%E2%80%99H%C3%B4tel%20de%20Ville%2C%2075004%20Paris&limit=1",
+          "label": "IGN · Géocodage d’adresse",
+          "checkedAt": "2026-10-19"
+        },
+        "hours": {
+          "url": "https://lacafeotheque.com/",
+          "label": "La Caféothèque · horaires officiels",
+          "checkedAt": "2026-10-19"
+        }
+      },
+      "imageSource": "https://images.unsplash.com/photo-1445116572660-236099ec97a0?auto=format&fit=crop&w=1400&q=85"
+    },
+    {
+      "id": "sagan",
+      "name": "Médiathèque Françoise Sagan",
+      "kind": "library",
+      "type": "neighborhood",
+      "lat": 48.87543,
+      "lng": 2.353667,
+      "address": "8 rue Léon Schwartzenberg, 75010 Paris",
+      "area": "Saint-Lazare · 10e",
+      "image": "/assets/photos/photo-1507842217343-583bb7270b66.jpg",
+      "imageCaption": {
+        "fr": "Photo d’ambiance illustrative · Unsplash",
+        "en": "Illustrative atmosphere photograph · Unsplash",
+        "zh": "氛围示意图 · Unsplash"
+      },
+      "description": {
+        "fr": "Une médiathèque municipale dans un bâtiment réhabilité, avec collections et programmation culturelle.",
+        "en": "A municipal library in a restored building, with collections and a cultural programme.",
+        "zh": "设于修复建筑中的市立图书馆，提供馆藏与文化项目。"
+      },
+      "sources": [
+        {
+          "url": "https://www.paris.fr/lieux/mediatheque-francoise-sagan-8695",
+          "label": "Ville de Paris · Fiche officielle"
+        },
+        {
+          "label": "IGN · Géocodage d’adresse",
+          "url": "https://data.geopf.fr/geocodage/search?q=8%20rue%20L%C3%A9on%20Schwartzenberg%2C%2075010%20Paris&limit=1"
+        }
+      ],
+      "verifiedAt": "2026-10-19",
+      "hours": null,
+      "policies": {
+        "laptop": "unknown",
+        "power": "unknown",
+        "wifi": "yes",
+        "pets": "no",
+        "decaf": "unknown",
+        "caffeineFree": "unknown",
+        "reservation": "unknown"
+      },
+      "notes": {
+        "fr": "Wi-Fi et règle générale sur les animaux vérifiés sur Paris.fr. Les horaires changent pendant les vacances de Toussaint 2026 : consultez les horaires officiels avant déplacement. Photo illustrative.",
+        "en": "Wi-Fi and the general pet policy checked on Paris.fr. Hours change during the 2026 autumn school holiday: check the official schedule before visiting. Illustrative photograph.",
+        "zh": "Wi-Fi 与一般宠物规则已根据 Paris.fr 核实。2026 年秋假期间开放时间有变化；到访前请查阅官网时刻表。图片为示意图。"
+      },
+      "demo": false,
+      "evidence": {
+        "address": {
+          "url": "https://www.paris.fr/lieux/mediatheque-francoise-sagan-8695",
+          "label": "Ville de Paris · Fiche officielle",
+          "checkedAt": "2026-10-19"
+        },
+        "coordinates": {
+          "url": "https://data.geopf.fr/geocodage/search?q=8%20rue%20L%C3%A9on%20Schwartzenberg%2C%2075010%20Paris&limit=1",
+          "label": "IGN · Géocodage d’adresse",
+          "checkedAt": "2026-10-19"
+        },
+        "wifi": {
+          "url": "https://www.paris.fr/lieux/mediatheque-francoise-sagan-8695",
+          "label": "Ville de Paris · infos pratiques",
+          "checkedAt": "2026-10-19"
+        },
+        "pets": {
+          "url": "https://www.paris.fr/lieux/mediatheque-francoise-sagan-8695",
+          "label": "Ville de Paris · infos pratiques",
+          "checkedAt": "2026-10-19"
+        }
+      },
+      "imageSource": "https://images.unsplash.com/photo-1507842217343-583bb7270b66?auto=format&fit=crop&w=1400&q=85"
+    },
+    {
+      "id": "canopee",
+      "name": "Médiathèque de la Canopée",
+      "kind": "library",
+      "type": "neighborhood",
+      "lat": 48.861819,
+      "lng": 2.347644,
+      "address": "10 passage de la Canopée, 75001 Paris",
+      "area": "Les Halles",
+      "image": "/assets/photos/photo-1481627834876-b7833e8f5570.jpg",
+      "imageCaption": {
+        "fr": "Photo d’ambiance illustrative · Unsplash",
+        "en": "Illustrative atmosphere photograph · Unsplash",
+        "zh": "氛围示意图 · Unsplash"
+      },
+      "description": {
+        "fr": "Une médiathèque municipale aux Halles. Fermeture pour travaux annoncée jusqu’à mi-novembre 2026.",
+        "en": "A municipal library at Les Halles. Renovation closure announced until mid-November 2026.",
+        "zh": "位于雷阿尔的市立图书馆。官网公告因装修闭馆至 2026 年 11 月中旬。"
+      },
+      "sources": [
+        {
+          "url": "https://www.paris.fr/lieux/mediatheque-de-la-canopee-16634",
+          "label": "Ville de Paris · Fiche officielle"
+        },
+        {
+          "label": "IGN · Géocodage d’adresse",
+          "url": "https://data.geopf.fr/geocodage/search?q=10%20passage%20de%20la%20Canop%C3%A9e%2C%2075001%20Paris&limit=1"
+        }
+      ],
+      "verifiedAt": "2026-10-19",
+      "hours": null,
+      "policies": {
+        "laptop": "unknown",
+        "power": "unknown",
+        "wifi": "yes",
+        "pets": "no",
+        "decaf": "unknown",
+        "caffeineFree": "unknown",
+        "reservation": "unknown"
+      },
+      "notes": {
+        "fr": "Au 19 octobre 2026, le site officiel annonce une fermeture pour travaux jusqu’à mi-novembre. Ne pas considérer ce lieu comme disponible. Photo illustrative.",
+        "en": "On 19 October 2026, the official page announces renovation closure until mid-November. Do not treat this venue as available. Illustrative photograph.",
+        "zh": "截至 2026 年 10 月 19 日，官网公告该馆装修闭馆至 11 月中旬。请勿将其作为当前可用地点。图片为示意图。"
+      },
+      "demo": false,
+      "availability": {
+        "status": "closed",
+        "reason": {
+          "fr": "Fermée pour travaux : réouverture annoncée à mi-novembre 2026, date exacte à confirmer.",
+          "en": "Closed for renovation: reopening announced for mid-November 2026, exact date to confirm.",
+          "zh": "装修闭馆：公告预计于 2026 年 11 月中旬重新开放，具体日期待确认。"
+        },
+        "source": "https://www.paris.fr/lieux/mediatheque-de-la-canopee-16634"
+      },
+      "evidence": {
+        "address": {
+          "url": "https://www.paris.fr/lieux/mediatheque-de-la-canopee-16634",
+          "label": "Ville de Paris · Fiche officielle",
+          "checkedAt": "2026-10-19"
+        },
+        "coordinates": {
+          "url": "https://data.geopf.fr/geocodage/search?q=10%20passage%20de%20la%20Canop%C3%A9e%2C%2075001%20Paris&limit=1",
+          "label": "IGN · Géocodage d’adresse",
+          "checkedAt": "2026-10-19"
+        },
+        "wifi": {
+          "url": "https://www.paris.fr/lieux/mediatheque-de-la-canopee-16634",
+          "label": "Ville de Paris · infos pratiques",
+          "checkedAt": "2026-10-19"
+        },
+        "pets": {
+          "url": "https://www.paris.fr/lieux/mediatheque-de-la-canopee-16634",
+          "label": "Ville de Paris · infos pratiques",
+          "checkedAt": "2026-10-19"
+        },
+        "availability": {
+          "url": "https://www.paris.fr/lieux/mediatheque-de-la-canopee-16634",
+          "label": "Ville de Paris · fermeture pour travaux",
+          "checkedAt": "2026-10-19"
+        }
+      },
+      "imageSource": "https://images.unsplash.com/photo-1481627834876-b7833e8f5570?auto=format&fit=crop&w=1400&q=85"
+    },
+    {
+      "id": "demo-atelier",
+      "name": "L’Atelier — Démonstration",
+      "kind": "cafe",
+      "type": "modern",
+      "lat": 48.8535,
+      "lng": 2.342,
+      "address": "Position de démonstration · Quartier Latin, Paris",
+      "area": "Quartier Latin",
+      "image": "/assets/photos/photo-1554118811-1e0d58224f24.jpg",
+      "description": {
+        "fr": "Lieu fictif : un exemple pour tester une session de travail avec ordinateur, charge et boissons.",
+        "en": "Fictional venue: an example for testing a laptop work session, charging and drink preferences.",
+        "zh": "虚构场所：用于测试电脑办公、充电与饮品需求的匹配。"
+      },
+      "hours": {
+        "1": [
+          [
+            "08:00",
+            "20:00"
+          ]
+        ],
+        "2": [
+          [
+            "08:00",
+            "20:00"
+          ]
+        ],
+        "3": [
+          [
+            "08:00",
+            "20:00"
+          ]
+        ],
+        "4": [
+          [
+            "08:00",
+            "20:00"
+          ]
+        ],
+        "5": [
+          [
+            "08:00",
+            "20:00"
+          ]
+        ],
+        "6": [
+          [
+            "08:00",
+            "20:00"
+          ]
+        ],
+        "7": [
+          [
+            "08:00",
+            "20:00"
+          ]
+        ]
+      },
+      "policies": {
+        "laptop": "yes",
+        "power": "yes",
+        "wifi": "yes",
+        "pets": "inside",
+        "decaf": "yes",
+        "caffeineFree": "yes",
+        "reservation": "no"
+      },
+      "maxGroup": 4,
+      "minSpend": 6,
+      "notes": {
+        "fr": "Scénario fictif uniquement. Règles simulées : ordinateurs autorisés, prises disponibles, animaux à l’intérieur. Ne correspond à aucun commerce réel ; aucune disponibilité de siège garantie.",
+        "en": "Fictional scenario only. Simulated rules: laptops allowed, power available, pets indoors. This is not a real business; no seat availability is claimed.",
+        "zh": "仅供演示的虚构场景。模拟规则：允许电脑、有充电条件、宠物可进入室内。不对应真实商家，也不代表有空座。"
+      },
+      "imageCaption": {
+        "fr": "Photo d’ambiance illustrative · Unsplash",
+        "en": "Illustrative atmosphere photograph · Unsplash",
+        "zh": "氛围示意图 · Unsplash"
+      },
+      "sources": [],
+      "verifiedAt": null,
+      "demo": true,
+      "imageSource": "https://images.unsplash.com/photo-1554118811-1e0d58224f24?auto=format&fit=crop&w=1400&q=85"
+    },
+    {
+      "id": "demo-jardin",
+      "name": "Le Jardin partagé — Démonstration",
+      "kind": "cafe",
+      "type": "neighborhood",
+      "lat": 48.8588,
+      "lng": 2.3558,
+      "address": "Position de démonstration · Le Marais, Paris",
+      "area": "Le Marais",
+      "image": "/assets/photos/photo-1501339847302-ac426a4a7cbb.jpg",
+      "description": {
+        "fr": "Lieu fictif : un exemple pour comparer rendez-vous, petits groupes et terrasse.",
+        "en": "Fictional venue: an example for comparing dates, small groups and terrace preferences.",
+        "zh": "虚构场所：用于比较约会、小聚与露台偏好的匹配。"
+      },
+      "hours": {
+        "1": [
+          [
+            "10:00",
+            "23:00"
+          ]
+        ],
+        "2": [
+          [
+            "10:00",
+            "23:00"
+          ]
+        ],
+        "3": [
+          [
+            "10:00",
+            "23:00"
+          ]
+        ],
+        "4": [
+          [
+            "10:00",
+            "23:00"
+          ]
+        ],
+        "5": [
+          [
+            "10:00",
+            "23:00"
+          ]
+        ],
+        "6": [
+          [
+            "10:00",
+            "23:00"
+          ]
+        ],
+        "7": [
+          [
+            "10:00",
+            "23:00"
+          ]
+        ]
+      },
+      "policies": {
+        "laptop": "limited",
+        "power": "limited",
+        "wifi": "yes",
+        "pets": "terrace",
+        "decaf": "yes",
+        "caffeineFree": "yes",
+        "reservation": "yes"
+      },
+      "maxGroup": 6,
+      "minSpend": 8,
+      "notes": {
+        "fr": "Scénario fictif uniquement. Ordinateurs limités à un espace dédié ; animaux seulement en terrasse ; réservations simulées. Aucune promesse de silence ou de place libre.",
+        "en": "Fictional scenario only. Laptops limited to a designated area; pets on terrace only; simulated booking support. No quietness or empty seat is promised.",
+        "zh": "仅供演示的虚构场景。电脑仅限指定区域；宠物仅限露台；模拟支持预约。不保证安静或空座。"
+      },
+      "imageCaption": {
+        "fr": "Photo d’ambiance illustrative · Unsplash",
+        "en": "Illustrative atmosphere photograph · Unsplash",
+        "zh": "氛围示意图 · Unsplash"
+      },
+      "sources": [],
+      "verifiedAt": null,
+      "demo": true,
+      "imageSource": "https://images.unsplash.com/photo-1501339847302-ac426a4a7cbb?auto=format&fit=crop&w=1400&q=85"
+    },
+    {
+      "id": "demo-salon",
+      "name": "Le Salon des rencontres — Démonstration",
+      "kind": "workspace",
+      "type": "cafe_restaurant",
+      "lat": 48.8641,
+      "lng": 2.3344,
+      "address": "Position de démonstration · Palais-Royal, Paris",
+      "area": "Palais-Royal",
+      "image": "/assets/photos/photo-1559925393-8be0ec4767c8.jpg",
+      "description": {
+        "fr": "Lieu fictif : un exemple de salle de rencontre pour tester les besoins professionnels.",
+        "en": "Fictional venue: a meeting-space example for testing professional requirements.",
+        "zh": "虚构场所：用于测试商务会面需求的会议空间示例。"
+      },
+      "hours": {
+        "1": [
+          [
+            "09:00",
+            "19:00"
+          ]
+        ],
+        "2": [
+          [
+            "09:00",
+            "19:00"
+          ]
+        ],
+        "3": [
+          [
+            "09:00",
+            "19:00"
+          ]
+        ],
+        "4": [
+          [
+            "09:00",
+            "19:00"
+          ]
+        ],
+        "5": [
+          [
+            "09:00",
+            "19:00"
+          ]
+        ],
+        "6": [
+          [
+            "10:00",
+            "18:00"
+          ]
+        ],
+        "7": []
+      },
+      "policies": {
+        "laptop": "yes",
+        "power": "yes",
+        "wifi": "yes",
+        "pets": "no",
+        "decaf": "no",
+        "caffeineFree": "yes",
+        "reservation": "yes"
+      },
+      "maxGroup": 8,
+      "minSpend": 15,
+      "notes": {
+        "fr": "Scénario fictif uniquement. Salle sur réservation simulée ; dimanche fermé ; animaux non admis. Le montant est un exemple de consommation minimale, pas un tarif réel.",
+        "en": "Fictional scenario only. Simulated bookable room; closed Sundays; no pets. Amount is an example minimum spend, not a real price.",
+        "zh": "仅供演示的虚构场景。模拟可预约空间；周日关闭；不允许宠物。金额为最低消费示例，并非真实价格。"
+      },
+      "imageCaption": {
+        "fr": "Photo d’ambiance illustrative · Unsplash",
+        "en": "Illustrative atmosphere photograph · Unsplash",
+        "zh": "氛围示意图 · Unsplash"
+      },
+      "sources": [],
+      "verifiedAt": null,
+      "demo": true,
+      "imageSource": "https://images.unsplash.com/photo-1559925393-8be0ec4767c8?auto=format&fit=crop&w=1400&q=85"
+    },
+    {
+      "id": "hubsy-arts",
+      "name": "Hubsy Arts & Métiers",
+      "kind": "workspace",
+      "type": "modern",
+      "lat": 48.865771,
+      "lng": 2.35419,
+      "address": "41 rue Réaumur, 75003 Paris",
+      "area": "Arts & Métiers",
+      "image": "/assets/photos/photo-1554118811-1e0d58224f24.jpg",
+      "imageCaption": {
+        "fr": "Photo d’ambiance illustrative · Unsplash",
+        "en": "Illustrative atmosphere photograph · Unsplash",
+        "zh": "氛围示意图 · Unsplash"
+      },
+      "description": {
+        "fr": "Café-coworking facturé au temps passé, avec salles de réunion réservables séparément.",
+        "en": "A café-coworking space charged by time, with separately bookable meeting rooms.",
+        "zh": "按停留时间收费的咖啡共享办公空间，会议室可另行预约。"
+      },
+      "sources": [
+        {
+          "url": "https://hubsy.fr/arts-et-metiers",
+          "label": "Hubsy · fiche officielle"
+        },
+        {
+          "url": "https://hubsy.fr/faq",
+          "label": "Hubsy · FAQ"
+        },
+        {
+          "url": "https://www.hubsy.fr/prix",
+          "label": "Hubsy · tarifs"
+        },
+        {
+          "url": "https://data.geopf.fr/geocodage/search?q=41%20rue%20R%C3%A9aumur%2C%2075003%20Paris&limit=1",
+          "label": "IGN address geocoding"
+        }
+      ],
+      "verifiedAt": "2026-10-19",
+      "hours": null,
+      "policies": {
+        "laptop": "yes",
+        "power": "yes",
+        "wifi": "yes",
+        "pets": "inside",
+        "decaf": "unknown",
+        "caffeineFree": "unknown",
+        "reservation": "limited"
+      },
+      "notes": {
+        "fr": "Animaux sociables tenus en laisse. Coworking sans réservation ; salles réservables. Horaires divergents entre pages officielles : confirmer avant de venir. Photo illustrative.",
+        "en": "Sociable pets on a lead. Coworking is walk-in; rooms can be booked. Official pages disagree on hours: confirm before visiting. Illustrative photograph.",
+        "zh": "宠物须温顺且牵引。办公区无需预约，会议室可预约。官网不同页面的时间存在差异，到访前请确认。图片为示意图。"
+      },
+      "pricing": {
+        "currency": "EUR",
+        "firstHour": 6.5,
+        "nextHalfHour": 3,
+        "day": 28,
+        "studentDay": 23,
+        "dayThresholdHours": 5,
+        "description": {
+          "fr": "Par personne ; boissons et snacks inclus. Salles et impressions en supplément.",
+          "en": "Per person; drinks and snacks included. Rooms and printing cost extra.",
+          "zh": "按人收费，包含饮品与小食；会议室及打印另收费。"
+        }
+      },
+      "meetingRooms": {
+        "bookable": true,
+        "source": "https://hubsy.fr/arts-et-metiers"
+      },
+      "evidence": {
+        "address": {
+          "url": "https://hubsy.fr/arts-et-metiers",
+          "label": "Hubsy · fiche du lieu",
+          "checkedAt": "2026-10-19"
+        },
+        "laptop": {
+          "url": "https://hubsy.fr/concept",
+          "label": "Hubsy · espace de coworking",
+          "checkedAt": "2026-10-19"
+        },
+        "power": {
+          "url": "https://hubsy.fr/faq",
+          "label": "Hubsy · prises à chaque place",
+          "checkedAt": "2026-10-19"
+        },
+        "wifi": {
+          "url": "https://hubsy.fr/faq",
+          "label": "Hubsy · wifi fibre",
+          "checkedAt": "2026-10-19"
+        },
+        "pets": {
+          "url": "https://hubsy.fr/faq",
+          "label": "Hubsy · animaux sociables tenus en laisse",
+          "checkedAt": "2026-10-19"
+        },
+        "reservation": {
+          "url": "https://hubsy.fr/arts-et-metiers",
+          "label": "Hubsy · salles réservables",
+          "checkedAt": "2026-10-19"
+        },
+        "pricing": {
+          "url": "https://www.hubsy.fr/prix",
+          "label": "Hubsy · tarifs par personne",
+          "checkedAt": "2026-10-19"
+        },
+        "coordinates": {
+          "url": "https://data.geopf.fr/geocodage/search?q=41%20rue%20R%C3%A9aumur%2C%2075003%20Paris&limit=1",
+          "label": "IGN address geocoding",
+          "checkedAt": "2026-10-19"
+        }
+      },
+      "demo": false,
+      "imageSource": "https://images.unsplash.com/photo-1554118811-1e0d58224f24?auto=format&fit=crop&w=1400&q=85"
+    },
+    {
+      "id": "hubsy-republique",
+      "name": "Hubsy République",
+      "kind": "workspace",
+      "type": "modern",
+      "lat": 48.871261,
+      "lng": 2.360032,
+      "address": "9B rue Lucien Sampaix, 75010 Paris",
+      "area": "République",
+      "image": "/assets/photos/photo-1445116572660-236099ec97a0.jpg",
+      "imageCaption": {
+        "fr": "Photo d’ambiance illustrative · Unsplash",
+        "en": "Illustrative atmosphere photograph · Unsplash",
+        "zh": "氛围示意图 · Unsplash"
+      },
+      "description": {
+        "fr": "Café-coworking facturé au temps passé, avec salles de réunion réservables séparément.",
+        "en": "A café-coworking space charged by time, with separately bookable meeting rooms.",
+        "zh": "按停留时间收费的咖啡共享办公空间，会议室可另行预约。"
+      },
+      "sources": [
+        {
+          "url": "https://hubsy.fr/republique",
+          "label": "Hubsy · fiche officielle"
+        },
+        {
+          "url": "https://hubsy.fr/faq",
+          "label": "Hubsy · FAQ"
+        },
+        {
+          "url": "https://www.hubsy.fr/prix",
+          "label": "Hubsy · tarifs"
+        },
+        {
+          "url": "https://data.geopf.fr/geocodage/search?q=9B%20rue%20Lucien%20Sampaix%2C%2075010%20Paris&limit=1",
+          "label": "IGN address geocoding"
+        }
+      ],
+      "verifiedAt": "2026-10-19",
+      "hours": null,
+      "policies": {
+        "laptop": "yes",
+        "power": "yes",
+        "wifi": "yes",
+        "pets": "inside",
+        "decaf": "unknown",
+        "caffeineFree": "unknown",
+        "reservation": "limited"
+      },
+      "notes": {
+        "fr": "Animaux sociables tenus en laisse. Coworking sans réservation ; salles réservables. Horaires divergents entre pages officielles : confirmer avant de venir. Photo illustrative.",
+        "en": "Sociable pets on a lead. Coworking is walk-in; rooms can be booked. Official pages disagree on hours: confirm before visiting. Illustrative photograph.",
+        "zh": "宠物须温顺且牵引。办公区无需预约，会议室可预约。官网不同页面的时间存在差异，到访前请确认。图片为示意图。"
+      },
+      "pricing": {
+        "currency": "EUR",
+        "firstHour": 6.5,
+        "nextHalfHour": 3,
+        "day": 28,
+        "studentDay": 23,
+        "dayThresholdHours": 5,
+        "description": {
+          "fr": "Par personne ; boissons et snacks inclus. Salles et impressions en supplément.",
+          "en": "Per person; drinks and snacks included. Rooms and printing cost extra.",
+          "zh": "按人收费，包含饮品与小食；会议室及打印另收费。"
+        }
+      },
+      "meetingRooms": {
+        "bookable": true,
+        "source": "https://hubsy.fr/republique"
+      },
+      "evidence": {
+        "address": {
+          "url": "https://hubsy.fr/republique",
+          "label": "Hubsy · fiche du lieu",
+          "checkedAt": "2026-10-19"
+        },
+        "laptop": {
+          "url": "https://hubsy.fr/concept",
+          "label": "Hubsy · espace de coworking",
+          "checkedAt": "2026-10-19"
+        },
+        "power": {
+          "url": "https://hubsy.fr/faq",
+          "label": "Hubsy · prises à chaque place",
+          "checkedAt": "2026-10-19"
+        },
+        "wifi": {
+          "url": "https://hubsy.fr/faq",
+          "label": "Hubsy · wifi fibre",
+          "checkedAt": "2026-10-19"
+        },
+        "pets": {
+          "url": "https://hubsy.fr/faq",
+          "label": "Hubsy · animaux sociables tenus en laisse",
+          "checkedAt": "2026-10-19"
+        },
+        "reservation": {
+          "url": "https://hubsy.fr/republique",
+          "label": "Hubsy · salles réservables",
+          "checkedAt": "2026-10-19"
+        },
+        "pricing": {
+          "url": "https://www.hubsy.fr/prix",
+          "label": "Hubsy · tarifs par personne",
+          "checkedAt": "2026-10-19"
+        },
+        "coordinates": {
+          "url": "https://data.geopf.fr/geocodage/search?q=9B%20rue%20Lucien%20Sampaix%2C%2075010%20Paris&limit=1",
+          "label": "IGN address geocoding",
+          "checkedAt": "2026-10-19"
+        }
+      },
+      "demo": false,
+      "imageSource": "https://images.unsplash.com/photo-1445116572660-236099ec97a0?auto=format&fit=crop&w=1400&q=85"
+    }
+  ],
+  "events": []
+}

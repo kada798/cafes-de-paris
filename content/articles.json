@@ -1,0 +1,153 @@
+{
+  "articles": [
+    {
+      "id": "terrasses",
+      "theme": "everyday",
+      "title": {
+        "fr": "La ville, vue d’une terrasse",
+        "en": "The city, from a terrace",
+        "zh": "从露台看巴黎"
+      },
+      "excerpt": {
+        "fr": "Une autre façon de regarder la rue — et de choisir son prochain rendez-vous.",
+        "en": "Another way to watch the street — and choose your next meeting place.",
+        "zh": "换一个角度观察街道，也为下一次见面挑选地点。"
+      },
+      "body": {
+        "fr": [
+          "Une terrasse transforme une pause en observation de la ville. La sélection de la Ville de Paris montre des cadres très différents : au bord de la Seine, dans une cour ou un jardin.",
+          "Pour un rendez-vous, l’image ne suffit pas. Vérifiez la météo, les règles du lieu et les conditions d’accueil de votre groupe. Une belle terrasse ne prouve ni le calme ni la disponibilité d’une table.",
+          "Dans notre carte, la découverte visuelle mène à la fiche du lieu. Les conditions connues y sont séparées des informations encore inconnues."
+        ],
+        "en": [
+          "A terrace can turn a pause into a moment of watching the city. The City of Paris selection reveals different settings: beside the Seine, in a courtyard or in a garden.",
+          "For a meeting, a photograph is not enough. Check the weather, venue rules and conditions for your group. An attractive terrace establishes neither quietness nor an available table.",
+          "On our map, visual discovery leads to the venue record. Known conditions are separated from information still awaiting confirmation."
+        ],
+        "zh": [
+          "露台让休息成为观察城市的机会。巴黎市政府的露台介绍呈现了多种环境：塞纳河边、庭院里，或花园中。",
+          "安排见面时，照片并不足够。请核对天气、场所规则及团体接待条件。漂亮的露台不代表安静，也不代表一定有空桌。",
+          "在本项目中，视觉探索会连接到地点详情。已经确认的条件与尚未知晓的信息会分别展示。"
+        ]
+      },
+      "placeIds": [
+        "flore",
+        "deux-magots"
+      ],
+      "image": "/assets/photos/photo-1501339847302-ac426a4a7cbb.jpg",
+      "imageCaption": {
+        "fr": "Photo d’ambiance illustrative · Unsplash",
+        "en": "Illustrative atmosphere photograph · Unsplash",
+        "zh": "氛围示意图 · Unsplash"
+      },
+      "sources": [
+        {
+          "url": "https://www.paris.fr/pages/terrasses-a-paris-nos-coups-de-coeur-sur-un-plateau-18740",
+          "label": "Ville de Paris · Terrasses à Paris"
+        }
+      ],
+      "imageSource": "https://images.unsplash.com/photo-1501339847302-ac426a4a7cbb?auto=format&fit=crop&w=1400&q=85"
+    },
+    {
+      "id": "entre-deux",
+      "theme": "everyday",
+      "title": {
+        "fr": "Entre chez soi et ailleurs",
+        "en": "Between home and somewhere else",
+        "zh": "在家与目的地之间"
+      },
+      "excerpt": {
+        "fr": "Café ou bibliothèque : comparer les règles avant de comparer les ambiances.",
+        "en": "Café or library: compare the rules before comparing the atmosphere.",
+        "zh": "咖啡馆还是图书馆：先比较规则，再比较氛围。"
+      },
+      "body": {
+        "fr": [
+          "Quand on arrive dans une ville, trouver un lieu où lire, travailler ou rencontrer quelqu’un fait partie de la découverte. Nous employons ici « lieu du quotidien » comme regard éditorial, pas comme certification.",
+          "La médiathèque Françoise Sagan annonce des espaces de travail et une programmation culturelle. Ses horaires et exceptions doivent néanmoins être consultés avant une visite ; une place n’est jamais déduite de l’ouverture.",
+          "Notre proposition : partir d’un besoin concret, comparer les conditions et garder un autre lieu en tête. L’inconnu reste visible, pour décider en connaissance de cause."
+        ],
+        "en": [
+          "When arriving in a city, finding somewhere to read, work or meet someone is part of discovering it. Here, “everyday place” is an editorial perspective, not a certification.",
+          "The Françoise Sagan library lists work areas and cultural programming. Opening hours and exceptions still need checking before a visit; being open does not establish seat availability.",
+          "Our approach is to start with a concrete need, compare conditions and keep an alternative in mind. Unknown information remains visible so you can make an informed choice."
+        ],
+        "zh": [
+          "初到一座城市，寻找阅读、工作或见面的地方，也是认识城市的一部分。这里的“日常去处”是一种编辑视角，并非任何资格认证。",
+          "弗朗索瓦丝·萨冈图书馆的官网介绍了工作区域和文化项目。但到访前仍要查看开放时间及例外安排；开馆不等于有空座。",
+          "我们的建议是从具体需求出发，比较规则，并留一个备选地点。未知信息应当保持可见，帮助用户在了解限制后作决定。"
+        ]
+      },
+      "placeIds": [
+        "sagan",
+        "cafeotheque"
+      ],
+      "image": "/assets/photos/photo-1507842217343-583bb7270b66.jpg",
+      "imageCaption": {
+        "fr": "Photo d’ambiance illustrative · Unsplash",
+        "en": "Illustrative atmosphere photograph · Unsplash",
+        "zh": "氛围示意图 · Unsplash"
+      },
+      "sources": [
+        {
+          "url": "https://www.paris.fr/lieux/mediatheque-francoise-sagan-8695",
+          "label": "Ville de Paris · Médiathèque Françoise Sagan"
+        }
+      ],
+      "imageSource": "https://images.unsplash.com/photo-1507842217343-583bb7270b66?auto=format&fit=crop&w=1400&q=85"
+    },
+    {
+      "id": "cafes-litteraires",
+      "theme": "literature",
+      "title": {
+        "fr": "Une adresse, plusieurs histoires",
+        "en": "One address, many stories",
+        "zh": "一个地址，多重故事"
+      },
+      "excerpt": {
+        "fr": "À Saint-Germain-des-Prés, relier les récits aux lieux sans présumer de leurs usages actuels.",
+        "en": "In Saint-Germain-des-Prés, connect stories and places without assuming today's usage rules.",
+        "zh": "在圣日耳曼德佩连接故事与地点，同时单独核实今天的使用规则。"
+      },
+      "body": {
+        "fr": [
+          "Le récit officiel du Café de Flore évoque Apollinaire et ses rencontres avec les milieux littéraires. Cette mémoire invite à regarder une table comme un lieu de circulation des idées.",
+          "À proximité, le Procope permet un autre détour : sa façade, ses balcons et sa toiture font l’objet d’une protection patrimoniale partielle recensée par le ministère de la Culture.",
+          "Une histoire littéraire ne constitue toutefois pas une règle d’accueil. Pour lire, écrire sur ordinateur ou organiser un rendez-vous, consultez les conditions actuelles et les points encore à confirmer."
+        ],
+        "en": [
+          "Café de Flore’s official history recalls Apollinaire and his literary encounters. That memory invites us to see a café table as a place where ideas circulate.",
+          "Nearby, Procope offers another stop: its façade, balconies and roof are covered by a partial heritage listing documented by the French Ministry of Culture.",
+          "Literary history does not establish today's usage policies. Before reading, writing on a laptop or arranging a meeting, check current conditions and what remains unconfirmed."
+        ],
+        "zh": [
+          "花神咖啡馆的官方历史提到阿波利奈尔及其文学交往。这段记忆让一张咖啡桌也成为理解思想交流的线索。",
+          "附近的普罗科普提供了另一个观察角度：法国文化部的遗产记录列明，其立面、阳台及相应屋顶受到部分保护。",
+          "文学历史并不能说明今天的接待规则。无论是阅读、用电脑写作还是安排会面，都仍需核对当前条件与待确认事项。"
+        ]
+      },
+      "placeIds": [
+        "flore",
+        "procope",
+        "deux-magots"
+      ],
+      "image": "/assets/photos/photo-1442512595331-e89e73853f31.jpg",
+      "imageCaption": {
+        "fr": "Photo d’ambiance illustrative · Unsplash",
+        "en": "Illustrative atmosphere photograph · Unsplash",
+        "zh": "氛围示意图 · Unsplash"
+      },
+      "sources": [
+        {
+          "url": "https://cafedeflore.fr/",
+          "label": "Café de Flore · Histoire officielle"
+        },
+        {
+          "url": "https://pop.culture.gouv.fr/notice/merimee/PA00088496",
+          "label": "Ministère de la Culture · Le Procope"
+        }
+      ],
+      "imageSource": "https://images.unsplash.com/photo-1442512595331-e89e73853f31?auto=format&fit=crop&w=1400&q=85"
+    }
+  ]
+}

@@ -9,7 +9,22 @@
     "npm": ">=10"
   },
   "scripts": {
+    "dev": "node --env-file-if-exists=.env --watch server/app.mjs",
+    "start": "node --env-file-if-exists=.env server/app.mjs",
+    "db:seed": "node --env-file-if-exists=.env scripts/seed.mjs",
+    "data:override": "node --env-file-if-exists=.env scripts/override.mjs",
+    "build:preview": "node --env-file-if-exists=.env scripts/build-preview.mjs",
+    "sync": "node --env-file-if-exists=.env scripts/sync.mjs",
+    "sync:watch": "node --env-file-if-exists=.env scripts/sync.mjs --watch",
+    "test": "node --test tests/*.test.mjs",
+    "test:browser": "playwright test",
     "check:env": "node scripts/check-env.mjs",
-    "check": "node --check scripts/check-env.mjs && node scripts/check-env.mjs"
+    "check": "node scripts/check.mjs && node --test tests/*.test.mjs"
+  },
+  "dependencies": {
+    "leaflet": "^1.9.4"
+  },
+  "devDependencies": {
+    "@playwright/test": "^1.64.1"
   }
 }
