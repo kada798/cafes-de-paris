@@ -45,13 +45,12 @@ test('scenario, optional demo, custom priorities and language state survive navi
   await expect(page.locator('input[name="includeDemo"]')).toBeChecked();
 });
 
-test('map origin remains unknown without configured routing; origin is not in URL', async ({
-  page,
-}) => {
+test('unconfigured transit remains unknown; origin is not in URL', async ({ page }) => {
   await page.goto('/en/map');
   await expect(page.locator('#map')).toBeVisible();
   await page.locator('#map').click({ position: { x: 100, y: 100 } });
   await expect(page.locator('#origin')).not.toHaveValue('');
+  await page.locator('#mode').selectOption('transit');
   await page.locator('#search-form button[type="submit"]').click();
   await expect(page.locator('#search-form button[type="submit"]')).toBeEnabled({ timeout: 30000 });
   expect(page.url()).not.toMatch(/48\.|origin=/);

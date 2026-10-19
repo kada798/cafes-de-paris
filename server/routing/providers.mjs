@@ -1,4 +1,5 @@
 import { parseParisLocal } from '../../shared/time.mjs';
+import { fetchIgnWalking, selectRoute } from '../../shared/public-routing.mjs';
 function parisLocal(iso) {
   return new Intl.DateTimeFormat('sv-SE', {
     timeZone: 'Europe/Paris',
@@ -17,7 +18,7 @@ function parisLocal(iso) {
 export async function fetchRoute(origin, place, mode, departure, fetcher = fetch) {
   try {
     if (mode === 'walking') {
-      if (!process.env.ORS_API_KEY) return { status: 'unconfigured', provider: 'openrouteservice' };
+      if (!process.env.ORS_API_KEY) return fetchIgnWalking(origin, place, fetcher);
       const response = await fetcher(
         'https://api.openrouteservice.org/v2/directions/foot-walking/geojson',
         {
@@ -107,18 +108,7 @@ export async function calculateRoutes(places, query, fetcher = fetch) {
         fetchRoute(query.origin, place, mode, query.departure || new Date().toISOString(), fetcher)
       )
     );
-    const valid = routes
-      .filter((r) => r.status === 'ok')
-      .sort((a, b) => a.durationSeconds - b.durationSeconds);
-    const unresolved = routes.some((r) => !['ok', 'no_route'].includes(r.status));
-    results[place.id] =
-      valid[0] && (!unresolved || valid[0].durationSeconds <= (query.maxMinutes || 20) * 60)
-        ? valid[0]
-        : valid[0]
-          ? { status: 'partial', knownAlternative: valid[0] }
-          : routes.every((r) => r.status === 'no_route')
-            ? { status: 'no_route' }
-            : routes.find((r) => r.status !== 'no_route');
+    results[place.id] = selectRoute(routes, query.maxMinutes || 20);
   }
   return results;
 }

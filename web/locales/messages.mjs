@@ -413,6 +413,34 @@ const messages = {
   ],
 };
 export const LANGS = ['fr', 'en', 'zh'];
+Object.assign(messages, {
+  translating: ['Traduction en cours…', 'Translating…', '正在自动翻译…'],
+  automaticTranslation: ['Traduction automatique', 'Machine translation', '机器翻译'],
+  showOriginal: ['Voir le texte original en français', 'Read the French original', '查看法语原文'],
+  translationUnavailable: [
+    'Traduction indisponible ; consultez l’original.',
+    'Translation unavailable; read the original.',
+    '翻译暂不可用，请展开查看原文。',
+  ],
+  translationQuota: [
+    'Quota de traduction atteint ; réessayez plus tard.',
+    'Translation quota reached; try again later.',
+    '翻译服务额度已用完，请稍后重试或查看原文。',
+  ],
+  translationRetry: ['Réessayer', 'Retry translation', '重试翻译'],
+  freeEntry: ['Gratuit', 'Free admission', '免费入场'],
+  transitPending: [
+    'Transports en commun à configurer',
+    'Public transport awaiting configuration',
+    '公交路线待配置',
+  ],
+  walkingReady: [
+    'Itinéraires à pied : IGN. Les transports en commun nécessitent une configuration.',
+    'Walking routes: IGN. Public transport requires configuration.',
+    '已接入 IGN 真实步行路线；公交路线仍需配置。',
+  ],
+  routeEstimate: ['Durée estimée', 'Estimated time', '预计用时'],
+});
 export function translator(lang) {
   const index = LANGS.indexOf(lang);
   return (key) => messages[key]?.[index] ?? key;

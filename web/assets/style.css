@@ -2160,3 +2160,14 @@ input[type='checkbox'] {
   padding: 7px 15px;
   letter-spacing: 0.3px;
 }
+.card-bottom > span {
+  min-width: 0;
+}
+.card-bottom small {
+  display: block;
+  font-size: 0.65rem;
+  line-height: 1.5;
+}
+details > summary {
+  cursor: pointer;
+}

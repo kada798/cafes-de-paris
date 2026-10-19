@@ -1,9 +1,49 @@
 import { evaluatePlaces, currentCrowding } from '/shared/match.mjs';
 import { upcomingEvent } from '/shared/events.mjs';
+import { calculatePublicRoutes } from '/shared/public-routing.mjs';
+import { createTranslator, translateEvent } from '/shared/translation.mjs';
 export const snapshotMode = Boolean(
   document.querySelector('meta[name="app-mode"][content="snapshot"]')
 );
 let snapshot;
+const memory = new Map();
+const browserTranslator = createTranslator({
+  cache: {
+    get(key) {
+      try {
+        return JSON.parse(localStorage.getItem(`cafes-translation:${key}`)) || memory.get(key);
+      } catch {
+        return memory.get(key);
+      }
+    },
+    set(key, value) {
+      memory.set(key, value);
+      try {
+        localStorage.setItem(`cafes-translation:${key}`, JSON.stringify(value));
+      } catch {
+        /* Storage is optional. */
+      }
+    },
+  },
+});
+export async function translateEvents(ids, language, { full = false } = {}) {
+  if (snapshotMode) {
+    const events = [];
+    for (const event of snapshot.events.filter((e) => ids.includes(e.id)).slice(0, full ? 1 : 12)) {
+      const translated = await translateEvent(event, language, browserTranslator, { full });
+      events.push(translated);
+      if (translated.translationStatus?.[language]?.code === 'quota') break;
+    }
+    return { events };
+  }
+  const response = await fetch('/api/translate-events', {
+    method: 'POST',
+    headers: { 'Content-Type': 'application/json' },
+    body: JSON.stringify({ ids, language, full }),
+  });
+  if (!response.ok) throw new Error('Translation unavailable');
+  return response.json();
+}
 export async function getCatalog() {
   const response = await fetch(snapshotMode ? '/api/catalog.json' : '/api/catalog');
   if (!response.ok) throw new Error('Catalogue unavailable');
@@ -19,7 +59,13 @@ export async function getCatalog() {
   return data;
 }
 export async function searchPlaces(query) {
-  if (snapshotMode) return { results: evaluatePlaces(snapshot.places, query), query };
+  if (snapshotMode) {
+    const candidates = evaluatePlaces(snapshot.places, query).filter(
+      (p) => p.match.status !== 'excluded'
+    );
+    const routes = await calculatePublicRoutes(candidates, query);
+    return { results: evaluatePlaces(snapshot.places, query, routes), query };
+  }
   const response = await fetch('/api/search', {
     method: 'POST',
     headers: { 'Content-Type': 'application/json' },

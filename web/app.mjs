@@ -1,5 +1,5 @@
 import { translator, localized, LANGS } from './locales/messages.mjs';
-import { esc, icon } from './components/ui.mjs';
+import { esc, icon, eventText, eventLanguage } from './components/ui.mjs';
 import { homePage } from './pages/home.mjs';
 import { explorePage, POLICY_KEYS } from './pages/explore.mjs';
 import { discoverPage } from './pages/discover.mjs';
@@ -7,7 +7,7 @@ import { detailPage, missing } from './pages/detail.mjs';
 import { SCENARIOS } from '/shared/match.mjs';
 import { parisLocalInput, parseParisLocal } from '/shared/time.mjs';
 import { MAP_TILE_URL, MAP_ATTRIBUTION } from './services/map-config.mjs';
-import { getCatalog, searchPlaces, geocode } from './services/api.mjs';
+import { getCatalog, searchPlaces, geocode, translateEvents } from './services/api.mjs';
 
 const defaults = () => ({
   requirements: {},
@@ -42,6 +42,87 @@ let data,
   currentRoute = '',
   searchSequence = 0;
 const app = document.querySelector('#app');
+let translationObserver,
+  translationQueue = Promise.resolve();
+const translating = new Set();
+function requestTranslation(id, lang, full = false) {
+  const event = data.events.find((e) => e.id === id);
+  const status = event?.translationStatus?.[lang];
+  const key = `${lang}:${id}:${full}`;
+  if (
+    !event ||
+    lang === 'fr' ||
+    translating.has(key) ||
+    status?.status === 'failed' ||
+    (status?.status === 'ready' && (!full || status.full))
+  )
+    return;
+  translating.add(key);
+  translationQueue = translationQueue
+    .catch(() => {})
+    .then(async () => {
+      const latest = event.translationStatus?.[lang];
+      if (latest?.status === 'ready' && (!full || latest.full)) {
+        translating.delete(key);
+        return;
+      }
+      try {
+        const response = await translateEvents([id], lang, { full });
+        const updated = response.events.find((e) => e.id === id);
+        if (!updated) throw new Error('Translation missing');
+        // Merge each language independently when visitors switch languages mid-request.
+        for (const field of ['title', 'description'])
+          event[field] = {
+            ...event[field],
+            [lang]: updated[field]?.[lang] || event[field]?.[lang],
+          };
+        event.detailsTranslations = {
+          ...event.detailsTranslations,
+          [lang]: updated.detailsTranslations?.[lang],
+        };
+        event.translationStatus = {
+          ...event.translationStatus,
+          [lang]: updated.translationStatus?.[lang],
+        };
+      } catch {
+        event.translationStatus = {
+          ...event.translationStatus,
+          [lang]: { status: 'failed', code: 'unavailable' },
+        };
+      } finally {
+        translating.delete(key);
+      }
+      if (language() !== lang) return;
+      if (location.pathname.split('/')[2] === 'events' && location.pathname.split('/')[3] === id) {
+        const y = scrollY;
+        render();
+        scrollTo(0, y);
+      } else {
+        const c = context();
+        document.querySelectorAll('[data-event-id]').forEach((card) => {
+          if (card.dataset.eventId !== id) return;
+          card.querySelector('[data-event-title]').textContent = eventText(event, 'title', c);
+          card.querySelector('[data-event-language]').innerHTML = eventLanguage(event, c);
+        });
+      }
+    });
+}
+function activateTranslations(page, id, lang) {
+  translationObserver?.disconnect();
+  if (lang === 'fr') return;
+  if (page === 'events' && id) requestTranslation(id, lang, true);
+  translationObserver = new IntersectionObserver(
+    (entries) => {
+      for (const entry of entries)
+        if (entry.isIntersecting) {
+          requestTranslation(entry.target.dataset.eventId, lang);
+          translationObserver.unobserve(entry.target);
+        }
+    },
+    { rootMargin: '80px' }
+  );
+  document.querySelectorAll('[data-event-id]').forEach((card) => translationObserver.observe(card));
+}
 
 function language() {
   return LANGS.includes(location.pathname.split('/')[1]) ? location.pathname.split('/')[1] : 'fr';
@@ -201,6 +282,7 @@ function render() {
     )
       search();
   }
+  activateTranslations(page, id, lang);
 }
 
 function initMap(c) {
@@ -237,8 +319,9 @@ function initMap(c) {
         .forEach((card) => card.classList.toggle('highlight', card.dataset.placeCard === p.id));
     });
     markers.push(marker);
-    if (p.route?.geometry)
-      L.geoJSON(p.route.geometry, { style: { color: '#244437', weight: 3, opacity: 0.5 } }).addTo(
+    const geometry = p.route?.geometry || p.route?.knownAlternative?.geometry;
+    if (geometry)
+      L.geoJSON(geometry, { style: { color: '#244437', weight: 3, opacity: 0.5 } }).addTo(
         markerLayer
       );
   }
@@ -324,6 +407,12 @@ document.addEventListener('click', async (event) => {
     return;
   }
   const action = event.target.closest('[data-action]')?.dataset.action;
+  if (action === 'retry-translation') {
+    const id = event.target.closest('[data-event]').dataset.event;
+    const item = data.events.find((e) => e.id === id);
+    if (item?.translationStatus) delete item.translationStatus[language()];
+    render();
+  }
   if (action === 'menu') {
     const button = event.target.closest('button');
     const expanded = button.getAttribute('aria-expanded') === 'true';

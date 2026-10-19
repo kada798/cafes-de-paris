@@ -1,4 +1,14 @@
-import { esc, safeUrl, icon, IMG, placeCard, articleCard, eventCard } from '../components/ui.mjs';
+import {
+  esc,
+  safeUrl,
+  icon,
+  IMG,
+  placeCard,
+  articleCard,
+  eventCard,
+  eventText,
+  eventLanguage,
+} from '../components/ui.mjs';
 import { POLICY_KEYS } from './explore.mjs';
 export function detailPage(kind, id, c) {
   const { t, l, path, data, state } = c;
@@ -12,6 +22,8 @@ export function detailPage(kind, id, c) {
     const destination = new URL('https://www.google.com/maps/dir/');
     destination.searchParams.set('api', '1');
     destination.searchParams.set('destination', `${p.lat},${p.lng}`);
+    if (state.query.origin)
+      destination.searchParams.set('origin', `${state.query.origin.lat},${state.query.origin.lng}`);
     destination.searchParams.set(
       'travelmode',
       state.query.mode === 'transit' ? 'transit' : 'walking'
@@ -95,14 +107,14 @@ export function detailPage(kind, id, c) {
         timeStyle: 'short',
         timeZone: 'Europe/Paris',
       }).format(new Date(value));
-    return `<section class="page-heading wrap"><a class="text-link" href="${path('events')}">${icon('arrow', 'reverse')} ${t('events')}</a><div class="eyebrow">AGENDA · PARIS DATA</div><h1>${esc(l(e.title))}</h1><span class="badge muted">${t('originalLanguage')}</span></section><section class="prose article-body"><p>${esc(l(e.description))}</p><div class="detail-box"><h2>${esc(e.venue)}</h2><p>${esc(e.address)}</p><p>${esc(format(e.start))}<br>${esc(format(e.end))}</p>${
+    return `<section class="page-heading wrap"><a class="text-link" href="${path('events')}">${icon('arrow', 'reverse')} ${t('events')}</a><div class="eyebrow">AGENDA · PARIS DATA</div><h1>${esc(eventText(e, 'title', c))}</h1><span class="badge muted" aria-live="polite">${eventLanguage(e, c)}</span>${e.translationStatus?.[c.lang]?.status === 'failed' ? `<button class="text-link" data-action="retry-translation" data-event="${esc(e.id)}">${t('translationRetry')}</button>` : ''}</section><section class="prose article-body"><p data-event-description>${esc(eventText(e, 'description', c))}</p>${c.lang !== 'fr' ? `<details class="detail-box"><summary>${t('showOriginal')}</summary><h2 lang="fr">${esc(e.title.fr)}</h2><p lang="fr">${esc(e.description.fr)}</p><p lang="fr">${esc(e.dateDescription)}</p><p lang="fr">${esc(e.price)}</p></details>` : ''}<div class="detail-box"><h2>${esc(e.venue)}</h2><p>${esc(e.address)}</p><p>${esc(format(e.start))}<br>${esc(format(e.end))}</p>${
       e.occurrences?.length > 1
         ? `<h3>${t('upcomingDates')}</h3><ul>${e.occurrences
             .slice(0, 12)
             .map((o) => `<li>${esc(format(o.start))}</li>`)
             .join('')}</ul>`
         : ''
-    }<p class="small">${t('dateSourceNote')}</p><p>${esc(e.dateDescription)}</p><p>${esc(e.price)}</p>${e.placeId ? `<a class="text-link" href="${path(`places/${e.placeId}`)}">${t('details')} ${icon('arrow')}</a>` : `<p class="small muted-text">${t('eventPlaceUnmatched')}</p>`}</div><a class="button primary" href="${safeUrl(e.url)}" target="_blank" rel="noopener noreferrer">${t('originalAnnouncement')} ${icon('external')}</a><h2>${t('sources')}</h2><p><a href="${safeUrl(e.sourceUrl)}" target="_blank" rel="noopener noreferrer">Paris Data</a> · ${esc(e.fetchedAt)}</p></section>`;
+    }<p class="small">${t('dateSourceNote')}</p>${c.lang === 'fr' ? `<p>${esc(e.dateDescription)}</p><p>${esc(e.price)}</p>` : e.detailsTranslations?.[c.lang] ? `<p>${esc(e.detailsTranslations[c.lang].dateDescription)}</p><p>${esc(e.detailsTranslations[c.lang].price)}</p>` : /^(gratuit|free)$/i.test(e.price?.trim() || '') ? `<p>${t('freeEntry')}</p>` : ''}${e.placeId ? `<a class="text-link" href="${path(`places/${e.placeId}`)}">${t('details')} ${icon('arrow')}</a>` : `<p class="small muted-text">${t('eventPlaceUnmatched')}</p>`}</div><a class="button primary" href="${safeUrl(e.url)}" target="_blank" rel="noopener noreferrer">${t('originalAnnouncement')} ${icon('external')}</a><h2>${t('sources')}</h2><p><a href="${safeUrl(e.sourceUrl)}" target="_blank" rel="noopener noreferrer">Paris Data</a> · ${esc(e.fetchedAt)}</p></section>`;
   }
   return missing(c);
 }

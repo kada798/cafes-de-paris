@@ -60,7 +60,7 @@ npm.cmd run data:override -- flore data/patch.json
 
 ## 文章、图片、活动
 
-文章分别编辑三语 `title`、`excerpt`、`body`，通过 `placeIds` 关联地点并提供来源。原文变化后需检查译文，首版未启用机器翻译。
+文章分别编辑三语 `title`、`excerpt`、`body`，通过 `placeIds` 关联地点并提供来源。编辑文章后需人工检查三语译文；抓取的活动单独使用 MyMemory 自动翻译，保留法语原文，具有缓存和额度失败提示。
 
 当前图片为 Unsplash 氛围示意，保存在 `web/assets/photos/`，`imageSource` 保留原始 URL。替换成地点实拍时需同时记录作者、许可与真实关联，再调整展示说明。
 

@@ -41,6 +41,7 @@ export const IMG = {
 export function placeCard(p, c, compact = false) {
   const { t, l, path } = c;
   const checks = p.match?.checks || [];
+  const route = p.route?.status === 'ok' ? p.route : p.route?.knownAlternative;
   const badge =
     p.availability?.status === 'closed'
       ? `<span class="badge warning">${t('closed')}</span>`
@@ -62,7 +63,7 @@ export function placeCard(p, c, compact = false) {
             .join('')}</div>`
         : ''
     }
-    <div class="card-bottom"><span>${p.route?.status === 'ok' ? `${icon('clock')} ${Math.ceil(p.route.durationSeconds / 60)} ${t('min')}` : `${icon('pin')} ${esc(p.address.split(',')[0])}`}</span><a class="arrow-link" href="${path(`places/${p.id}`)}" aria-label="${esc(t('details'))}: ${esc(p.name)}">${icon('arrow')}</a></div></div></article>`;
+    <div class="card-bottom"><span>${route ? `${icon('clock')} ${Math.ceil(route.durationSeconds / 60)} ${t('min')} · ${t(route.mode)}<small>${esc(route.provider)} · ${t('routeEstimate')}${p.route.status === 'partial' ? ` · ${t('transitPending')}` : ''}</small>` : `${icon('pin')} ${esc(p.address.split(',')[0])}`}</span><a class="arrow-link" href="${path(`places/${p.id}`)}" aria-label="${esc(t('details'))}: ${esc(p.name)}">${icon('arrow')}</a></div></div></article>`;
 }
 export function articleCard(a, c) {
   return `<article class="article-card"><a href="${c.path(`articles/${a.id}`)}"><div class="article-image"><img src="${safeUrl(a.image || IMG.cafe)}" alt="${esc(c.t('photoCredit'))}" loading="lazy"></div><div class="card-meta">LE CARNET · ${c.lang.toUpperCase()}</div><h3>${esc(c.l(a.title))}</h3><p>${esc(c.l(a.excerpt))}</p><span class="text-link">${c.t('read')} ${icon('arrow')}</span></a></article>`;
@@ -70,5 +71,35 @@ export function articleCard(a, c) {
 export function eventCard(e, c) {
   const date = new Date(e.start);
   const locale = c.lang === 'zh' ? 'zh-CN' : c.lang;
-  return `<article class="event-card"><div class="event-date"><strong>${new Intl.DateTimeFormat(locale, { day: '2-digit', timeZone: 'Europe/Paris' }).format(date)}</strong><span>${new Intl.DateTimeFormat(locale, { month: 'short', timeZone: 'Europe/Paris' }).format(date)}</span></div><div><div class="card-meta">${esc(e.venue || 'Paris')}</div><h3><a href="${c.path(`events/${e.id}`)}">${esc(c.l(e.title))}</a></h3><span class="small muted-text">${c.t('originalLanguage')}</span></div><a class="arrow-link" href="${c.path(`events/${e.id}`)}" aria-label="${esc(c.t('eventDetails'))}">${icon('arrow')}</a></article>`;
+  return `<article class="event-card" data-event-id="${esc(e.id)}"><div class="event-date"><strong>${new Intl.DateTimeFormat(locale, { day: '2-digit', timeZone: 'Europe/Paris' }).format(date)}</strong><span>${new Intl.DateTimeFormat(locale, { month: 'short', timeZone: 'Europe/Paris' }).format(date)}</span></div><div><div class="card-meta">${esc(e.venue || 'Paris')}</div><h3><a data-event-title href="${c.path(`events/${e.id}`)}">${esc(eventText(e, 'title', c))}</a></h3><span class="small muted-text" data-event-language>${eventLanguage(e, c)}</span></div><a class="arrow-link" href="${c.path(`events/${e.id}`)}" aria-label="${esc(c.t('eventDetails'))}">${icon('arrow')}</a></article>`;
+}
+export function eventText(event, field, c) {
+  return (
+    event[field]?.[c.lang] ||
+    (c.lang === 'fr'
+      ? c.l(event[field])
+      : c.t(
+          event.translationStatus?.[c.lang]?.status === 'failed'
+            ? 'translationUnavailable'
+            : 'translating'
+        ))
+  );
+}
+export function eventLanguage(event, c) {
+  if (c.lang === 'fr') return c.t('originalLanguage');
+  const status = event.translationStatus?.[c.lang];
+  const key =
+    status?.status === 'failed'
+      ? status.code === 'quota'
+        ? 'translationQuota'
+        : 'translationUnavailable'
+      : event.title?.[c.lang]
+        ? 'automaticTranslation'
+        : 'translating';
+  return (
+    esc(c.t(key)) +
+    (key === 'automaticTranslation'
+      ? ` · ${esc(status?.provider === 'libretranslate' ? 'LibreTranslate' : 'MyMemory')}`
+      : '')
+  );
 }

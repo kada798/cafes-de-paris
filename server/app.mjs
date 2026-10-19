@@ -6,6 +6,7 @@ import { evaluatePlaces, currentCrowding } from '../shared/match.mjs';
 import { calculateRoutes } from './routing/providers.mjs';
 import { upcomingEvent } from '../shared/events.mjs';
 import { syncEvents } from './ingestion/sync.mjs';
+import { databaseTranslator, translateRequestedEvents } from './services/translation.mjs';
 
 export function validateQuery(q) {
   if (!q || typeof q !== 'object' || Array.isArray(q)) throw new Error('Invalid query');
@@ -77,7 +78,7 @@ const mime = {
   '.jpg': 'image/jpeg',
   '.woff2': 'font/woff2',
 };
-export function createApp(db) {
+export function createApp(db, { translator = databaseTranslator(db) } = {}) {
   const repo = catalogRepository(db);
   const limits = new Map();
   return createServer(async (req, res) => {
@@ -112,12 +113,17 @@ export function createApp(db) {
               .sort((a, b) => Date.parse(a.start) - Date.parse(b.start)),
             syncRuns: repo.syncRuns(),
             capabilities: {
-              walking: Boolean(process.env.ORS_API_KEY),
+              walking: true,
+              walkingProvider: process.env.ORS_API_KEY ? 'openrouteservice' : 'IGN Géoplateforme',
+              translation: true,
               transit: Boolean(process.env.PRIM_API_KEY),
               timezone: 'Europe/Paris',
             },
           });
-        if (req.method === 'POST' && url.pathname === '/api/search') {
+        if (
+          req.method === 'POST' &&
+          ['/api/search', '/api/translate-events'].includes(url.pathname)
+        ) {
           let body = '',
             size = 0;
           for await (const chunk of req) {
@@ -126,6 +132,30 @@ export function createApp(db) {
             body += chunk;
           }
           let query;
+          if (url.pathname === '/api/translate-events') {
+            let input;
+            try {
+              input = JSON.parse(body);
+            } catch {
+              return send({ error: 'Invalid request' }, 400);
+            }
+            if (
+              !['en', 'zh'].includes(input?.language) ||
+              !Array.isArray(input?.ids) ||
+              input.ids.length > 12 ||
+              !input.ids.every((id) => typeof id === 'string' && id.length < 100)
+            )
+              return send({ error: 'Invalid translation request' }, 400);
+            return send({
+              events: await translateRequestedEvents(
+                repo.events(),
+                input.ids,
+                input.language,
+                translator,
+                input.full === true
+              ),
+            });
+          }
           try {
             query = validateQuery(JSON.parse(body));
           } catch (error) {

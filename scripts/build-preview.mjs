@@ -2,6 +2,8 @@ import { cp, mkdir, readFile, writeFile, rm, lstat } from 'node:fs/promises';
 import { resolve } from 'node:path';
 import { openDatabase, catalogRepository, ROOT } from '../server/repositories/catalog.mjs';
 import { upcomingEvent } from '../shared/events.mjs';
+import { databaseTranslator } from '../server/services/translation.mjs';
+import { translateEvent } from '../shared/translation.mjs';
 const destination = resolve(ROOT, 'dist');
 // Delete only this project's generated directory, and never follow a symlink.
 if (destination !== resolve(ROOT, 'dist')) throw new Error('Unexpected output directory');
@@ -24,15 +26,44 @@ try {
     .events()
     .map((e) => upcomingEvent(e))
     .filter(Boolean);
-  syncRuns = repo
-    .syncRuns()
-    .map(({ source, started_at, finished_at, status, imported }) => ({
-      source,
-      started_at,
-      finished_at,
-      status,
-      imported,
-    }));
+  syncRuns = repo.syncRuns().map(({ source, started_at, finished_at, status, imported }) => ({
+    source,
+    started_at,
+    finished_at,
+    status,
+    imported,
+  }));
+  // Export only public cached translations. Builds never consume API quota.
+  const cachedTranslator = databaseTranslator(db, async () => {
+    throw new Error('Cache only');
+  });
+  for (const event of events)
+    for (const lang of ['en', 'zh']) {
+      const translated = await translateEvent(event, lang, cachedTranslator, { full: true });
+      if (translated.translationStatus?.[lang]?.status === 'ready') {
+        event.title[lang] = translated.title[lang];
+        event.description[lang] = translated.description[lang];
+        event.detailsTranslations = {
+          ...event.detailsTranslations,
+          [lang]: translated.detailsTranslations[lang],
+        };
+        event.translationStatus = {
+          ...event.translationStatus,
+          [lang]: translated.translationStatus[lang],
+        };
+      } else if (translated.title[lang]) {
+        event.title[lang] = translated.title[lang];
+        event.translationStatus = {
+          ...event.translationStatus,
+          [lang]: {
+            status: 'ready',
+            full: false,
+            provider: translated.translationStatus[lang].provider || 'mymemory',
+            machine: true,
+          },
+        };
+      }
+    }
 } finally {
   db.close();
 }
@@ -44,7 +75,13 @@ const catalog = {
   articles,
   events,
   syncRuns,
-  capabilities: { walking: false, transit: false, timezone: 'Europe/Paris' },
+  capabilities: {
+    walking: true,
+    walkingProvider: 'IGN Géoplateforme',
+    transit: false,
+    translation: true,
+    timezone: 'Europe/Paris',
+  },
   snapshotAt: new Date().toISOString(),
 };
 await mkdir(resolve(destination, 'api'), { recursive: true });

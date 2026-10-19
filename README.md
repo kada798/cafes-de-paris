@@ -46,7 +46,7 @@ web/                    可手动修改的 HTML、CSS、JavaScript
 server/
   routes/               HTTP 接口
   services/             查询、筛选、内容关联
-  routing/              ORS 步行、IDFM PRIM 公共交通适配器
+  routing/              IGN/ORS 步行、IDFM PRIM 公共交通适配器
   repositories/         数据库读写边界
   db/migrations/        可追踪的数据库结构变更
   ingestion/
@@ -137,7 +137,7 @@ git push
 
 包含 10 个附官方来源的真实地点、3 个默认关闭的虚构演示地点、3 篇三语文化文章。真实政策有字段级证据；缺失信息保持未知，有限制的政策不算无条件符合。图片为明确标注的氛围示意图，不是地点实拍。
 
-默认出行范围为 20 分钟。未配置路线密钥时不能确认可达时间，不使用直线距离冒充路线。实时空座／占用率尚无来源，显示未知。计时收费在详情展示，不冒充已知最低消费或完整预算。活动缺译时保留法语原文；源中消失不会被猜测为取消。
+默认出行范围为 20 分钟。步行通过 IGN Géoplateforme 计算真实路径和预计用时，无需密钥；公交未配置时仍显示未知。实时空座／占用率尚无来源，显示未知。计时收费在详情展示，不冒充已知最低消费或完整预算。活动按当前语言自动翻译，提供法语原文展开；源中消失不会被猜测为取消。
 
 ## 活动同步与路线配置
 
@@ -147,7 +147,7 @@ npm.cmd run sync
 
 开放活动源无需密钥。自动更新选择其一：在 `.env` 设置 `PARIS_DATA_ENABLED=true` 后启动网站；或单独运行 `npm.cmd run sync:watch`。进程运行期间按 `SYNC_INTERVAL_MINUTES` 更新（默认 180 分钟，最低 30 分钟）。失败保留已有资料，活动页显示同步状态。
 
-步行及公共交通分别需要在 `.env` 填写 `ORS_API_KEY`、`PRIM_API_KEY`，然后重启。适配器解析和失败逻辑有测试；有密钥的真实调用仍需配置后验证账号、配额和覆盖。起点保留在浏览器会话，请求路线时发送给服务商，不保存到数据库。
+步行默认使用法国 IGN 公共路线接口（无需密钥），并在地图绘制路线、按预计时长筛选。可选 `ORS_API_KEY` 切换本地服务的步行供应商。公共交通需在 `.env` 填写 `PRIM_API_KEY` 后重启；密钥仅留在服务器。本次已验证真实 IGN 调用，PRIM 仍待配置和账号验证。起点保留在浏览器会话，请求路线时发送给服务商，不保存到数据库。
 
 底图与地址来自 [IGN](https://cartes.gouv.fr/)，活动来自 [Paris Data](https://parisdata.opendatasoft.com/explore/dataset/que-faire-a-paris-/)。备份数据库时先停止网站与同步进程，再复制整个 `data/` 目录。
 
@@ -164,6 +164,12 @@ npm.cmd run test:browser
 
 ## 可分享交互预览
 
-`npm.cmd run build:preview` 生成 `dist/`，包含同一前端、公开地点和当前活动快照。界面显示快照时间；它不执行后台同步、不使用带密钥路线服务，不导出数据库、本地覆盖、密钥或原始 PDF。完整功能由 Node.js 服务提供，更新快照需重新构建发布。
+`npm.cmd run build:preview` 生成 `dist/`，包含同一前端、公开地点和当前活动快照。界面显示快照时间；它支持浏览器直接请求 IGN 步行路线、MyMemory 自动翻译；不执行后台同步或带密钥公交服务，不导出数据库、本地覆盖、密钥或原始 PDF。完整功能由 Node.js 服务提供，更新快照需重新构建发布。
 
 Sites 身份保存在 `.openai/hosting.json`。托管预览与 GitHub 独立，不修改 GitHub origin。
+
+### 抓取内容自动翻译
+
+活动标题、简介、日程说明和价格，切换中文或英文后按需调用 MyMemory 自动翻译；页面标注机器翻译，展开可查看完整法语原文。列表仅翻译进入视野的活动标题。Node 服务将译文保存在 SQLite `translation_cache`；静态站点使用浏览器缓存，缓存键包含原文哈希，原文变化会生成新译文。免费服务有额度限制，失败或额度用完会明确提示并保留原文入口，不能保证无限量翻译。
+
+可在本地 `.env` 设置 `TRANSLATION_PROVIDER=libretranslate`、`LIBRETRANSLATE_URL`，需要时填写 `LIBRETRANSLATE_API_KEY`，替换为自建或付费翻译服务。密钥不会导出到静态站点。已缓存的公共活动译文会随构建导出，减少访客请求。接口说明：[IGN 路线](https://ignf.github.io/cartes.gouv.fr-documentation/fr/guides-utilisateur/utiliser-les-services-de-la-geoplateforme/calcul-itineraire/)、[MyMemory](https://mymemory.translated.net/doc/spec.php)。

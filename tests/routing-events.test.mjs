@@ -5,11 +5,11 @@ import { upcomingEvent } from '../shared/events.mjs';
 import { normalizeEvent } from '../server/ingestion/sources/paris-data.mjs';
 import { linkEvent } from '../server/ingestion/match.mjs';
 import { readFileSync } from 'node:fs';
-test('routing keeps missing keys unknown and rejects malformed provider durations', async (t) => {
+test('routing rejects invalid coordinates and malformed provider durations', async (t) => {
   const old = process.env.ORS_API_KEY;
   delete process.env.ORS_API_KEY;
   t.after(() => (old == null ? delete process.env.ORS_API_KEY : (process.env.ORS_API_KEY = old)));
-  assert.equal((await fetchRoute({}, {}, 'walking', '')).status, 'unconfigured');
+  assert.equal((await fetchRoute({}, {}, 'walking', '')).status, 'unavailable');
   process.env.ORS_API_KEY = 'test';
   const result = await fetchRoute(
     { lat: 48.85, lng: 2.3 },

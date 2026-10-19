@@ -29,7 +29,7 @@ export function explorePage(c) {
     <div class="field"><label for="departure">${t('departure')}</label><input type="datetime-local" id="departure" name="departure" value="${esc(state.departureLocal || '')}"></div>
     <div class="field"><label for="stayMinutes">${t('stay')}</label><select id="stayMinutes" name="stayMinutes">${[30, 60, 120, 180, 240].map((v) => `<option value="${v}" ${q.stayMinutes === v ? 'selected' : ''}>${v} ${t('min')}</option>`).join('')}</select></div></div>
     <div class="search-bottom"><span class="small">${icon('pin')} ${t('originHint')}</span><button class="button primary" type="submit">${state.searching ? t('searching') : t('search')} ${icon('search')}</button></div></form>
-    ${!c.data.capabilities.walking || !c.data.capabilities.transit ? `<div class="notice">${icon('shield')}<span>${t('routeUnavailable')}</span></div>` : ''}
+    ${!c.data.capabilities.transit ? `<div class="notice">${icon('shield')}<span>${t(c.data.capabilities.walking ? (q.mode === 'transit' ? 'transitPending' : 'walkingReady') : 'routeUnavailable')}</span></div>` : ''}
     <div class="explore-layout"><aside class="filters-panel"><div class="filter-heading"><h2>${t('filters')}</h2><button class="text-button" data-action="reset">${t('reset')}</button></div>
     <label class="field"><span>${t('search')}</span><input form="search-form" name="text" value="${esc(q.text || '')}" placeholder="${t('cafe')} / ${t('library')}"></label>
     <label class="field"><span>${t('kind')}</span><select form="search-form" name="kind">${['', 'cafe', 'library', 'workspace'].map((v) => `<option value="${v}" ${q.kind === v ? 'selected' : ''}>${t(v || 'allKinds')}</option>`).join('')}</select></label>
