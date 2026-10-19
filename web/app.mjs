@@ -10,6 +10,7 @@ import { MAP_TILE_URL, MAP_ATTRIBUTION } from './services/map-config.mjs';
 import { getCatalog, searchPlaces, geocode, translateEvents } from './services/api.mjs';
 import { readingDetail } from './pages/library.mjs';
 import { libraryMetrics, recordReading, liked } from './services/library.mjs';
+import { BASE_PATH, appPathname, localUrl } from './services/runtime.mjs';
 
 const defaults = () => ({
   requirements: {},
@@ -121,7 +122,7 @@ function requestTranslation(id, lang, full = false) {
         translating.delete(key);
       }
       if (language() !== lang) return;
-      if (location.pathname.split('/')[2] === 'events' && location.pathname.split('/')[3] === id) {
+      if (appPathname().split('/')[2] === 'events' && appPathname().split('/')[3] === id) {
         const y = scrollY;
         render();
         scrollTo(0, y);
@@ -153,7 +154,7 @@ function activateTranslations(page, id, lang) {
 }
 
 function language() {
-  return LANGS.includes(location.pathname.split('/')[1]) ? location.pathname.split('/')[1] : 'fr';
+  return LANGS.includes(appPathname().split('/')[1]) ? appPathname().split('/')[1] : 'fr';
 }
 function context() {
   const lang = language();
@@ -161,7 +162,7 @@ function context() {
     lang,
     t: translator(lang),
     l: (value) => localized(value, lang),
-    path: (page) => `/${lang}/${page}`,
+    path: (page) => `${BASE_PATH}/${lang}/${page}`,
     state,
     data,
   };
@@ -189,7 +190,7 @@ function toast(message) {
   toast.timer = setTimeout(() => element.classList.remove('visible'), 4500);
 }
 function navigate(url, restore = false) {
-  if (location.pathname.split('/')[2] === 'map') state.scroll = window.scrollY;
+  if (appPathname().split('/')[2] === 'map') state.scroll = window.scrollY;
   history.pushState({}, '', url);
   render();
   if (restore) window.scrollTo({ top: state.scroll });
@@ -253,7 +254,7 @@ async function search() {
   } finally {
     if (sequence === searchSequence) {
       state.searching = false;
-      if (location.pathname.split('/')[2] === 'map') {
+      if (appPathname().split('/')[2] === 'map') {
         const top = scrollY;
         render();
         scrollTo(0, top);
@@ -265,7 +266,7 @@ async function search() {
 function render() {
   const c = context(),
     { t, path, lang } = c;
-  const parts = location.pathname.split('/').filter(Boolean),
+  const parts = appPathname().split('/').filter(Boolean),
     page = parts[1] || 'home',
     id = parts[2];
   const routeKey = parts.slice(1).join('/') + location.search;
@@ -307,7 +308,7 @@ function render() {
             : ['culture', 'types', 'gallery', 'events', 'about'].includes(page)
               ? discoverPage(page, c)
               : missing(c);
-  app.innerHTML = `<header class="site-header"><div class="nav-wrap"><a href="${path('')}" class="brand"><span class="brand-mark">${icon('cup')}</span><span>Les Cafés<span class="brand-line">DE PARIS</span></span></a><nav id="main-nav" aria-label="Navigation">${nav.map((n) => `<a href="${path(n === 'home' ? '' : n)}" class="${active === n ? 'active' : ''}" ${active === n ? 'aria-current="page"' : ''}>${t(n)}</a>`).join('')}</nav><div class="header-tools"><div class="language-switch" aria-label="Language">${LANGS.map((l) => `<a href="/${l}/${parts.slice(1).join('/')}${location.search}" lang="${l}" data-language="${l}" class="${lang === l ? 'active' : ''}" aria-label="${{ fr: 'Français', en: 'English', zh: '中文' }[l]}">${{ fr: 'FR', en: 'EN', zh: '中文' }[l]}</a>`).join('')}</div><button class="menu-button icon-button" data-action="menu" aria-label="Menu" aria-expanded="false" aria-controls="main-nav">${icon('menu')}</button></div></div></header>${data.snapshotAt ? `<div class="snapshot-note">${t('snapshotNotice')} ${new Intl.DateTimeFormat(lang === 'zh' ? 'zh-CN' : lang, { dateStyle: 'medium', timeStyle: 'short', timeZone: 'Europe/Paris' }).format(new Date(data.snapshotAt))}</div>` : ''}<main id="main" class="${page === 'map' ? `explore-page view-${state.view}` : ''}">${html}</main><footer class="site-footer"><div class="wrap footer-main"><a class="brand" href="${path('')}"><span class="brand-mark">${icon('cup')}</span><span>Les Cafés<span class="brand-line">DE PARIS</span></span></a><p>${t('footerLine')}</p><div><a href="${path('events')}">${t('events')}</a><a href="${path('about')}">${t('method')}</a><a href="https://github.com/kada798/cafes-de-paris" target="_blank" rel="noopener noreferrer">GitHub ${icon('external')}</a></div></div><div class="wrap footer-bottom"><span>© ${new Date().getFullYear()} Les Cafés de Paris</span><span>${t('footerMade')}</span></div></footer>`;
+  app.innerHTML = `<header class="site-header"><div class="nav-wrap"><a href="${path('')}" class="brand"><span class="brand-mark">${icon('cup')}</span><span>Les Cafés<span class="brand-line">DE PARIS</span></span></a><nav id="main-nav" aria-label="Navigation">${nav.map((n) => `<a href="${path(n === 'home' ? '' : n)}" class="${active === n ? 'active' : ''}" ${active === n ? 'aria-current="page"' : ''}>${t(n)}</a>`).join('')}</nav><div class="header-tools"><div class="language-switch" aria-label="Language">${LANGS.map((l) => `<a href="${BASE_PATH}/${l}/${parts.slice(1).join('/')}${location.search}" lang="${l}" data-language="${l}" class="${lang === l ? 'active' : ''}" aria-label="${{ fr: 'Français', en: 'English', zh: '中文' }[l]}">${{ fr: 'FR', en: 'EN', zh: '中文' }[l]}</a>`).join('')}</div><button class="menu-button icon-button" data-action="menu" aria-label="Menu" aria-expanded="false" aria-controls="main-nav">${icon('menu')}</button></div></div></header>${data.snapshotAt ? `<div class="snapshot-note">${t('snapshotNotice')} ${new Intl.DateTimeFormat(lang === 'zh' ? 'zh-CN' : lang, { dateStyle: 'medium', timeStyle: 'short', timeZone: 'Europe/Paris' }).format(new Date(data.snapshotAt))}</div>` : ''}<main id="main" class="${page === 'map' ? `explore-page view-${state.view}` : ''}">${html}</main><footer class="site-footer"><div class="wrap footer-main"><a class="brand" href="${path('')}"><span class="brand-mark">${icon('cup')}</span><span>Les Cafés<span class="brand-line">DE PARIS</span></span></a><p>${t('footerLine')}</p><div><a href="${path('events')}">${t('events')}</a><a href="${path('about')}">${t('method')}</a><a href="https://github.com/kada798/cafes-de-paris" target="_blank" rel="noopener noreferrer">GitHub ${icon('external')}</a></div></div><div class="wrap footer-bottom"><span>© ${new Date().getFullYear()} Les Cafés de Paris</span><span>${t('footerMade')}</span></div></footer>`;
   if (page === 'map') {
     initMap(c);
     if (
@@ -549,12 +550,12 @@ document.addEventListener('submit', (event) => {
 });
 window.addEventListener('popstate', () => {
   render();
-  if (location.pathname.split('/')[2] === 'map') scrollTo(0, state.scroll);
+  if (appPathname().split('/')[2] === 'map') scrollTo(0, state.scroll);
 });
 
 try {
   data = await getCatalog();
-  if (!LANGS.includes(location.pathname.split('/')[1])) history.replaceState({}, '', '/fr/');
+  if (!LANGS.includes(appPathname().split('/')[1])) history.replaceState({}, '', localUrl('/fr/'));
   render();
   libraryMetrics()
     .then((result) => updateLibraryMetrics(result.metrics))

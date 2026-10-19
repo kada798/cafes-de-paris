@@ -1,5 +1,7 @@
 import { test, expect } from '@playwright/test';
-test('weekly reading, source records, professional categories and Google transit links', async ({ page }) => {
+test('weekly reading, source records, professional categories and Google transit links', async ({
+  page,
+}) => {
   await page.clock.install({ time: new Date('2026-10-19T12:00:00Z') });
   await page.goto('/zh/culture');
   await expect(page.locator('.weekly-section .reading-card')).toHaveCount(4);
@@ -17,5 +19,8 @@ test('weekly reading, source records, professional categories and Google transit
   await page.locator('#mode').selectOption('transit');
   await page.locator('#search-form button[type="submit"]').click();
   await expect(page.locator('#search-form button[type="submit"]')).toBeEnabled();
-  await expect(page.locator('.google-directions').first()).toHaveAttribute('href', /travelmode=transit/);
+  await expect(page.locator('.google-directions').first()).toHaveAttribute(
+    'href',
+    /travelmode=transit/
+  );
 });

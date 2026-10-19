@@ -16,12 +16,12 @@ export function liked(id) {
   }
 }
 export async function libraryMetrics() {
-  const response = await fetch('/api/library', { signal: AbortSignal.timeout(5000) });
+  const response = await fetch(LIBRARY_ENDPOINT, { signal: AbortSignal.timeout(5000) });
   if (!response.ok) throw new Error('Statistics unavailable');
   return response.json();
 }
 export async function recordReading(id, kind, active) {
-  const response = await fetch('/api/library', {
+  const response = await fetch(LIBRARY_ENDPOINT, {
     method: 'POST',
     headers: { 'Content-Type': 'application/json' },
     body: JSON.stringify({ id, kind, active, visitor: visitor() }),
@@ -36,3 +36,4 @@ export async function recordReading(id, kind, active) {
     }
   return response.json();
 }
+import { LIBRARY_ENDPOINT } from './runtime.mjs';

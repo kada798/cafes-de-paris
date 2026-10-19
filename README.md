@@ -179,3 +179,11 @@ Sites 身份保存在 `.openai/hosting.json`。托管预览与 GitHub 独立，�
 已加入 15 条可追溯的文化阅读资料、五个内容主题、每周精选及筛选依据；新增 20 家官网可核查的巴黎咖啡馆。类型页采用多维标签并列明分类来源。Google Maps 外部导航无需密钥，Google 站内 API 未启用。每周精选展示本站真实访问、原文点击、可撤销有用票和近 7 天活跃度，外站统计不可获取时明确说明。
 
 维护方法、数据字段、Google 接入条件、统计定义及托管构建见 [SOURCES_AND_RANKING.md](docs/SOURCES_AND_RANKING.md)。托管统计使用 Sites D1；本地 Node 的 SQLite 与之分开。普通静态导出仍可使用，但无法提供共享统计接口。
+
+## GitHub Pages 产品演示
+
+正式演示入口：[Les Cafés de Paris](https://kada798.github.io/cafes-de-paris/fr/)。`.github/workflows/pages.yml` 在每次推送 `master` 后检查代码、构建三语静态前端并部署到 GitHub Pages；也可在 Actions 中手动运行。
+
+本地执行 `npm run build:pages` 生成 `/cafes-de-paris/` 子目录适配产物。GitHub Pages 不运行服务端，共享访问、原文点击和好评仍由现有公共后端提供，接口仅允许本站 Pages 域名跨域访问。步行路线和自动翻译由浏览器直接请求相应服务。活动构建时尝试同步 Paris Data；同步失败使用带来源的公开快照，不导出数据库或密钥。
+
+这个流程更新的是 GitHub Pages 前端；修改统计后端时仍需单独构建并发布 `hosting/`。

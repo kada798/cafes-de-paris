@@ -5,7 +5,8 @@ export const esc = (value) =>
     (c) => ({ '&': '&amp;', '<': '&lt;', '>': '&gt;', '"': '&quot;', "'": '&#39;' })[c]
   );
 export const safeUrl = (value) =>
-  /^https:\/\//.test(value || '') || /^\/assets\/photos\/photo-[\w-]+\.jpg$/.test(value || '')
+  /^https:\/\//.test(value || '') ||
+  /^\/(?:[\w-]+\/)*assets\/photos\/photo-[\w-]+\.jpg$/.test(value || '')
     ? esc(value)
     : '#';
 export function icon(name, cls = '') {

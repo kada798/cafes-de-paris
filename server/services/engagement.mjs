@@ -61,7 +61,7 @@ export async function engagementEndpoint(
   request,
   db,
   ids,
-  { trustedIdentity = false, now = new Date() } = {}
+  { trustedIdentity = false, now = new Date(), allowedOrigins = [] } = {}
 ) {
   if (!db) return response({ error: 'Statistics unavailable' }, 503);
   if (request.method === 'GET')
@@ -72,7 +72,7 @@ export async function engagementEndpoint(
     });
   if (request.method !== 'POST') return response({ error: 'Method not allowed' }, 405);
   const origin = request.headers.get('origin');
-  if (origin && origin !== new URL(request.url).origin)
+  if (origin && origin !== new URL(request.url).origin && !allowedOrigins.includes(origin))
     return response({ error: 'Origin mismatch' }, 403);
   if (Number(request.headers.get('content-length') || 0) > 4096)
     return response({ error: 'Request too large' }, 413);

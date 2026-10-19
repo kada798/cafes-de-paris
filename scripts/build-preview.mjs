@@ -26,6 +26,12 @@ try {
     .events()
     .map((e) => upcomingEvent(e))
     .filter(Boolean);
+  if (!events.length) {
+    const fallback = JSON.parse(
+      await readFile(resolve(ROOT, 'content/events-snapshot.json'), 'utf8')
+    );
+    events = fallback.events.map((e) => upcomingEvent(e)).filter(Boolean);
+  }
   syncRuns = repo.syncRuns().map(({ source, started_at, finished_at, status, imported }) => ({
     source,
     started_at,

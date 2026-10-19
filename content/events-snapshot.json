@@ -1,0 +1,1840 @@
+{
+  "snapshotAt": "2026-10-19T21:01:13.301Z",
+  "events": [
+    {
+      "id": "paris-34541",
+      "source": "paris-data",
+      "sourceId": "34541",
+      "title": {
+        "fr": "Un parfum de Violette : votre café littéraire !"
+      },
+      "description": {
+        "fr": "Présentez vos derniers coups de cœur littéraires, et écoutez ceux des autres, autour d'un bon café."
+      },
+      "start": "2026-01-10T10:00:00+00:00",
+      "end": "2026-12-12T12:00:00+00:00",
+      "occurrences": [
+        {
+          "start": "2026-11-14T10:00:00+02:00",
+          "end": "2026-11-14T12:00:00+02:00"
+        },
+        {
+          "start": "2026-12-12T10:00:00+02:00",
+          "end": "2026-12-12T12:00:00+02:00"
+        }
+      ],
+      "dateDescription": "Le samedi 12 décembre 2026 de 10h00 à 12h00 Le samedi 14 novembre 2026 de 10h00 à 12h00 ",
+      "venue": "Médiathèque Violette Leduc",
+      "address": "18 rue Faidherbe, 75011, Paris",
+      "lat": 48.851596,
+      "lng": 2.38396,
+      "url": "https://www.paris.fr/evenements/club-de-lecture-de-violette-leduc-acte-2-34541",
+      "price": "gratuit",
+      "sourceUpdatedAt": "2026-05-22T12:08:52+00:00",
+      "fetchedAt": "2026-10-19T15:31:45.968Z",
+      "status": "published",
+      "placeId": null,
+      "relationship": "unmatched",
+      "sourceUrl": "https://parisdata.opendatasoft.com/explore/dataset/que-faire-a-paris-/",
+      "nearbyPlaceIds": []
+    },
+    {
+      "id": "paris-118424",
+      "source": "paris-data",
+      "sourceId": "118424",
+      "title": {
+        "fr": "La Bulle - Club de lecture pour ados"
+      },
+      "description": {
+        "fr": "Entre dans La Bulle.\r\nUne conversation sur tes mangas, comics, BD préférées…"
+      },
+      "start": "2026-09-11T17:00:00+00:00",
+      "end": "2026-12-18T17:00:00+00:00",
+      "occurrences": [
+        {
+          "start": "2026-11-06T16:00:00+02:00",
+          "end": "2026-11-06T17:00:00+02:00"
+        },
+        {
+          "start": "2026-11-20T16:00:00+02:00",
+          "end": "2026-11-20T17:00:00+02:00"
+        },
+        {
+          "start": "2026-12-04T16:00:00+02:00",
+          "end": "2026-12-04T17:00:00+02:00"
+        },
+        {
+          "start": "2026-12-18T16:00:00+02:00",
+          "end": "2026-12-18T17:00:00+02:00"
+        }
+      ],
+      "dateDescription": "Le vendredi 04 décembre 2026 de 16h00 à 17h00 Le vendredi 18 décembre 2026 de 16h00 à 17h00 Le vendredi 06 novembre 2026 de 16h00 à 17h00 Le vendredi 20 novembre 2026 de 16h00 à 17h00 ",
+      "venue": "Médiathèque James Baldwin",
+      "address": "10 Bis rue Henri Ribière, 75019, Paris",
+      "lat": 48.876568,
+      "lng": 2.395622,
+      "url": "https://www.paris.fr/evenements/club-de-lecture-118424",
+      "price": "gratuit",
+      "sourceUpdatedAt": "2026-09-02T13:45:57+00:00",
+      "fetchedAt": "2026-10-19T15:31:45.968Z",
+      "status": "published",
+      "placeId": null,
+      "relationship": "unmatched",
+      "sourceUrl": "https://parisdata.opendatasoft.com/explore/dataset/que-faire-a-paris-/",
+      "nearbyPlaceIds": []
+    },
+    {
+      "id": "paris-114803",
+      "source": "paris-data",
+      "sourceId": "114803",
+      "title": {
+        "fr": "Ateliers conversation & clubs de lecture en italien"
+      },
+      "description": {
+        "fr": "Vous aimez parler en italien ?\r\nAteliers conversation ou clubs de lecture : il y en a pour tous les goûts à la bibliothèque Germaine Tillion !"
+      },
+      "start": "2026-09-11T18:00:00+00:00",
+      "end": "2026-12-04T19:00:00+00:00",
+      "occurrences": [
+        {
+          "start": "2026-11-06T17:00:00+02:00",
+          "end": "2026-11-06T19:00:00+02:00"
+        },
+        {
+          "start": "2026-12-04T17:00:00+02:00",
+          "end": "2026-12-04T19:00:00+02:00"
+        }
+      ],
+      "dateDescription": "Le vendredi 06 novembre 2026 de 17h00 à 19h00 Le vendredi 04 décembre 2026 de 17h00 à 19h00 ",
+      "venue": "Bibliothèque Germaine Tillion",
+      "address": "6 rue du Commandant Schlœsing, 75016, Paris",
+      "lat": 48.861836,
+      "lng": 2.284271,
+      "url": "https://www.paris.fr/evenements/ateliers-conversation-clubs-de-lecture-en-italien-114803",
+      "price": "gratuit",
+      "sourceUpdatedAt": "2026-09-12T12:41:23+00:00",
+      "fetchedAt": "2026-10-19T15:31:45.968Z",
+      "status": "published",
+      "placeId": null,
+      "relationship": "unmatched",
+      "sourceUrl": "https://parisdata.opendatasoft.com/explore/dataset/que-faire-a-paris-/",
+      "nearbyPlaceIds": []
+    },
+    {
+      "id": "paris-91544",
+      "source": "paris-data",
+      "sourceId": "91544",
+      "title": {
+        "fr": "Café Signes & Jeux en LSF - Seniors et pour tous.tes"
+      },
+      "description": {
+        "fr": "Envie d’un moment convivial et détendu ?\r\n\r\nParticipez à un après-midi de jeux de société, de partage de gâteaux ou tout simplement pour échanger en Langue des Signes Française (LSF) , dans une ambiance chaleureuse et ouverte à tous.tes !"
+      },
+      "start": "2026-09-17T15:00:00+00:00",
+      "end": "2027-06-24T18:00:00+00:00",
+      "occurrences": [
+        {
+          "start": "2026-11-19T14:00:00+02:00",
+          "end": "2026-11-19T17:00:00+02:00"
+        },
+        {
+          "start": "2026-12-17T14:00:00+02:00",
+          "end": "2026-12-17T17:00:00+02:00"
+        },
+        {
+          "start": "2027-01-21T14:00:00+02:00",
+          "end": "2027-01-21T17:00:00+02:00"
+        },
+        {
+          "start": "2027-02-18T14:00:00+02:00",
+          "end": "2027-02-18T17:00:00+02:00"
+        },
+        {
+          "start": "2027-03-18T14:00:00+02:00",
+          "end": "2027-03-18T17:00:00+02:00"
+        },
+        {
+          "start": "2027-04-15T14:00:00+02:00",
+          "end": "2027-04-15T17:00:00+02:00"
+        },
+        {
+          "start": "2027-05-20T14:00:00+02:00",
+          "end": "2027-05-20T17:00:00+02:00"
+        },
+        {
+          "start": "2027-06-24T14:00:00+02:00",
+          "end": "2027-06-24T17:00:00+02:00"
+        }
+      ],
+      "dateDescription": "Le jeudi 24 juin 2027 de 14h00 à 17h00 Le jeudi 20 mai 2027 de 14h00 à 17h00 Le jeudi 15 avril 2027 de 14h00 à 17h00 Le jeudi 18 mars 2027 de 14h00 à 17h00 Le jeudi 18 février 2027 de 14h00 à 17h00 Le jeudi 21 janvier 2027 de 14h00 à 17h00 Le jeudi 19 novembre 2026 de 14h00 à 17h00 Le jeudi 17 décembre 2026 de 14h00 à 17h00 ",
+      "venue": "Maison des Réfugiés",
+      "address": "10bis Rue Henri Ribière, 75019, Paris",
+      "lat": 48.8765680039658,
+      "lng": 2.39562202356552,
+      "url": "https://www.paris.fr/evenements/cafe-signes-jeux-seniors-et-pour-tous-tes-91544",
+      "price": "gratuit",
+      "sourceUpdatedAt": "2026-08-11T15:45:25+00:00",
+      "fetchedAt": "2026-10-19T15:31:45.968Z",
+      "status": "published",
+      "placeId": null,
+      "relationship": "unmatched",
+      "sourceUrl": "https://parisdata.opendatasoft.com/explore/dataset/que-faire-a-paris-/",
+      "nearbyPlaceIds": []
+    },
+    {
+      "id": "paris-123337",
+      "source": "paris-data",
+      "sourceId": "123337",
+      "title": {
+        "fr": "Club de lecture solidaire avec la bibliothèque Charlotte Delbo"
+      },
+      "description": {
+        "fr": "Un rendez-vous mensuel, à la Fabrique de la Solidarité, pour échanger, découvrir et faire le plein d’idées de lectures autour des solidarités à Paris !"
+      },
+      "start": "2026-09-18T15:30:00+00:00",
+      "end": "2026-11-27T16:00:00+00:00",
+      "occurrences": [
+        {
+          "start": "2026-11-27T14:30:00+02:00",
+          "end": "2026-11-27T16:00:00+02:00"
+        }
+      ],
+      "dateDescription": "Le vendredi 27 novembre 2026 de 14h30 à 16h00 ",
+      "venue": "La Fabrique de la Solidarité",
+      "address": "8 rue de la Banque, 75002, Paris",
+      "lat": 48.866834979908,
+      "lng": 2.34045099576025,
+      "url": "https://www.paris.fr/evenements/club-de-lecture-solidaire-avec-la-bibliotheque-charlotte-delbo-123337",
+      "price": "gratuit",
+      "sourceUpdatedAt": "2026-09-09T15:31:56+00:00",
+      "fetchedAt": "2026-10-19T15:31:45.968Z",
+      "status": "published",
+      "placeId": null,
+      "relationship": "unmatched",
+      "sourceUrl": "https://parisdata.opendatasoft.com/explore/dataset/que-faire-a-paris-/",
+      "nearbyPlaceIds": []
+    },
+    {
+      "id": "paris-113761",
+      "source": "paris-data",
+      "sourceId": "113761",
+      "title": {
+        "fr": "Sam'dit de lire : le club de lecture pour les ados"
+      },
+      "description": {
+        "fr": "Tu veux participer aux achats des romans ado de la médiathèque ? Rejoins le club de lecture !"
+      },
+      "start": "2026-09-19T12:30:00+00:00",
+      "end": "2026-12-05T13:00:00+00:00",
+      "occurrences": [
+        {
+          "start": "2026-11-07T11:30:00+02:00",
+          "end": "2026-11-07T13:00:00+02:00"
+        },
+        {
+          "start": "2026-12-05T11:30:00+02:00",
+          "end": "2026-12-05T13:00:00+02:00"
+        }
+      ],
+      "dateDescription": "Le samedi 05 décembre 2026 de 11h30 à 13h00 Le samedi 07 novembre 2026 de 11h30 à 13h00 ",
+      "venue": "Médiathèque Violette Leduc",
+      "address": "18 rue Faidherbe, 75011, Paris",
+      "lat": 48.851596,
+      "lng": 2.38396,
+      "url": "https://www.paris.fr/evenements/sam-dit-de-lire-le-club-de-lecture-pour-les-ados-113761",
+      "price": "gratuit",
+      "sourceUpdatedAt": "2026-09-16T14:59:42+00:00",
+      "fetchedAt": "2026-10-19T15:31:45.968Z",
+      "status": "published",
+      "placeId": null,
+      "relationship": "unmatched",
+      "sourceUrl": "https://parisdata.opendatasoft.com/explore/dataset/que-faire-a-paris-/",
+      "nearbyPlaceIds": []
+    },
+    {
+      "id": "paris-117608",
+      "source": "paris-data",
+      "sourceId": "117608",
+      "title": {
+        "fr": "Café culture à la bibliothèque Maurice Genevoix"
+      },
+      "description": {
+        "fr": "Coups de cœur et petits gâteaux ! Soyez les bienvenu.e.s au café de Momo."
+      },
+      "start": "2026-09-19T12:30:00+00:00",
+      "end": "2026-12-19T12:30:00+00:00",
+      "occurrences": [
+        {
+          "start": "2026-11-21T11:30:00+02:00",
+          "end": "2026-11-21T12:30:00+02:00"
+        },
+        {
+          "start": "2026-12-19T11:30:00+02:00",
+          "end": "2026-12-19T12:30:00+02:00"
+        }
+      ],
+      "dateDescription": "Le samedi 21 novembre 2026 de 11h30 à 12h30 Le samedi 19 décembre 2026 de 11h30 à 12h30 ",
+      "venue": "Bibliothèque Maurice Genevoix",
+      "address": "19 rue Tristan Tzara, 75018, Paris",
+      "lat": 48.894965,
+      "lng": 2.363901,
+      "url": "https://www.paris.fr/evenements/cafe-culture-a-la-bibliotheque-maurice-genevoix-117608",
+      "price": "gratuit",
+      "sourceUpdatedAt": "2026-08-13T12:15:34+00:00",
+      "fetchedAt": "2026-10-19T15:31:45.968Z",
+      "status": "published",
+      "placeId": null,
+      "relationship": "unmatched",
+      "sourceUrl": "https://parisdata.opendatasoft.com/explore/dataset/que-faire-a-paris-/",
+      "nearbyPlaceIds": []
+    },
+    {
+      "id": "paris-110044",
+      "source": "paris-data",
+      "sourceId": "110044",
+      "title": {
+        "fr": "Café littéraire \"club des Couronnes\""
+      },
+      "description": {
+        "fr": "La bibliothèque Naguib Mahfouz propose son café littéraire, \"le club des Couronnes\". Le temps d'une pause gourmande, nous vous invitons une fois par mois, à venir \"couronner\" vos coups de cœur!"
+      },
+      "start": "2026-09-19T16:30:00+00:00",
+      "end": "2026-12-19T17:00:00+00:00",
+      "occurrences": [
+        {
+          "start": "2026-11-14T15:30:00+02:00",
+          "end": "2026-11-14T17:00:00+02:00"
+        },
+        {
+          "start": "2026-12-19T15:30:00+02:00",
+          "end": "2026-12-19T17:00:00+02:00"
+        }
+      ],
+      "dateDescription": "Le samedi 19 décembre 2026 de 15h30 à 17h00 Le samedi 14 novembre 2026 de 15h30 à 17h00 ",
+      "venue": "Bibliothèque Naguib Mahfouz",
+      "address": "66 rue des Couronnes, 75020, Paris",
+      "lat": 48.870142,
+      "lng": 2.385165,
+      "url": "https://www.paris.fr/evenements/cafe-litteraire-club-des-couronnes-110044",
+      "price": "gratuit",
+      "sourceUpdatedAt": "2026-06-13T10:20:44+00:00",
+      "fetchedAt": "2026-10-19T15:31:45.968Z",
+      "status": "published",
+      "placeId": null,
+      "relationship": "unmatched",
+      "sourceUrl": "https://parisdata.opendatasoft.com/explore/dataset/que-faire-a-paris-/",
+      "nearbyPlaceIds": []
+    },
+    {
+      "id": "paris-105450",
+      "source": "paris-data",
+      "sourceId": "105450",
+      "title": {
+        "fr": "Les rendez-vous de l'Escalier : café littéraire et culturel"
+      },
+      "description": {
+        "fr": "Votre actualité culturelle, vos coups de cœur ! A Buffon, toutes les cultures ont leur place : livres, B.D, théâtre, cinéma, expos… Votre rendez-vous pour tisser des liens entre vous et vous relier aux collections de la bibliothèque"
+      },
+      "start": "2026-09-26T00:00:00+00:00",
+      "end": "2026-12-19T23:59:59+00:00",
+      "occurrences": [],
+      "dateDescription": "Du samedi 26 septembre 2026 au samedi 19 décembre 2026 :  ",
+      "venue": "Bibliothèque Buffon",
+      "address": "15 Bis rue Buffon, 75005, Paris",
+      "lat": 48.842573,
+      "lng": 2.361884,
+      "url": "https://www.paris.fr/evenements/les-rendez-vous-de-l-escalier-votre-actualite-culturelle-105450",
+      "price": "gratuit",
+      "sourceUpdatedAt": "2026-07-22T15:42:42+00:00",
+      "fetchedAt": "2026-10-19T15:31:45.968Z",
+      "status": "published",
+      "placeId": null,
+      "relationship": "unmatched",
+      "sourceUrl": "https://parisdata.opendatasoft.com/explore/dataset/que-faire-a-paris-/",
+      "nearbyPlaceIds": []
+    },
+    {
+      "id": "paris-116987",
+      "source": "paris-data",
+      "sourceId": "116987",
+      "title": {
+        "fr": "Tout en parlant de lectures"
+      },
+      "description": {
+        "fr": "Le club de lecture de la médiathèque Marguerite Duras avec l’association Tout en parlant. Échanges conviviaux autour d'un roman sélectionné."
+      },
+      "start": "2026-10-03T00:00:00+00:00",
+      "end": "2027-06-05T23:59:59+00:00",
+      "occurrences": [],
+      "dateDescription": "Du samedi 03 octobre 2026 au samedi 05 juin 2027 :  ",
+      "venue": "Médiathèque Marguerite Duras",
+      "address": "115, rue de Bagnolet, 75020, Paris",
+      "lat": 48.859839,
+      "lng": 2.403227,
+      "url": "https://www.paris.fr/evenements/tout-en-parlant-de-lectures-116987",
+      "price": "gratuit",
+      "sourceUpdatedAt": "2026-07-24T14:44:57+00:00",
+      "fetchedAt": "2026-10-19T15:31:45.968Z",
+      "status": "published",
+      "placeId": null,
+      "relationship": "unmatched",
+      "sourceUrl": "https://parisdata.opendatasoft.com/explore/dataset/que-faire-a-paris-/",
+      "nearbyPlaceIds": []
+    },
+    {
+      "id": "paris-105073",
+      "source": "paris-data",
+      "sourceId": "105073",
+      "title": {
+        "fr": "L'heure des bébés - Un temps de lecture partagée pour les tout-petits"
+      },
+      "description": {
+        "fr": "Pour les enfants de 0 à 3 ans accompagnés d’un adulte (parent, grand-parent, assistant·e maternel·le…). \r\nLectures individuelles dans l'espace des tout-petits pour découvrir les livres en douceur, au rythme de l'enfant."
+      },
+      "start": "2026-10-06T18:00:00+00:00",
+      "end": "2026-12-01T18:30:00+00:00",
+      "occurrences": [
+        {
+          "start": "2026-10-06T17:00:00+02:00",
+          "end": "2026-10-06T18:30:00+02:00"
+        },
+        {
+          "start": "2026-10-13T17:00:00+02:00",
+          "end": "2026-10-13T18:30:00+02:00"
+        },
+        {
+          "start": "2026-10-20T17:00:00+02:00",
+          "end": "2026-10-20T18:30:00+02:00"
+        },
+        {
+          "start": "2026-10-27T17:00:00+02:00",
+          "end": "2026-10-27T18:30:00+02:00"
+        },
+        {
+          "start": "2026-11-03T17:00:00+02:00",
+          "end": "2026-11-03T18:30:00+02:00"
+        },
+        {
+          "start": "2026-11-10T17:00:00+02:00",
+          "end": "2026-11-10T18:30:00+02:00"
+        },
+        {
+          "start": "2026-11-17T17:00:00+02:00",
+          "end": "2026-11-17T18:30:00+02:00"
+        },
+        {
+          "start": "2026-11-24T17:00:00+02:00",
+          "end": "2026-11-24T18:30:00+02:00"
+        },
+        {
+          "start": "2026-12-01T17:00:00+02:00",
+          "end": "2026-12-01T18:30:00+02:00"
+        }
+      ],
+      "dateDescription": "Du mardi 06 octobre 2026 au mardi 01 décembre 2026 :  mardi  de 17h00 à 18h30 ",
+      "venue": "Bibliothèque Amélie",
+      "address": "164 rue de Grenelle, 75007, Paris",
+      "lat": 48.857995,
+      "lng": 2.308717,
+      "url": "https://www.paris.fr/evenements/l-heure-des-bebes-un-temps-de-lecture-partagee-pour-les-tout-petits-105073",
+      "price": "gratuit",
+      "sourceUpdatedAt": "2026-10-02T16:14:40+00:00",
+      "fetchedAt": "2026-10-19T15:31:45.968Z",
+      "status": "published",
+      "placeId": null,
+      "relationship": "unmatched",
+      "sourceUrl": "https://parisdata.opendatasoft.com/explore/dataset/que-faire-a-paris-/",
+      "nearbyPlaceIds": []
+    },
+    {
+      "id": "paris-76677",
+      "source": "paris-data",
+      "sourceId": "76677",
+      "title": {
+        "fr": "Club de lecture"
+      },
+      "description": {
+        "fr": "Chaque mois, la médiathèque vous accueille pour discuter littérature(s) en toute convivialité."
+      },
+      "start": "2026-10-10T11:30:00+00:00",
+      "end": "2027-06-12T13:30:00+00:00",
+      "occurrences": [
+        {
+          "start": "2026-11-14T10:30:00+02:00",
+          "end": "2026-11-14T12:30:00+02:00"
+        },
+        {
+          "start": "2026-12-12T10:30:00+02:00",
+          "end": "2026-12-12T12:30:00+02:00"
+        },
+        {
+          "start": "2027-01-09T10:30:00+02:00",
+          "end": "2027-01-09T12:30:00+02:00"
+        },
+        {
+          "start": "2027-02-13T10:30:00+02:00",
+          "end": "2027-02-13T12:30:00+02:00"
+        },
+        {
+          "start": "2027-03-13T10:30:00+02:00",
+          "end": "2027-03-13T12:30:00+02:00"
+        },
+        {
+          "start": "2027-04-10T10:30:00+02:00",
+          "end": "2027-04-10T12:30:00+02:00"
+        },
+        {
+          "start": "2027-05-15T10:30:00+02:00",
+          "end": "2027-05-15T12:30:00+02:00"
+        },
+        {
+          "start": "2027-06-12T10:30:00+02:00",
+          "end": "2027-06-12T12:30:00+02:00"
+        }
+      ],
+      "dateDescription": "Le samedi 15 mai 2027 de 10h30 à 12h30 Le samedi 12 juin 2027 de 10h30 à 12h30 Le samedi 13 mars 2027 de 10h30 à 12h30 Le samedi 10 avril 2027 de 10h30 à 12h30 Le samedi 09 janvier 2027 de 10h30 à 12h30 Le samedi 13 février 2027 de 10h30 à 12h30 Le samedi 14 novembre 2026 de 10h30 à 12h30 Le samedi 12 décembre 2026 de 10h30 à 12h30 ",
+      "venue": "Médiathèque James Baldwin",
+      "address": "10 Bis rue Henri Ribière, 75019, Paris",
+      "lat": 48.876568,
+      "lng": 2.395622,
+      "url": "https://www.paris.fr/evenements/club-de-lecture-76677",
+      "price": "gratuit",
+      "sourceUpdatedAt": "2026-09-01T13:47:38+00:00",
+      "fetchedAt": "2026-10-19T15:31:45.968Z",
+      "status": "published",
+      "placeId": null,
+      "relationship": "unmatched",
+      "sourceUrl": "https://parisdata.opendatasoft.com/explore/dataset/que-faire-a-paris-/",
+      "nearbyPlaceIds": []
+    },
+    {
+      "id": "paris-117798",
+      "source": "paris-data",
+      "sourceId": "117798",
+      "title": {
+        "fr": "Club lecture jeunesse : Tatoulu"
+      },
+      "description": {
+        "fr": "Tu aimes lire et tu as envie de partager tes coups de cœur : romans, mangas, bd… ? Tu as envie de découvrir de nouvelles séries, de nouveaux héros ? Le club lecture t’attend !\r\nLes samedis à 14h15"
+      },
+      "start": "2026-10-10T15:15:00+00:00",
+      "end": "2027-06-12T17:00:00+00:00",
+      "occurrences": [
+        {
+          "start": "2026-11-14T14:15:00+02:00",
+          "end": "2026-11-14T16:00:00+02:00"
+        },
+        {
+          "start": "2026-12-12T14:15:00+02:00",
+          "end": "2026-12-12T16:00:00+02:00"
+        },
+        {
+          "start": "2027-01-09T14:15:00+02:00",
+          "end": "2027-01-09T16:00:00+02:00"
+        },
+        {
+          "start": "2027-02-13T14:15:00+02:00",
+          "end": "2027-02-13T16:00:00+02:00"
+        },
+        {
+          "start": "2027-03-20T14:15:00+02:00",
+          "end": "2027-03-20T16:00:00+02:00"
+        },
+        {
+          "start": "2027-04-10T14:15:00+02:00",
+          "end": "2027-04-10T16:00:00+02:00"
+        },
+        {
+          "start": "2027-06-12T14:15:00+02:00",
+          "end": "2027-06-12T16:00:00+02:00"
+        }
+      ],
+      "dateDescription": "Le samedi 12 décembre 2026 de 14h15 à 16h00 Le samedi 09 janvier 2027 de 14h15 à 16h00 Le samedi 13 février 2027 de 14h15 à 16h00 Le samedi 10 avril 2027 de 14h15 à 16h00 Le samedi 12 juin 2027 de 14h15 à 16h00 Le samedi 20 mars 2027 de 14h15 à 16h00 Le samedi 14 novembre 2026 de 14h15 à 16h00 ",
+      "venue": "Bibliothèque Assia Djebar",
+      "address": "1 rue Reynaldo Hahn, 75020, Paris",
+      "lat": 48.849256,
+      "lng": 2.412159,
+      "url": "https://www.paris.fr/evenements/club-lecture-jeunesse-117798",
+      "price": "gratuit",
+      "sourceUpdatedAt": "2026-09-23T10:29:19+00:00",
+      "fetchedAt": "2026-10-19T15:31:45.968Z",
+      "status": "published",
+      "placeId": null,
+      "relationship": "unmatched",
+      "sourceUrl": "https://parisdata.opendatasoft.com/explore/dataset/que-faire-a-paris-/",
+      "nearbyPlaceIds": []
+    },
+    {
+      "id": "paris-117389",
+      "source": "paris-data",
+      "sourceId": "117389",
+      "title": {
+        "fr": "Lecture musicale « Marcher dans tes pas » de Léonor de Récondo"
+      },
+      "description": {
+        "fr": "Nos identités se construisent dans les pas de celles et ceux qui nous ont précédés, entre les silences hérités et les récits à réinventer. Avec ce spectacle, la littérature et la musique se rejoignent pour faire surgir une mémoire intime et collective, marquée par l’exil et la transmission. Comment habiter une identité façonnée par une histoire qui nous précède et continue de nous traverser ?"
+      },
+      "start": "2026-10-20T21:30:00+00:00",
+      "end": "2026-10-21T22:45:00+00:00",
+      "occurrences": [
+        {
+          "start": "2026-10-20T20:30:00+02:00",
+          "end": "2026-10-20T21:45:00+02:00"
+        },
+        {
+          "start": "2026-10-21T20:30:00+02:00",
+          "end": "2026-10-21T21:45:00+02:00"
+        }
+      ],
+      "dateDescription": "Le mercredi 21 octobre 2026 de 20h30 à 21h45 Le mardi 20 octobre 2026 de 20h30 à 21h45 ",
+      "venue": "Théâtre de la Concorde",
+      "address": "1 Avenue Gabriel, 75008, Paris",
+      "lat": 48.8674259879009,
+      "lng": 2.31892802860537,
+      "url": "https://www.paris.fr/evenements/marcher-dans-tes-pas-de-leonor-de-recondo-117389",
+      "price": "gratuit sous condition",
+      "sourceUpdatedAt": "2026-08-20T11:56:09+00:00",
+      "fetchedAt": "2026-10-19T15:31:45.968Z",
+      "status": "published",
+      "placeId": null,
+      "relationship": "unmatched",
+      "sourceUrl": "https://parisdata.opendatasoft.com/explore/dataset/que-faire-a-paris-/",
+      "nearbyPlaceIds": []
+    },
+    {
+      "id": "paris-123610",
+      "source": "paris-data",
+      "sourceId": "123610",
+      "title": {
+        "fr": "Lecture Nature : Humour sauvage"
+      },
+      "description": {
+        "fr": "[Lecture pour enfants]\r\n\r\nChaque mois, la Maison Paris Nature propose des lectures d’histoires choisies dans la collection de la Bibliothèque nature. Ce mois-ci ce seront des histoires où les animaux nous font rire, qui seront mises à l'honneur. À destination des enfants à partir de 3 ans, accompagnés d’un adulte (Inscription obligatoire pour chacun des participants)."
+      },
+      "start": "2026-10-21T16:30:00+00:00",
+      "end": "2026-10-21T17:15:00+00:00",
+      "occurrences": [
+        {
+          "start": "2026-10-21T15:30:00+02:00",
+          "end": "2026-10-21T16:15:00+02:00"
+        }
+      ],
+      "dateDescription": "Le mercredi 21 octobre 2026 de 15h30 à 16h15 ",
+      "venue": "Maison Paris Nature",
+      "address": "Pavillons 1 et 2 du Parc Floral de Paris, route de la Pyramide, 75012, Paris",
+      "lat": 48.834921,
+      "lng": 2.443769,
+      "url": "https://www.paris.fr/evenements/lecture-nature-histoires-a-grandes-oreilles-123610",
+      "price": "gratuit",
+      "sourceUpdatedAt": "2026-09-22T17:17:10+00:00",
+      "fetchedAt": "2026-10-19T15:31:45.968Z",
+      "status": "published",
+      "placeId": null,
+      "relationship": "unmatched",
+      "sourceUrl": "https://parisdata.opendatasoft.com/explore/dataset/que-faire-a-paris-/",
+      "nearbyPlaceIds": []
+    },
+    {
+      "id": "paris-124117",
+      "source": "paris-data",
+      "sourceId": "124117",
+      "title": {
+        "fr": "Café des parents \"Avoir confiance en soi : pas facile à l’école…\""
+      },
+      "description": {
+        "fr": "Et si la plus grande peur des parents n’était pas la note d’aujourd’hui, mais l’adulte que leur enfant deviendra demain ?\r\nDans un monde où les métiers, les exigences et les repères évoluent rapidement, comment préparer son enfant à un futur qui ne ressemblera pas à celui que nous connaissons aujourd’hui ?"
+      },
+      "start": "2026-10-24T11:30:00+00:00",
+      "end": "2026-10-24T13:00:00+00:00",
+      "occurrences": [
+        {
+          "start": "2026-10-24T10:30:00+02:00",
+          "end": "2026-10-24T12:00:00+02:00"
+        }
+      ],
+      "dateDescription": "Le samedi 24 octobre 2026 de 10h30 à 12h00 ",
+      "venue": "Médiathèque James Baldwin",
+      "address": "10 Bis rue Henri Ribière, 75019, Paris",
+      "lat": 48.876568,
+      "lng": 2.395622,
+      "url": "https://www.paris.fr/evenements/cafe-des-parents-avoir-confiance-en-soi-pas-facile-a-l-ecole-124117",
+      "price": "gratuit",
+      "sourceUpdatedAt": "2026-10-02T15:32:55+00:00",
+      "fetchedAt": "2026-10-19T15:31:45.968Z",
+      "status": "published",
+      "placeId": null,
+      "relationship": "unmatched",
+      "sourceUrl": "https://parisdata.opendatasoft.com/explore/dataset/que-faire-a-paris-/",
+      "nearbyPlaceIds": []
+    },
+    {
+      "id": "paris-112197",
+      "source": "paris-data",
+      "sourceId": "112197",
+      "title": {
+        "fr": "Bar à lectures"
+      },
+      "description": {
+        "fr": "Dans le cadre du Mois de l'imaginaire, la médiathèque Virginia Woolf vous convie à un Bar à lectures concocté par la compagnie théâtrale Les Écriés !"
+      },
+      "start": "2026-10-24T15:00:00+00:00",
+      "end": "2026-10-24T18:00:00+00:00",
+      "occurrences": [
+        {
+          "start": "2026-10-24T14:00:00+02:00",
+          "end": "2026-10-24T17:00:00+02:00"
+        }
+      ],
+      "dateDescription": "Le samedi 24 octobre 2026 de 14h00 à 17h00 ",
+      "venue": "Médiathèque Virginia Woolf",
+      "address": "4 rue Germaine Krull, 75013, Paris",
+      "lat": 48.817383,
+      "lng": 2.359182,
+      "url": "https://www.paris.fr/evenements/bar-a-lectures-112197",
+      "price": "gratuit",
+      "sourceUpdatedAt": "2026-09-09T18:04:32+00:00",
+      "fetchedAt": "2026-10-19T15:31:45.968Z",
+      "status": "published",
+      "placeId": null,
+      "relationship": "unmatched",
+      "sourceUrl": "https://parisdata.opendatasoft.com/explore/dataset/que-faire-a-paris-/",
+      "nearbyPlaceIds": []
+    },
+    {
+      "id": "paris-125966",
+      "source": "paris-data",
+      "sourceId": "125966",
+      "title": {
+        "fr": "La lecture, c'est bon pour les bébés ! - Atelier enfants-parents mensuel gratuit"
+      },
+      "description": {
+        "fr": "L’atelier de lecture avec les bébés est un temps d’éveil doux et convivial où tout-petits et parents découvrent ensemble le plaisir des livres à travers des lectures à voix haute, des comptines et la manipulation libre."
+      },
+      "start": "2026-10-24T17:00:00+00:00",
+      "end": "2027-06-19T18:00:00+00:00",
+      "occurrences": [
+        {
+          "start": "2026-10-24T16:00:00+02:00",
+          "end": "2026-10-24T17:00:00+02:00"
+        },
+        {
+          "start": "2026-11-28T16:00:00+02:00",
+          "end": "2026-11-28T17:00:00+02:00"
+        },
+        {
+          "start": "2026-12-19T16:00:00+02:00",
+          "end": "2026-12-19T17:00:00+02:00"
+        },
+        {
+          "start": "2027-01-23T16:00:00+02:00",
+          "end": "2027-01-23T17:00:00+02:00"
+        },
+        {
+          "start": "2027-02-27T16:00:00+02:00",
+          "end": "2027-02-27T17:00:00+02:00"
+        },
+        {
+          "start": "2027-03-20T16:00:00+02:00",
+          "end": "2027-03-20T17:00:00+02:00"
+        },
+        {
+          "start": "2027-04-24T16:00:00+02:00",
+          "end": "2027-04-24T17:00:00+02:00"
+        },
+        {
+          "start": "2027-05-29T16:00:00+02:00",
+          "end": "2027-05-29T17:00:00+02:00"
+        },
+        {
+          "start": "2027-06-19T16:00:00+02:00",
+          "end": "2027-06-19T17:00:00+02:00"
+        }
+      ],
+      "dateDescription": "Le samedi 19 juin 2027 de 16h00 à 17h00 Le samedi 29 mai 2027 de 16h00 à 17h00 Le samedi 24 avril 2027 de 16h00 à 17h00 Le samedi 20 mars 2027 de 16h00 à 17h00 Le samedi 27 février 2027 de 16h00 à 17h00 Le samedi 23 janvier 2027 de 16h00 à 17h00 Le samedi 19 décembre 2026 de 16h00 à 17h00 Le samedi 28 novembre 2026 de 16h00 à 17h00 Le samedi 24 octobre 2026 de 16h00 à 17h00 ",
+      "venue": "Le Petit Ney",
+      "address": "10 avenue de la Porte de Montmartre, 75018, Paris",
+      "lat": 48.8986899838311,
+      "lng": 2.33691500608666,
+      "url": "https://www.paris.fr/evenements/la-lecture-c-est-bon-pour-les-bebes-atelier-enfants-parents-mensuel-gratuit-125966",
+      "price": "gratuit sous condition",
+      "sourceUpdatedAt": "2026-10-14T12:13:30+00:00",
+      "fetchedAt": "2026-10-19T15:31:45.968Z",
+      "status": "published",
+      "placeId": null,
+      "relationship": "unmatched",
+      "sourceUrl": "https://parisdata.opendatasoft.com/explore/dataset/que-faire-a-paris-/",
+      "nearbyPlaceIds": []
+    },
+    {
+      "id": "paris-117400",
+      "source": "paris-data",
+      "sourceId": "117400",
+      "title": {
+        "fr": "Lecture musicale Mary Lou Williams, little piano girl, Dès 7 ans au 38Riv"
+      },
+      "description": {
+        "fr": "Jazz — Plongez dans l'univers de Mary Lou Williams, pionnière du jazz, à travers une lecture musicale enrichissante et interactive pour toute la famille."
+      },
+      "start": "2026-10-29T20:30:00+00:00",
+      "end": "2026-10-29T21:30:00+00:00",
+      "occurrences": [
+        {
+          "start": "2026-10-29T14:00:00+02:00",
+          "end": "2026-10-29T15:00:00+02:00"
+        },
+        {
+          "start": "2026-10-29T20:30:00+02:00",
+          "end": "2026-10-29T21:30:00+02:00"
+        }
+      ],
+      "dateDescription": "Le jeudi 29 octobre 2026 de 20h30 à 21h30 Le jeudi 29 octobre 2026 de 14h00 à 15h00 ",
+      "venue": "38Riv Jazz Club",
+      "address": "38, rue de Rivoli, 75004, Paris",
+      "lat": 48.856427003097,
+      "lng": 2.3564829781449,
+      "url": "https://www.paris.fr/evenements/lecture-musicale-mary-lou-williams-little-piano-girl-des-7-ans-au-38riv-117400",
+      "price": "payant",
+      "sourceUpdatedAt": "2026-08-12T11:51:10+00:00",
+      "fetchedAt": "2026-10-19T15:31:45.969Z",
+      "status": "published",
+      "placeId": null,
+      "relationship": "unmatched",
+      "sourceUrl": "https://parisdata.opendatasoft.com/explore/dataset/que-faire-a-paris-/",
+      "nearbyPlaceIds": [
+        "cafeotheque"
+      ]
+    },
+    {
+      "id": "paris-118161",
+      "source": "paris-data",
+      "sourceId": "118161",
+      "title": {
+        "fr": "Les petits déjeuners littéraires"
+      },
+      "description": {
+        "fr": "Venez découvrir et partager nos livres coups de cœur et échanger sur vos lectures du moment, dans une ambiance chaleureuse."
+      },
+      "start": "2026-10-31T10:30:00+00:00",
+      "end": "2026-11-28T12:00:00+00:00",
+      "occurrences": [
+        {
+          "start": "2026-10-31T10:30:00+02:00",
+          "end": "2026-10-31T12:00:00+02:00"
+        },
+        {
+          "start": "2026-11-28T10:30:00+02:00",
+          "end": "2026-11-28T12:00:00+02:00"
+        }
+      ],
+      "dateDescription": "Le samedi 28 novembre 2026 de 10h30 à 12h00 Le samedi 31 octobre 2026 de 10h30 à 12h00 ",
+      "venue": "Médiathèque Hélène Berr",
+      "address": "70 rue de Picpus, 75012, Paris",
+      "lat": 48.842541,
+      "lng": 2.397477,
+      "url": "https://www.paris.fr/evenements/petits-dejeuners-litteraires-2024-118161",
+      "price": "gratuit",
+      "sourceUpdatedAt": "2026-09-22T10:55:50+00:00",
+      "fetchedAt": "2026-10-19T15:31:45.969Z",
+      "status": "published",
+      "placeId": null,
+      "relationship": "unmatched",
+      "sourceUrl": "https://parisdata.opendatasoft.com/explore/dataset/que-faire-a-paris-/",
+      "nearbyPlaceIds": []
+    },
+    {
+      "id": "paris-104618",
+      "source": "paris-data",
+      "sourceId": "104618",
+      "title": {
+        "fr": "Café littéraire des Batignolles"
+      },
+      "description": {
+        "fr": "samedi 31 octobre à 11h\r\nsalle bleue\r\naccès libre"
+      },
+      "start": "2026-10-31T11:00:00+00:00",
+      "end": "2026-10-31T12:00:00+00:00",
+      "occurrences": [
+        {
+          "start": "2026-10-31T11:00:00+02:00",
+          "end": "2026-10-31T12:00:00+02:00"
+        }
+      ],
+      "dateDescription": "Le samedi 31 octobre 2026 de 11h00 à 12h00 ",
+      "venue": "Bibliothèque des Batignolles",
+      "address": "18, rue des Batignolles, 75017, Paris",
+      "lat": 48.884341,
+      "lng": 2.322094,
+      "url": "https://www.paris.fr/evenements/cafe-litteraire-des-batignolles-104618",
+      "price": "gratuit",
+      "sourceUpdatedAt": "2026-09-29T18:08:44+00:00",
+      "fetchedAt": "2026-10-19T15:31:45.969Z",
+      "status": "published",
+      "placeId": null,
+      "relationship": "unmatched",
+      "sourceUrl": "https://parisdata.opendatasoft.com/explore/dataset/que-faire-a-paris-/",
+      "nearbyPlaceIds": []
+    },
+    {
+      "id": "paris-123595",
+      "source": "paris-data",
+      "sourceId": "123595",
+      "title": {
+        "fr": "Café coup de cœur"
+      },
+      "description": {
+        "fr": "[Atelier-Discussion]\r\n\r\nLivres, DVD, jeux… Venez partager les pépites de la bibliothèque autour d'un café avec l'équipe de la Maison Paris Nature. Adultes, à partir de 14 ans."
+      },
+      "start": "2026-10-31T11:00:00+00:00",
+      "end": "2026-10-31T12:00:00+00:00",
+      "occurrences": [
+        {
+          "start": "2026-10-31T11:00:00+02:00",
+          "end": "2026-10-31T12:00:00+02:00"
+        }
+      ],
+      "dateDescription": "Le samedi 31 octobre 2026 de 11h00 à 12h00 ",
+      "venue": "Maison Paris Nature",
+      "address": "Pavillons 1 et 2 du Parc Floral de Paris, route de la Pyramide, 75012, Paris",
+      "lat": 48.834921,
+      "lng": 2.443769,
+      "url": "https://www.paris.fr/evenements/cafe-coup-de-coeur-123595",
+      "price": "gratuit",
+      "sourceUpdatedAt": "2026-09-25T09:04:09+00:00",
+      "fetchedAt": "2026-10-19T15:31:45.969Z",
+      "status": "published",
+      "placeId": null,
+      "relationship": "unmatched",
+      "sourceUrl": "https://parisdata.opendatasoft.com/explore/dataset/que-faire-a-paris-/",
+      "nearbyPlaceIds": []
+    },
+    {
+      "id": "paris-117574",
+      "source": "paris-data",
+      "sourceId": "117574",
+      "title": {
+        "fr": "Club de lecture : La littérature des grands espaces"
+      },
+      "description": {
+        "fr": "C'est la reprise de nos clubs de lecture où nous vous proposons la lecture commune de deux romans et deux bandes dessinées : inspirées par l'automne de la science, dont la thématique cette année est le biomimétisme, nous avons eu envie de lire des ouvrages où la nature a un rôle central."
+      },
+      "start": "2026-10-31T16:00:00+00:00",
+      "end": "2026-10-31T17:30:00+00:00",
+      "occurrences": [
+        {
+          "start": "2026-10-31T16:00:00+02:00",
+          "end": "2026-10-31T17:30:00+02:00"
+        }
+      ],
+      "dateDescription": "Le samedi 31 octobre 2026 de 16h00 à 17h30 ",
+      "venue": "Médiathèque Hélène Berr",
+      "address": "70 rue de Picpus, 75012, Paris",
+      "lat": 48.842541,
+      "lng": 2.397477,
+      "url": "https://www.paris.fr/evenements/club-de-lecture-on-a-aime-et-vous-117574",
+      "price": "gratuit",
+      "sourceUpdatedAt": "2026-08-24T11:11:16+00:00",
+      "fetchedAt": "2026-10-19T15:31:45.969Z",
+      "status": "published",
+      "placeId": null,
+      "relationship": "unmatched",
+      "sourceUrl": "https://parisdata.opendatasoft.com/explore/dataset/que-faire-a-paris-/",
+      "nearbyPlaceIds": []
+    },
+    {
+      "id": "paris-115553",
+      "source": "paris-data",
+      "sourceId": "115553",
+      "title": {
+        "fr": "Des lectures ou un sort, Melville fête Halloween !"
+      },
+      "description": {
+        "fr": "Contes horrifiques et animations pour les petits et les grands.\r\n\r\nOn vous attend dans votre déguisement le plus effrayant !"
+      },
+      "start": "2026-10-31T18:00:00+00:00",
+      "end": "2026-10-31T20:00:00+00:00",
+      "occurrences": [
+        {
+          "start": "2026-10-31T18:00:00+02:00",
+          "end": "2026-10-31T20:00:00+02:00"
+        }
+      ],
+      "dateDescription": "Le samedi 31 octobre 2026 de 18h00 à 20h00 ",
+      "venue": "Médiathèque Jean-Pierre Melville",
+      "address": "79 rue Nationale, 75013, Paris",
+      "lat": 48.826787,
+      "lng": 2.36644,
+      "url": "https://www.paris.fr/evenements/melville-fete-halloween-115553",
+      "price": "gratuit",
+      "sourceUpdatedAt": "2026-10-08T15:03:39+00:00",
+      "fetchedAt": "2026-10-19T15:31:45.969Z",
+      "status": "published",
+      "placeId": null,
+      "relationship": "unmatched",
+      "sourceUrl": "https://parisdata.opendatasoft.com/explore/dataset/que-faire-a-paris-/",
+      "nearbyPlaceIds": []
+    },
+    {
+      "id": "paris-125090",
+      "source": "paris-data",
+      "sourceId": "125090",
+      "title": {
+        "fr": "Atelier de lecture à voix haute avec Isabelle Mestre"
+      },
+      "description": {
+        "fr": "Une soirée carte blanche : L’appétit, la dévoration, mangé, être mangé, traversent les contes depuis la nuit des temps et toutes les civilisations…"
+      },
+      "start": "2026-11-04T18:30:00+00:00",
+      "end": "2026-11-04T20:30:00+00:00",
+      "occurrences": [
+        {
+          "start": "2026-11-04T18:30:00+02:00",
+          "end": "2026-11-04T20:30:00+02:00"
+        }
+      ],
+      "dateDescription": "Le mercredi 04 novembre 2026 de 18h30 à 20h30 ",
+      "venue": "Bibliothèque Jacqueline Dreyfus-Weill",
+      "address": "6 rue Fessart, 75019, Paris",
+      "lat": 48.876269,
+      "lng": 2.388184,
+      "url": "https://www.paris.fr/evenements/atelier-de-lecture-a-voix-haute-avec-isabelle-mestre-125090",
+      "price": "gratuit",
+      "sourceUpdatedAt": "2026-10-01T12:21:01+00:00",
+      "fetchedAt": "2026-10-19T15:31:45.969Z",
+      "status": "published",
+      "placeId": null,
+      "relationship": "unmatched",
+      "sourceUrl": "https://parisdata.opendatasoft.com/explore/dataset/que-faire-a-paris-/",
+      "nearbyPlaceIds": []
+    },
+    {
+      "id": "paris-124037",
+      "source": "paris-data",
+      "sourceId": "124037",
+      "title": {
+        "fr": "Lecture : Sous le regard de Stefan Zweig"
+      },
+      "description": {
+        "fr": "Destruction de l'hôtel de Joseph Roth\r\n(Correspondance 1927-1938). Par Arnaud Simon."
+      },
+      "start": "2026-11-04T19:00:00+00:00",
+      "end": "2026-11-05T21:00:00+00:00",
+      "occurrences": [
+        {
+          "start": "2026-11-04T19:00:00+02:00",
+          "end": "2026-11-04T20:00:00+02:00"
+        },
+        {
+          "start": "2026-11-05T20:00:00+02:00",
+          "end": "2026-11-05T21:00:00+02:00"
+        }
+      ],
+      "dateDescription": "Du mercredi 04 novembre 2026 au jeudi 05 novembre 2026 :  jeudi  de 20h00 à 21h00 mercredi  de 19h00 à 20h00 ",
+      "venue": "Théâtre Artistic Athévains",
+      "address": "45 Bis rue Richard Lenoir, 75011, Paris",
+      "lat": 48.856651,
+      "lng": 2.38112,
+      "url": "https://www.paris.fr/evenements/lecture-sous-le-regard-de-stefan-zweig-124037",
+      "price": "payant",
+      "sourceUpdatedAt": "2026-09-16T17:46:40+00:00",
+      "fetchedAt": "2026-10-19T15:31:45.969Z",
+      "status": "published",
+      "placeId": null,
+      "relationship": "unmatched",
+      "sourceUrl": "https://parisdata.opendatasoft.com/explore/dataset/que-faire-a-paris-/",
+      "nearbyPlaceIds": []
+    },
+    {
+      "id": "paris-126236",
+      "source": "paris-data",
+      "sourceId": "126236",
+      "title": {
+        "fr": "Projection - lecture - signature autour du film « À jamais »"
+      },
+      "description": {
+        "fr": "« À jamais » est un film entièrement conçu à travers l’œil d’un téléphone. Venez le découvrir en compagnie du réalisateur Karim Kari et de l’autrice du recueil de poésies éponyme Isabelle Bouché Kari."
+      },
+      "start": "2026-11-06T19:30:00+00:00",
+      "end": "2026-11-06T21:30:00+00:00",
+      "occurrences": [
+        {
+          "start": "2026-11-06T19:30:00+02:00",
+          "end": "2026-11-06T21:30:00+02:00"
+        }
+      ],
+      "dateDescription": "Le vendredi 06 novembre 2026 de 19h30 à 21h30 ",
+      "venue": "La Table des Matières",
+      "address": "51, rue de l’Abbé Carton, 75014, Paris",
+      "lat": 48.8291030045734,
+      "lng": 2.31769303899151,
+      "url": "https://www.paris.fr/evenements/projection-lecture-signature-autour-du-film-a-jamais-126236",
+      "price": "gratuit",
+      "sourceUpdatedAt": "2026-10-19T10:29:21+00:00",
+      "fetchedAt": "2026-10-19T15:31:45.969Z",
+      "status": "published",
+      "placeId": null,
+      "relationship": "unmatched",
+      "sourceUrl": "https://parisdata.opendatasoft.com/explore/dataset/que-faire-a-paris-/",
+      "nearbyPlaceIds": []
+    },
+    {
+      "id": "paris-124699",
+      "source": "paris-data",
+      "sourceId": "124699",
+      "title": {
+        "fr": "Samedi lectures : rentrée littéraire spéciale littérature étrangère"
+      },
+      "description": {
+        "fr": "Les nouveautés en littérature étrangère sont à l'honneur. Venez écouter des lectures à voix haute, et partager les vôtres."
+      },
+      "start": "2026-11-07T10:30:00+00:00",
+      "end": "2026-11-07T11:30:00+00:00",
+      "occurrences": [
+        {
+          "start": "2026-11-07T10:30:00+02:00",
+          "end": "2026-11-07T11:30:00+02:00"
+        }
+      ],
+      "dateDescription": "Le samedi 07 novembre 2026 de 10h30 à 11h30 ",
+      "venue": "Médiathèque Marguerite Yourcenar",
+      "address": "41, rue d'Alleray, 75015, Paris",
+      "lat": 48.836807,
+      "lng": 2.303481,
+      "url": "https://www.paris.fr/evenements/samedi-lectures-rentree-litteraire-speciale-litterature-etrangere-124699",
+      "price": "gratuit",
+      "sourceUpdatedAt": "2026-09-25T17:04:25+00:00",
+      "fetchedAt": "2026-10-19T15:31:45.969Z",
+      "status": "published",
+      "placeId": null,
+      "relationship": "unmatched",
+      "sourceUrl": "https://parisdata.opendatasoft.com/explore/dataset/que-faire-a-paris-/",
+      "nearbyPlaceIds": []
+    },
+    {
+      "id": "paris-115366",
+      "source": "paris-data",
+      "sourceId": "115366",
+      "title": {
+        "fr": "Bulle et Bob dans la cuisine | Lecture chantée de Natalie Tual"
+      },
+      "description": {
+        "fr": "Il s’en passe des choses quand Bulle et Bob cuisinent !"
+      },
+      "start": "2026-11-07T10:30:00+00:00",
+      "end": "2026-11-07T11:00:00+00:00",
+      "occurrences": [
+        {
+          "start": "2026-11-07T10:30:00+02:00",
+          "end": "2026-11-07T11:00:00+02:00"
+        }
+      ],
+      "dateDescription": "Le samedi 07 novembre 2026 de 10h30 à 11h00 ",
+      "venue": "Bibliothèque L'Heure joyeuse",
+      "address": "6-12 rue des Prêtres Saint-Séverin, 75005, Paris",
+      "lat": 48.851833,
+      "lng": 2.34494,
+      "url": "https://www.paris.fr/evenements/bulle-et-bob-dans-la-cuisine-lecture-chantee-de-natalie-tual-115366",
+      "price": "gratuit",
+      "sourceUpdatedAt": "2026-09-19T16:50:25+00:00",
+      "fetchedAt": "2026-10-19T15:31:45.969Z",
+      "status": "published",
+      "placeId": null,
+      "relationship": "unmatched",
+      "sourceUrl": "https://parisdata.opendatasoft.com/explore/dataset/que-faire-a-paris-/",
+      "nearbyPlaceIds": []
+    },
+    {
+      "id": "paris-116124",
+      "source": "paris-data",
+      "sourceId": "116124",
+      "title": {
+        "fr": "Rencontre littéraire avec Julien Marsay"
+      },
+      "description": {
+        "fr": "À l’occasion du Festival des Fiertés, rencontrez Julien Marsay - auteur et enseignant agrégé de lettres modernes - pour une discussion autour de son essai \"Queers-Riposter à l’injure\" édité chez Payot."
+      },
+      "start": "2026-11-13T19:00:00+00:00",
+      "end": "2026-11-13T21:00:00+00:00",
+      "occurrences": [
+        {
+          "start": "2026-11-13T19:00:00+02:00",
+          "end": "2026-11-13T21:00:00+02:00"
+        }
+      ],
+      "dateDescription": "Le vendredi 13 novembre 2026 de 19h00 à 21h00 ",
+      "venue": "Bibliothèque Aimé Césaire",
+      "address": "5 rue de Ridder, 75014, Paris",
+      "lat": 48.8312310021516,
+      "lng": 2.31166200819968,
+      "url": "https://www.paris.fr/evenements/rencontre-litteraire-avec-julien-marsay-116124",
+      "price": "gratuit",
+      "sourceUpdatedAt": "2026-08-26T14:59:51+00:00",
+      "fetchedAt": "2026-10-19T15:31:45.969Z",
+      "status": "published",
+      "placeId": null,
+      "relationship": "unmatched",
+      "sourceUrl": "https://parisdata.opendatasoft.com/explore/dataset/que-faire-a-paris-/",
+      "nearbyPlaceIds": []
+    },
+    {
+      "id": "paris-125318",
+      "source": "paris-data",
+      "sourceId": "125318",
+      "title": {
+        "fr": "Lire dans le 20e : prix littéraire jeunesse"
+      },
+      "description": {
+        "fr": "Le prix littéraire destiné aux jeunes à partir de 7 ans revient cette année pour cinq bibliothèques du 20e : Maryse Condé, Assia Djebar, Marguerite Duras, Couronnes-Naguib Mahfouz et Oscar Wilde !"
+      },
+      "start": "2026-11-14T00:00:00+00:00",
+      "end": "2027-03-20T23:59:59+00:00",
+      "occurrences": [],
+      "dateDescription": "Du samedi 14 novembre 2026 au samedi 20 mars 2027 :  ",
+      "venue": "Bibliothèque Oscar Wilde",
+      "address": "12 rue du Télégraphe, 75020, Paris",
+      "lat": 48.872026,
+      "lng": 2.399816,
+      "url": "https://www.paris.fr/evenements/lire-dans-le-20e-prix-litteraire-jeunesse-125318",
+      "price": "gratuit",
+      "sourceUpdatedAt": "2026-10-03T14:46:00+00:00",
+      "fetchedAt": "2026-10-19T15:31:45.969Z",
+      "status": "published",
+      "placeId": null,
+      "relationship": "unmatched",
+      "sourceUrl": "https://parisdata.opendatasoft.com/explore/dataset/que-faire-a-paris-/",
+      "nearbyPlaceIds": []
+    },
+    {
+      "id": "paris-90392",
+      "source": "paris-data",
+      "sourceId": "90392",
+      "title": {
+        "fr": "Lectures inclusives et féministes par les bibliothécaires"
+      },
+      "description": {
+        "fr": "Un temps de lecture par les bibliothécaires pour découvrir des textes importants sur les minorités de genre"
+      },
+      "start": "2026-11-14T10:30:00+00:00",
+      "end": "2026-11-14T12:00:00+00:00",
+      "occurrences": [
+        {
+          "start": "2026-11-14T10:30:00+02:00",
+          "end": "2026-11-14T12:00:00+02:00"
+        }
+      ],
+      "dateDescription": "Le samedi 14 novembre 2026 de 10h30 à 12h00 ",
+      "venue": "Bibliothèque Aimé Césaire",
+      "address": "5 rue de Ridder, 75014, Paris",
+      "lat": 48.8312310021516,
+      "lng": 2.31166200819968,
+      "url": "https://www.paris.fr/evenements/lectures-inclusives-et-feministes-par-les-bibliothecaires-d-aime-cesaire-90392",
+      "price": "gratuit",
+      "sourceUpdatedAt": "2026-09-17T16:16:56+00:00",
+      "fetchedAt": "2026-10-19T15:31:45.969Z",
+      "status": "published",
+      "placeId": null,
+      "relationship": "unmatched",
+      "sourceUrl": "https://parisdata.opendatasoft.com/explore/dataset/que-faire-a-paris-/",
+      "nearbyPlaceIds": []
+    },
+    {
+      "id": "paris-126149",
+      "source": "paris-data",
+      "sourceId": "126149",
+      "title": {
+        "fr": "Café vinyle novembre 2026"
+      },
+      "description": {
+        "fr": "La discothèque Rilke vous propose un moment de convivialité autour du support vinyle !"
+      },
+      "start": "2026-11-14T11:00:00+00:00",
+      "end": "2026-11-14T13:00:00+00:00",
+      "occurrences": [
+        {
+          "start": "2026-11-14T11:00:00+02:00",
+          "end": "2026-11-14T13:00:00+02:00"
+        }
+      ],
+      "dateDescription": "Le samedi 14 novembre 2026 de 11h00 à 13h00 ",
+      "venue": "Bibliothèque Rainer Maria Rilke",
+      "address": "88 Ter boulevard de Port-Royal, 75005, Paris",
+      "lat": 48.839183,
+      "lng": 2.339248,
+      "url": "https://www.paris.fr/evenements/cafe-vinyle-novembre-2026-126149",
+      "price": "gratuit",
+      "sourceUpdatedAt": "2026-10-15T17:13:11+00:00",
+      "fetchedAt": "2026-10-19T15:31:45.969Z",
+      "status": "published",
+      "placeId": null,
+      "relationship": "unmatched",
+      "sourceUrl": "https://parisdata.opendatasoft.com/explore/dataset/que-faire-a-paris-/",
+      "nearbyPlaceIds": []
+    },
+    {
+      "id": "paris-124005",
+      "source": "paris-data",
+      "sourceId": "124005",
+      "title": {
+        "fr": "Café littéraire"
+      },
+      "description": {
+        "fr": "La bibliothèque Germaine Tillion relance son club de lecture. Venez parler de vos livres du moment !"
+      },
+      "start": "2026-11-14T11:00:00+00:00",
+      "end": "2026-11-14T12:30:00+00:00",
+      "occurrences": [
+        {
+          "start": "2026-11-14T11:00:00+02:00",
+          "end": "2026-11-14T12:30:00+02:00"
+        }
+      ],
+      "dateDescription": "Le samedi 14 novembre 2026 de 11h00 à 12h30 ",
+      "venue": "Bibliothèque Germaine Tillion",
+      "address": "6 rue du Commandant Schlœsing, 75016, Paris",
+      "lat": 48.861836,
+      "lng": 2.284271,
+      "url": "https://www.paris.fr/evenements/cafe-litteraire-124005",
+      "price": "gratuit",
+      "sourceUpdatedAt": "2026-09-26T14:02:11+00:00",
+      "fetchedAt": "2026-10-19T15:31:45.969Z",
+      "status": "published",
+      "placeId": null,
+      "relationship": "unmatched",
+      "sourceUrl": "https://parisdata.opendatasoft.com/explore/dataset/que-faire-a-paris-/",
+      "nearbyPlaceIds": []
+    },
+    {
+      "id": "paris-124404",
+      "source": "paris-data",
+      "sourceId": "124404",
+      "title": {
+        "fr": "Julia Lepère - La Mer et son double - Lecture musicale"
+      },
+      "description": {
+        "fr": "Lecture par l'autrice de son premier roman\r\naccompagnée par Mathias Bourre\r\nsuivie d'un entretien avec un bibliothécaire"
+      },
+      "start": "2026-11-14T18:00:00+00:00",
+      "end": "2026-11-14T20:00:00+00:00",
+      "occurrences": [
+        {
+          "start": "2026-11-14T18:00:00+02:00",
+          "end": "2026-11-14T20:00:00+02:00"
+        }
+      ],
+      "dateDescription": "Le samedi 14 novembre 2026 de 18h00 à 20h00 ",
+      "venue": "Bibliothèque Marguerite Audoux",
+      "address": "10 rue Portefoin, 75003, Paris",
+      "lat": 48.863702,
+      "lng": 2.359974,
+      "url": "https://www.paris.fr/evenements/julia-lepere-la-mer-et-son-double-lecture-musicale-124404",
+      "price": "gratuit",
+      "sourceUpdatedAt": "2026-09-19T23:59:59+00:00",
+      "fetchedAt": "2026-10-19T15:31:45.969Z",
+      "status": "published",
+      "placeId": null,
+      "relationship": "unmatched",
+      "sourceUrl": "https://parisdata.opendatasoft.com/explore/dataset/que-faire-a-paris-/",
+      "nearbyPlaceIds": []
+    },
+    {
+      "id": "paris-113813",
+      "source": "paris-data",
+      "sourceId": "113813",
+      "title": {
+        "fr": "Parcours littéraire #1 | Fatima Daas invite Abdellah Taïa"
+      },
+      "description": {
+        "fr": "L’écriture de Fatima Daas naît d’une nécessité : nommer ce qui est invisibilisé. « Je tente de rendre compte des héritages coloniaux qui perdurent à travers le prisme de l’intime et des institutions emblématiques, telles que l’Éducation nationale ou la Santé. Je cherche à être au plus près du réel. Trouver les bons langages, les bonnes voix, le bon rythme »."
+      },
+      "start": "2026-11-17T20:00:00+00:00",
+      "end": "2026-11-17T21:00:00+00:00",
+      "occurrences": [
+        {
+          "start": "2026-11-17T20:00:00+02:00",
+          "end": "2026-11-17T21:00:00+02:00"
+        }
+      ],
+      "dateDescription": "Le mardi 17 novembre 2026 de 20h00 à 21h00 ",
+      "venue": "Théâtre L'étoile du nord",
+      "address": "16, rue Georgette Agutte, 75018, Paris",
+      "lat": 48.895559007719,
+      "lng": 2.3329419839815,
+      "url": "https://www.paris.fr/evenements/parcours-litteraire-1-fatima-daas-invite-abdellah-taia-113813",
+      "price": "payant",
+      "sourceUpdatedAt": "2026-07-13T14:54:39+00:00",
+      "fetchedAt": "2026-10-19T15:31:45.969Z",
+      "status": "published",
+      "placeId": null,
+      "relationship": "unmatched",
+      "sourceUrl": "https://parisdata.opendatasoft.com/explore/dataset/que-faire-a-paris-/",
+      "nearbyPlaceIds": []
+    },
+    {
+      "id": "paris-116141",
+      "source": "paris-data",
+      "sourceId": "116141",
+      "title": {
+        "fr": "Lectures de contes par des artistes drag queens et drag kings avec le collectif Les Contes à Paillettes"
+      },
+      "description": {
+        "fr": "Les artistes du collectif Les Contes à Paillettes viennent raconter des histoires inclusives et décalées pour aborder les questions d’égalité et interroger la normalisation des représentations."
+      },
+      "start": "2026-11-18T16:00:00+00:00",
+      "end": "2026-11-18T17:30:00+00:00",
+      "occurrences": [
+        {
+          "start": "2026-11-18T16:00:00+02:00",
+          "end": "2026-11-18T17:30:00+02:00"
+        }
+      ],
+      "dateDescription": "Le mercredi 18 novembre 2026 de 16h00 à 17h30 ",
+      "venue": "Bibliothèque Aimé Césaire",
+      "address": "5 rue de Ridder, 75014, Paris",
+      "lat": 48.8312310021516,
+      "lng": 2.31166200819968,
+      "url": "https://www.paris.fr/evenements/lectures-de-contes-par-des-artistes-drag-queens-et-drag-kings-avec-le-collectif-les-contes-a-paillettes-116141",
+      "price": "gratuit",
+      "sourceUpdatedAt": "2026-08-26T15:00:44+00:00",
+      "fetchedAt": "2026-10-19T15:31:45.969Z",
+      "status": "published",
+      "placeId": null,
+      "relationship": "unmatched",
+      "sourceUrl": "https://parisdata.opendatasoft.com/explore/dataset/que-faire-a-paris-/",
+      "nearbyPlaceIds": []
+    },
+    {
+      "id": "paris-115489",
+      "source": "paris-data",
+      "sourceId": "115489",
+      "title": {
+        "fr": "Nos rendez-vous littéraires : Plume à la page"
+      },
+      "description": {
+        "fr": "Vous avez aimé un livre, un film ? Vous voulez partager avec d'autres passionné.e.s et curieux.ses ? \r\nParticipez à notre rendez-vous littéraire Plume à la page !\r\nEn présence d'interprètes LSF/FR"
+      },
+      "start": "2026-11-21T10:30:00+00:00",
+      "end": "2026-11-21T12:00:00+00:00",
+      "occurrences": [
+        {
+          "start": "2026-11-21T10:30:00+02:00",
+          "end": "2026-11-21T12:00:00+02:00"
+        }
+      ],
+      "dateDescription": "Le samedi 21 novembre 2026 de 10h30 à 12h00 ",
+      "venue": "Bibliothèque Saint-Eloi",
+      "address": "23 rue du Colonel Rozanoff, 75012, Paris",
+      "lat": 48.845529,
+      "lng": 2.387111,
+      "url": "https://www.paris.fr/evenements/nos-rendez-vous-litteraires-plume-a-la-page-115489",
+      "price": "gratuit",
+      "sourceUpdatedAt": "2026-09-08T18:16:33+00:00",
+      "fetchedAt": "2026-10-19T15:31:45.969Z",
+      "status": "published",
+      "placeId": null,
+      "relationship": "unmatched",
+      "sourceUrl": "https://parisdata.opendatasoft.com/explore/dataset/que-faire-a-paris-/",
+      "nearbyPlaceIds": []
+    },
+    {
+      "id": "paris-123914",
+      "source": "paris-data",
+      "sourceId": "123914",
+      "title": {
+        "fr": "Café ciné : \"Le Cinéma de Jim Henson\""
+      },
+      "description": {
+        "fr": "Une présentation ludique et approfondie du cinéma de Jim Henson, par Margot Dugué et Bastien Champougny."
+      },
+      "start": "2026-11-21T11:00:00+00:00",
+      "end": "2026-11-21T13:00:00+00:00",
+      "occurrences": [
+        {
+          "start": "2026-11-21T11:00:00+02:00",
+          "end": "2026-11-21T13:00:00+02:00"
+        }
+      ],
+      "dateDescription": "Le samedi 21 novembre 2026 de 11h00 à 13h00 ",
+      "venue": "Médiathèque Jean-Pierre Melville",
+      "address": "79 rue Nationale, 75013, Paris",
+      "lat": 48.826787,
+      "lng": 2.36644,
+      "url": "https://www.paris.fr/evenements/cafe-cine-le-cinema-de-jim-henson-123914",
+      "price": "gratuit",
+      "sourceUpdatedAt": "2026-09-15T14:48:19+00:00",
+      "fetchedAt": "2026-10-19T15:31:45.969Z",
+      "status": "published",
+      "placeId": null,
+      "relationship": "unmatched",
+      "sourceUrl": "https://parisdata.opendatasoft.com/explore/dataset/que-faire-a-paris-/",
+      "nearbyPlaceIds": []
+    },
+    {
+      "id": "paris-117341",
+      "source": "paris-data",
+      "sourceId": "117341",
+      "title": {
+        "fr": "\"La tournée des coups de cœur\" - café littéraire de NOVEMBRE"
+      },
+      "description": {
+        "fr": "Venez partager de manière informelle et conviviale vos lectures du moment et vos coups de cœur d'hier, d'aujourd'hui et de toujours."
+      },
+      "start": "2026-11-21T11:30:00+00:00",
+      "end": "2026-11-21T12:30:00+00:00",
+      "occurrences": [
+        {
+          "start": "2026-11-21T11:30:00+02:00",
+          "end": "2026-11-21T12:30:00+02:00"
+        }
+      ],
+      "dateDescription": "Le samedi 21 novembre 2026 de 11h30 à 12h30 ",
+      "venue": "Bibliothèque Benoîte Groult",
+      "address": "25 Rue du Commandant René Mouchotte, 75014, Paris",
+      "lat": 48.83825,
+      "lng": 2.319986,
+      "url": "https://www.paris.fr/evenements/modele-la-tournee-des-coups-de-coeur-cafe-litteraire-du-mois-117341",
+      "price": "gratuit",
+      "sourceUpdatedAt": "2026-09-04T13:39:04+00:00",
+      "fetchedAt": "2026-10-19T15:31:45.969Z",
+      "status": "published",
+      "placeId": null,
+      "relationship": "unmatched",
+      "sourceUrl": "https://parisdata.opendatasoft.com/explore/dataset/que-faire-a-paris-/",
+      "nearbyPlaceIds": []
+    },
+    {
+      "id": "paris-123728",
+      "source": "paris-data",
+      "sourceId": "123728",
+      "title": {
+        "fr": "\"Au fabuleux bistrot de Jeannine\", projection-causerie sur les cafés"
+      },
+      "description": {
+        "fr": "Le tendre portrait d'une arrière-grand-mère rebelle et drôle. Un long-métrage documentaire de Pierrick Bourgault présenté par son réalisateur, et une causerie sur le rôle des cafés et bistrots."
+      },
+      "start": "2026-11-21T18:00:00+00:00",
+      "end": "2026-11-21T20:00:00+00:00",
+      "occurrences": [
+        {
+          "start": "2026-11-21T18:00:00+02:00",
+          "end": "2026-11-21T20:00:00+02:00"
+        }
+      ],
+      "dateDescription": "Le samedi 21 novembre 2026 de 18h00 à 20h00 ",
+      "venue": "Le 32 Ciné",
+      "address": "32, rue Saint-Yves, 75014, Paris",
+      "lat": 48.8259340165304,
+      "lng": 2.3322900395525,
+      "url": "https://www.paris.fr/evenements/au-fabuleux-bistrot-de-jeannine-projection-causerie-sur-les-cafes-123728",
+      "price": "payant",
+      "sourceUpdatedAt": "2026-09-14T12:05:00+00:00",
+      "fetchedAt": "2026-10-19T15:31:45.969Z",
+      "status": "published",
+      "placeId": null,
+      "relationship": "unmatched",
+      "sourceUrl": "https://parisdata.opendatasoft.com/explore/dataset/que-faire-a-paris-/",
+      "nearbyPlaceIds": []
+    },
+    {
+      "id": "paris-117290",
+      "source": "paris-data",
+      "sourceId": "117290",
+      "title": {
+        "fr": "Café littéraire à la bibliothèque Jean d'Ormesson"
+      },
+      "description": {
+        "fr": "Des coups de cœur à partager ? En quête d'idées de lecture ? Retrouvons-nous autour d'un thé ou d'un café pour en parler."
+      },
+      "start": "2026-11-28T11:00:00+00:00",
+      "end": "2026-11-28T12:30:00+00:00",
+      "occurrences": [
+        {
+          "start": "2026-11-28T11:00:00+02:00",
+          "end": "2026-11-28T12:30:00+02:00"
+        }
+      ],
+      "dateDescription": "Le samedi 28 novembre 2026 de 11h00 à 12h30 ",
+      "venue": "Bibliothèque Jean d'Ormesson",
+      "address": "3 rue de Lisbonne, 75008, Paris",
+      "lat": 48.877717,
+      "lng": 2.317538,
+      "url": "https://www.paris.fr/evenements/cafe-litteraire-a-la-bibliotheque-jean-d-ormesson-117290",
+      "price": "gratuit",
+      "sourceUpdatedAt": "2026-07-31T17:14:56+00:00",
+      "fetchedAt": "2026-10-19T15:31:45.969Z",
+      "status": "published",
+      "placeId": null,
+      "relationship": "unmatched",
+      "sourceUrl": "https://parisdata.opendatasoft.com/explore/dataset/que-faire-a-paris-/",
+      "nearbyPlaceIds": []
+    },
+    {
+      "id": "paris-124159",
+      "source": "paris-data",
+      "sourceId": "124159",
+      "title": {
+        "fr": "Rencontre littéraire avec Lucile Novat"
+      },
+      "description": {
+        "fr": "La Bibliothèque Aimé Césaire vous invite à une soirée exceptionnelle et passionnante avec Lucile Novat, autrice de \"De grandes dents : Enquête sur un petit malentendu\", publié aux éditions La Découverte"
+      },
+      "start": "2026-12-03T19:00:00+00:00",
+      "end": "2026-12-03T21:00:00+00:00",
+      "occurrences": [
+        {
+          "start": "2026-12-03T19:00:00+02:00",
+          "end": "2026-12-03T21:00:00+02:00"
+        }
+      ],
+      "dateDescription": "Le jeudi 03 décembre 2026 de 19h00 à 21h00 ",
+      "venue": "Bibliothèque Aimé Césaire",
+      "address": "5 rue de Ridder, 75014, Paris",
+      "lat": 48.8312310021516,
+      "lng": 2.31166200819968,
+      "url": "https://www.paris.fr/evenements/rencontre-litteraire-avec-lucile-novat-124159",
+      "price": "gratuit",
+      "sourceUpdatedAt": "2026-09-18T15:46:17+00:00",
+      "fetchedAt": "2026-10-19T15:31:45.969Z",
+      "status": "published",
+      "placeId": null,
+      "relationship": "unmatched",
+      "sourceUrl": "https://parisdata.opendatasoft.com/explore/dataset/que-faire-a-paris-/",
+      "nearbyPlaceIds": []
+    },
+    {
+      "id": "paris-116192",
+      "source": "paris-data",
+      "sourceId": "116192",
+      "title": {
+        "fr": "Samedi Lecture : Agatha Christie"
+      },
+      "description": {
+        "fr": "Venez écouter des lectures à voix haute, et partager les vôtres, autour d'extraits d'œuvres d'Agatha Christie ou d'ouvrages sur la Reine du crime."
+      },
+      "start": "2026-12-05T10:30:00+00:00",
+      "end": "2026-12-05T11:30:00+00:00",
+      "occurrences": [
+        {
+          "start": "2026-12-05T10:30:00+02:00",
+          "end": "2026-12-05T11:30:00+02:00"
+        }
+      ],
+      "dateDescription": "Le samedi 05 décembre 2026 de 10h30 à 11h30 ",
+      "venue": "Médiathèque Marguerite Yourcenar",
+      "address": "41, rue d'Alleray, 75015, Paris",
+      "lat": 48.836807,
+      "lng": 2.303481,
+      "url": "https://www.paris.fr/evenements/samedi-lecture-agatha-christie-116192",
+      "price": "gratuit",
+      "sourceUpdatedAt": "2026-10-10T14:10:35+00:00",
+      "fetchedAt": "2026-10-19T15:31:45.969Z",
+      "status": "published",
+      "placeId": null,
+      "relationship": "unmatched",
+      "sourceUrl": "https://parisdata.opendatasoft.com/explore/dataset/que-faire-a-paris-/",
+      "nearbyPlaceIds": []
+    },
+    {
+      "id": "paris-117623",
+      "source": "paris-data",
+      "sourceId": "117623",
+      "title": {
+        "fr": "Café littéraire : des mots et des mets"
+      },
+      "description": {
+        "fr": "Venez échanger avec les bibliothécaires et partager vos coups de cœur littéraires ou documentaires autour du grand champ de ce qui se déguste."
+      },
+      "start": "2026-12-05T11:00:00+00:00",
+      "end": "2026-12-05T12:30:00+00:00",
+      "occurrences": [
+        {
+          "start": "2026-12-05T11:00:00+02:00",
+          "end": "2026-12-05T12:30:00+02:00"
+        }
+      ],
+      "dateDescription": "Le samedi 05 décembre 2026 de 11h00 à 12h30 ",
+      "venue": "Médiathèque Virginia Woolf",
+      "address": "4 rue Germaine Krull, 75013, Paris",
+      "lat": 48.817383,
+      "lng": 2.359182,
+      "url": "https://www.paris.fr/evenements/cafe-litteraire-la-rentree-litteraire-117623",
+      "price": "gratuit",
+      "sourceUpdatedAt": "2026-09-18T18:28:42+00:00",
+      "fetchedAt": "2026-10-19T15:31:45.969Z",
+      "status": "published",
+      "placeId": null,
+      "relationship": "unmatched",
+      "sourceUrl": "https://parisdata.opendatasoft.com/explore/dataset/que-faire-a-paris-/",
+      "nearbyPlaceIds": []
+    },
+    {
+      "id": "paris-117416",
+      "source": "paris-data",
+      "sourceId": "117416",
+      "title": {
+        "fr": "Des mots sur ses maux : parcours littéraire"
+      },
+      "description": {
+        "fr": "Pendant et après la Shoah, en France comme partout en Europe, nombreux furent ceux qui prirent la plume pour dire et raconter l’indicible."
+      },
+      "start": "2026-12-06T11:00:00+00:00",
+      "end": "2026-12-06T13:00:00+00:00",
+      "occurrences": [
+        {
+          "start": "2026-12-06T11:00:00+02:00",
+          "end": "2026-12-06T13:00:00+02:00"
+        }
+      ],
+      "dateDescription": "Le dimanche 06 décembre 2026 de 11h00 à 13h00 ",
+      "venue": "Mémorial de la Shoah",
+      "address": "17 rue Geoffroy l’Asnier, 75004, Paris",
+      "lat": 48.8548509957524,
+      "lng": 2.35631399897687,
+      "url": "https://www.paris.fr/evenements/des-mots-sur-ses-maux-parcours-litteraire-117416",
+      "price": "gratuit",
+      "sourceUpdatedAt": "2026-08-06T12:40:29+00:00",
+      "fetchedAt": "2026-10-19T15:31:45.969Z",
+      "status": "published",
+      "placeId": null,
+      "relationship": "unmatched",
+      "sourceUrl": "https://parisdata.opendatasoft.com/explore/dataset/que-faire-a-paris-/",
+      "nearbyPlaceIds": [
+        "cafeotheque"
+      ]
+    },
+    {
+      "id": "paris-123870",
+      "source": "paris-data",
+      "sourceId": "123870",
+      "title": {
+        "fr": "Apéro littéraire"
+      },
+      "description": {
+        "fr": "Découvrez les autrices de théâtre d’aujourd’hui et partagez vos impressions autour d’un verre ! Une soirée organisée avec Sarah Pèpe, compagnie Vent Debout."
+      },
+      "start": "2026-12-11T19:30:00+00:00",
+      "end": "2027-04-30T22:30:00+00:00",
+      "occurrences": [
+        {
+          "start": "2026-12-11T19:30:00+02:00",
+          "end": "2026-12-11T21:30:00+02:00"
+        },
+        {
+          "start": "2027-04-30T19:30:00+02:00",
+          "end": "2027-04-30T21:30:00+02:00"
+        }
+      ],
+      "dateDescription": "Le vendredi 30 avril 2027 de 19h30 à 21h30 Le vendredi 11 décembre 2026 de 19h30 à 21h30 ",
+      "venue": "MPAA/Breguet",
+      "address": "17-19, rue Bréguet, 75011, Paris",
+      "lat": 48.8576039899409,
+      "lng": 2.37363000510896,
+      "url": "https://www.paris.fr/evenements/apero-litteraire-123870",
+      "price": "gratuit",
+      "sourceUpdatedAt": "2026-09-29T15:21:52+00:00",
+      "fetchedAt": "2026-10-19T15:31:45.969Z",
+      "status": "published",
+      "placeId": null,
+      "relationship": "unmatched",
+      "sourceUrl": "https://parisdata.opendatasoft.com/explore/dataset/que-faire-a-paris-/",
+      "nearbyPlaceIds": []
+    },
+    {
+      "id": "paris-126150",
+      "source": "paris-data",
+      "sourceId": "126150",
+      "title": {
+        "fr": "Café vinyle décembre 2026"
+      },
+      "description": {
+        "fr": "La discothèque Rilke vous propose un moment de convivialité autour du support vinyle !"
+      },
+      "start": "2026-12-12T11:00:00+00:00",
+      "end": "2026-12-12T13:00:00+00:00",
+      "occurrences": [
+        {
+          "start": "2026-12-12T11:00:00+02:00",
+          "end": "2026-12-12T13:00:00+02:00"
+        }
+      ],
+      "dateDescription": "Le samedi 12 décembre 2026 de 11h00 à 13h00 ",
+      "venue": "Bibliothèque Rainer Maria Rilke",
+      "address": "88 Ter boulevard de Port-Royal, 75005, Paris",
+      "lat": 48.839183,
+      "lng": 2.339248,
+      "url": "https://www.paris.fr/evenements/cafe-vinyle-decembre-2026-126150",
+      "price": "gratuit",
+      "sourceUpdatedAt": "2026-10-15T17:14:10+00:00",
+      "fetchedAt": "2026-10-19T15:31:45.969Z",
+      "status": "published",
+      "placeId": null,
+      "relationship": "unmatched",
+      "sourceUrl": "https://parisdata.opendatasoft.com/explore/dataset/que-faire-a-paris-/",
+      "nearbyPlaceIds": []
+    },
+    {
+      "id": "paris-124006",
+      "source": "paris-data",
+      "sourceId": "124006",
+      "title": {
+        "fr": "Café littéraire spécial premiers romans"
+      },
+      "description": {
+        "fr": "La bibliothèque Germaine Tillion relance son club de lecture. Venez parler de vos livres du moment !"
+      },
+      "start": "2026-12-12T11:00:00+00:00",
+      "end": "2026-12-12T12:30:00+00:00",
+      "occurrences": [
+        {
+          "start": "2026-12-12T11:00:00+02:00",
+          "end": "2026-12-12T12:30:00+02:00"
+        }
+      ],
+      "dateDescription": "Le samedi 12 décembre 2026 de 11h00 à 12h30 ",
+      "venue": "Bibliothèque Germaine Tillion",
+      "address": "6 rue du Commandant Schlœsing, 75016, Paris",
+      "lat": 48.861836,
+      "lng": 2.284271,
+      "url": "https://www.paris.fr/evenements/cafe-litteraire-special-premiers-romans-124006",
+      "price": "gratuit",
+      "sourceUpdatedAt": "2026-09-26T14:01:57+00:00",
+      "fetchedAt": "2026-10-19T15:31:45.969Z",
+      "status": "published",
+      "placeId": null,
+      "relationship": "unmatched",
+      "sourceUrl": "https://parisdata.opendatasoft.com/explore/dataset/que-faire-a-paris-/",
+      "nearbyPlaceIds": []
+    },
+    {
+      "id": "paris-105867",
+      "source": "paris-data",
+      "sourceId": "105867",
+      "title": {
+        "fr": "Cappuccino littéraire : Coups de coeur annuels"
+      },
+      "description": {
+        "fr": "Venez partager avec les bibliothécaires de la médiathèque Jean-Pierre Melville vos lectures coups de cœur !"
+      },
+      "start": "2026-12-19T11:00:00+00:00",
+      "end": "2026-12-19T13:00:00+00:00",
+      "occurrences": [
+        {
+          "start": "2026-12-19T11:00:00+02:00",
+          "end": "2026-12-19T13:00:00+02:00"
+        }
+      ],
+      "dateDescription": "Le samedi 19 décembre 2026 de 11h00 à 13h00 ",
+      "venue": "Médiathèque Jean-Pierre Melville",
+      "address": "79 rue Nationale, 75013, Paris",
+      "lat": 48.826787,
+      "lng": 2.36644,
+      "url": "https://www.paris.fr/evenements/cappuccino-litteraire-coups-de-coeur-annuels-105867",
+      "price": "gratuit",
+      "sourceUpdatedAt": "2026-09-10T17:10:16+00:00",
+      "fetchedAt": "2026-10-19T15:31:45.969Z",
+      "status": "published",
+      "placeId": null,
+      "relationship": "unmatched",
+      "sourceUrl": "https://parisdata.opendatasoft.com/explore/dataset/que-faire-a-paris-/",
+      "nearbyPlaceIds": []
+    }
+  ]
+}
